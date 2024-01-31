@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="VistasAdventis:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="VistasAdventis.jar">
+      <element id="module-output" name="VistasAdventis" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/unknown/binary/AbsoluteLayout/SNAPSHOT/AbsoluteLayout-SNAPSHOT.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
