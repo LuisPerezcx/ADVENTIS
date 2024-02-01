@@ -17,10 +17,12 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="14" max="32767" attributes="0"/>
               <Component id="eliminarBtnTable" min="-2" pref="35" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="agregarBtnTable" min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="abrirBtnTable" min="-2" pref="35" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="editarBtnTable" min="-2" pref="35" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
@@ -32,8 +34,9 @@
           <Group type="102" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="agregarBtnTable" min="-2" pref="35" max="-2" attributes="0"/>
                   <Component id="editarBtnTable" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="agregarBtnTable" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="abrirBtnTable" min="-2" pref="35" max="-2" attributes="0"/>
                   <Component id="eliminarBtnTable" min="-2" pref="35" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -42,10 +45,10 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="Views.celdaAcciones.ActionButton" name="editarBtnTable">
+    <Component class="Views.celdaAcciones.ActionButton" name="abrirBtnTable">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Images/icons8_edit_25px.png"/>
+          <Image iconType="3" name="/Images/icons8_file_25px.png"/>
         </Property>
       </Properties>
       <AuxValues>
@@ -66,6 +69,16 @@
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/icons8_add_25px.png"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="Views.celdaAcciones.ActionButton" name="editarBtnTable">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Images/icons8_edit_25px.png"/>
         </Property>
       </Properties>
       <AuxValues>

@@ -1,6 +1,7 @@
 package Views;
 
 import Controller.ControladorSolicitarHerramientasIFrame;
+import Controller.ControladorSolicitudesHerramientasIFrame;
 import Controller.ControladorVerHerramientas;
 import Views.celdaAcciones.TableAccionCellEditor;
 import Views.celdaAcciones.TableActionCellRender;
@@ -11,9 +12,9 @@ import Views.celdaAcciones.TableActionCellRender;
  *
  * @author david
  */
-public class SolicitarHerramientasIFrame extends javax.swing.JInternalFrame {
+public class SolicitudesHerramientasIFrame extends javax.swing.JInternalFrame {
     private final VentanaPrincipal ventanaPrincipal;
-    public SolicitarHerramientasIFrame(VentanaPrincipal ventanaPrincipal) {
+    public SolicitudesHerramientasIFrame(VentanaPrincipal ventanaPrincipal) {
         this.ventanaPrincipal = ventanaPrincipal;
         initComponents();
         tablaEstilo();
@@ -23,14 +24,14 @@ public class SolicitarHerramientasIFrame extends javax.swing.JInternalFrame {
     private void tablaEstilo(){
         TableActionCellRender tableActionCellRender = new TableActionCellRender();
         TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor();
-        tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);
-        tableAccionCellEditor.panelAcciones.abrirBtnTable.setVisible(false);
+        tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
+        tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.eliminarBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.eliminarBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.editarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.editarBtnTable.setVisible(false);
-        tablaHerramientas.getColumnModel().getColumn(5).setCellRenderer(tableActionCellRender);
-        tablaHerramientas.getColumnModel().getColumn(5).setCellEditor(tableAccionCellEditor);
+        tablaHerramientas.getColumnModel().getColumn(3).setCellRenderer(tableActionCellRender);
+        tablaHerramientas.getColumnModel().getColumn(3).setCellEditor(tableAccionCellEditor);
     }
 
     /**
@@ -45,7 +46,6 @@ public class SolicitarHerramientasIFrame extends javax.swing.JInternalFrame {
         titulo = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
-        solicitar = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaHerramientas = new javax.swing.JTable();
         buscar = new javax.swing.JLabel();
@@ -54,7 +54,7 @@ public class SolicitarHerramientasIFrame extends javax.swing.JInternalFrame {
         setTitle("Ver empleados");
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
-        titulo.setText("Solicitar herramientas");
+        titulo.setText("Solicitudes de herramientas");
 
         jTextField1.setBackground(new java.awt.Color(238, 238, 238));
         jTextField1.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
@@ -63,45 +63,37 @@ public class SolicitarHerramientasIFrame extends javax.swing.JInternalFrame {
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
 
-        solicitar.setBackground(new java.awt.Color(96, 133, 188));
-        solicitar.setFont(new java.awt.Font("Axia", 3, 24)); // NOI18N
-        solicitar.setForeground(new java.awt.Color(255, 255, 255));
-        solicitar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        solicitar.setText("Solicitar");
-        solicitar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        solicitar.setOpaque(true);
-
         tablaHerramientas.setAutoCreateRowSorter(true);
         tablaHerramientas.setFont(new java.awt.Font("Axia", 0, 18)); // NOI18N
         tablaHerramientas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "N° de serie", "Nombre", "Marca", "Ubicacion", "Categoria", ""
+                "Folio", "Fecha", "Nombre solicitante", ""
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, true, true, true, true
+                false, false, false, true
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -129,16 +121,14 @@ public class SolicitarHerramientasIFrame extends javax.swing.JInternalFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(titulo)
-                .addGap(388, 388, 388))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(48, 48, 48)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(solicitar, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
-                            .addComponent(jSeparator1))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                        .addComponent(jSeparator1)))
                 .addContainerGap(48, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
@@ -159,15 +149,13 @@ public class SolicitarHerramientasIFrame extends javax.swing.JInternalFrame {
                         .addGap(95, 95, 95)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 459, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(solicitar)
-                .addContainerGap(159, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(194, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(154, 154, 154)
                     .addComponent(buscar)
-                    .addContainerGap(685, Short.MAX_VALUE)))
+                    .addContainerGap(706, Short.MAX_VALUE)))
         );
 
         pack();
@@ -179,13 +167,11 @@ public class SolicitarHerramientasIFrame extends javax.swing.JInternalFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField jTextField1;
-    public javax.swing.JLabel solicitar;
     private javax.swing.JTable tablaHerramientas;
     private javax.swing.JLabel titulo;
     // End of variables declaration//GEN-END:variables
     private void addListeners(){
-        ControladorSolicitarHerramientasIFrame controladorSolicitarHerramientasIFrame = new ControladorSolicitarHerramientasIFrame(this);
-        solicitar.addMouseListener(controladorSolicitarHerramientasIFrame);
-        buscar.addMouseListener(controladorSolicitarHerramientasIFrame);
+        ControladorSolicitudesHerramientasIFrame controladorSolicitudesHerramientasIFrame = new ControladorSolicitudesHerramientasIFrame(this);
+        buscar.addMouseListener(controladorSolicitudesHerramientasIFrame);
     }
 }
