@@ -26,6 +26,7 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
         setSolicitarHerramientasIFrame(new SolicitarHerramientasIFrame(ventanaPrincipal));
         setRegistroComponentesIFrame(new RegistroComponentesIFrame(ventanaPrincipal));
         setRegistroTipoHerramientasIFrame(new RegistroTipoHerramientasIFrame(ventanaPrincipal));
+        setSolicitudesHerramientasIFrame(new SolicitudesHerramientasIFrame(ventanaPrincipal));
     }
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -50,6 +51,8 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
             ventanaPrincipal.dibujarVista(registroComponentesIFrame);
         } else if (event == ventanaPrincipal.rTipoHerramientaItem) {
             ventanaPrincipal.dibujarVista(registroTipoHerramientasIFrame);
+        } else if (event == ventanaPrincipal.prestarHerramientasItem) {
+            ventanaPrincipal.dibujarVista(solicitudesHerramientasIFrame);
         }
     }
 

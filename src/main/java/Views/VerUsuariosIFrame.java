@@ -26,6 +26,8 @@ public class VerUsuariosIFrame extends javax.swing.JInternalFrame {
         TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor();
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
+        tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);
+        tableAccionCellEditor.panelAcciones.abrirBtnTable.setVisible(false);
         tablaEmpleados.getColumnModel().getColumn(2).setCellRenderer(tableActionCellRender);
         tablaEmpleados.getColumnModel().getColumn(2).setCellEditor(tableAccionCellEditor);
     }

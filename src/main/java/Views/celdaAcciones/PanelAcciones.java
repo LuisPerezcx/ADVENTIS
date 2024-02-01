@@ -26,25 +26,30 @@ public class PanelAcciones extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        editarBtnTable = new Views.celdaAcciones.ActionButton();
+        abrirBtnTable = new Views.celdaAcciones.ActionButton();
         eliminarBtnTable = new Views.celdaAcciones.ActionButton();
         agregarBtnTable = new Views.celdaAcciones.ActionButton();
+        editarBtnTable = new Views.celdaAcciones.ActionButton();
 
-        editarBtnTable.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_edit_25px.png"))); // NOI18N
+        abrirBtnTable.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_file_25px.png"))); // NOI18N
 
         eliminarBtnTable.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_waste_25px.png"))); // NOI18N
 
         agregarBtnTable.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_add_25px.png"))); // NOI18N
+
+        editarBtnTable.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_edit_25px.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(14, Short.MAX_VALUE)
                 .addComponent(eliminarBtnTable, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(agregarBtnTable, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(abrirBtnTable, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(editarBtnTable, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -54,8 +59,9 @@ public class PanelAcciones extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(agregarBtnTable, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(editarBtnTable, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(agregarBtnTable, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(abrirBtnTable, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(eliminarBtnTable, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -63,6 +69,7 @@ public class PanelAcciones extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public Views.celdaAcciones.ActionButton abrirBtnTable;
     public Views.celdaAcciones.ActionButton agregarBtnTable;
     public Views.celdaAcciones.ActionButton editarBtnTable;
     public Views.celdaAcciones.ActionButton eliminarBtnTable;
