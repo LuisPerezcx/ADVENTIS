@@ -22,6 +22,7 @@ public class CreacionIFrames {
     public static VerHerramientasIFrame verHerramientasIFrame;
     public static SolicitarHerramientasIFrame solicitarHerramientasIFrame;
     public static RegistroComponentesIFrame registroComponentesIFrame;
+    public static RegistroTipoHerramientasIFrame registroTipoHerramientasIFrame;
 
     public static void setPerfilMenuIFrame(PerfilMenuIFrame perfilMenuIFrame) {
         CreacionIFrames.perfilMenuIFrame = perfilMenuIFrame;
@@ -44,5 +45,9 @@ public class CreacionIFrames {
 
     public static  void setRegistroComponentesIFrame(RegistroComponentesIFrame registroComponentesIFrame){
         CreacionIFrames.registroComponentesIFrame = registroComponentesIFrame;
+    }
+
+    public static void setRegistroTipoHerramientasIFrame(RegistroTipoHerramientasIFrame registroTipoHerramientasIFrame){
+        CreacionIFrames.registroTipoHerramientasIFrame = registroTipoHerramientasIFrame;
     }
 }
