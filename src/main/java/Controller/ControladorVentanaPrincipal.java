@@ -21,6 +21,7 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
         setPerfilMenuIFrame(new PerfilMenuIFrame(ventanaPrincipal));
         setEmpleadosMenuIFrame(new EmpleadosMenuIFrame(ventanaPrincipal));
         setRegistroHerramientasIFrame(new RegistroHerramientasIFrame(ventanaPrincipal));
+        setVerHerramientasIFrame(new VerHerramientasIFrame(ventanaPrincipal));
     }
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -32,9 +33,11 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
         } else if (event == ventanaPrincipal.verEmpleadosItem) {
             ventanaPrincipal.dibujarVista(verEmpleadosIFrame);
         } else if (event == ventanaPrincipal.verUsuariosItem) {
-            ventanaPrincipal.dibujarVista(verUsuarios);
+            ventanaPrincipal.dibujarVista(verUsuariosIFrame);
         } else if (event == ventanaPrincipal.rHerramientasItem){
             ventanaPrincipal.dibujarVista(registroHerramientasIFrame);
+        } else if (event == ventanaPrincipal.verHerramientasItem) {
+            ventanaPrincipal.dibujarVista(verHerramientasIFrame);
         }
     }
 

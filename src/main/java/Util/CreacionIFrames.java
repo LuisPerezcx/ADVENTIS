@@ -1,7 +1,6 @@
 package Util;
 
 import Views.*;
-import Views.celdaAcciones.PanelAcciones;
 
 /*
 la razon de que esta clase sea static es para evitar que existan 2 o mas internalframes
@@ -14,10 +13,11 @@ public class CreacionIFrames {
     public static final RegistroUsuariosIFrame registroUsuariosIFrame = new RegistroUsuariosIFrame();
     public static final RegistroEmpleadosIFrame registroEmpleadosIFrame = new RegistroEmpleadosIFrame();
     public static final VerEmpleadosIFrame verEmpleadosIFrame = new VerEmpleadosIFrame();
-    public static final VerUsuarios verUsuarios = new VerUsuarios();
+    public static final VerUsuariosIFrame verUsuariosIFrame = new VerUsuariosIFrame();
     public static PerfilMenuIFrame perfilMenuIFrame;
     public static EmpleadosMenuIFrame empleadosMenuIFrame;
     public static RegistroHerramientasIFrame registroHerramientasIFrame;
+    public static VerHerramientasIFrame verHerramientasIFrame;
 
     public static void setPerfilMenuIFrame(PerfilMenuIFrame perfilMenuIFrame) {
         CreacionIFrames.perfilMenuIFrame = perfilMenuIFrame;
@@ -29,5 +29,9 @@ public class CreacionIFrames {
 
     public static void setRegistroHerramientasIFrame(RegistroHerramientasIFrame registroHerramientasIFrame) {
         CreacionIFrames.registroHerramientasIFrame = registroHerramientasIFrame;
+    }
+
+    public static void setVerHerramientasIFrame(VerHerramientasIFrame verHerramientasIFrame) {
+        CreacionIFrames.verHerramientasIFrame = verHerramientasIFrame;
     }
 }
