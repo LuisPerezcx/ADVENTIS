@@ -30,7 +30,6 @@ Views\AA1APLANTILLA.class
 Views\celdaAcciones\PanelAcciones.class
 Controller\ControladorRegistroHerramientasIFrame.class
 Controller\ControladorVentanaPrincipal.class
-Views\RegistroComponentes.class
 Util\CreacionIFrames.class
 Views\Login.class
 Views\PerfilMenuIFrame.class
