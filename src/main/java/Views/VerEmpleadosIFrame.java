@@ -109,11 +109,6 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
         tablaEmpleados.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         tablaEmpleados.setShowGrid(true);
         jScrollPane1.setViewportView(tablaEmpleados);
-        if (tablaEmpleados.getColumnModel().getColumnCount() > 0) {
-            tablaEmpleados.getColumnModel().getColumn(1).setHeaderValue("Apellido paterno");
-            tablaEmpleados.getColumnModel().getColumn(2).setHeaderValue("Apellido materno");
-            tablaEmpleados.getColumnModel().getColumn(3).setHeaderValue("Acciones");
-        }
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -150,8 +145,8 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
                         .addGap(95, 95, 95)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(165, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 604, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         pack();
