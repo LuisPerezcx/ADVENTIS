@@ -42,7 +42,7 @@ public class PerfilMenuIFrame extends javax.swing.JInternalFrame {
         setTitle("Menú herramientas");
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
-        titulo.setText("Perfil de usuario");
+        titulo.setText("Mi perfil");
 
         imgn.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         imgn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/imgnPerfil.png"))); // NOI18N
@@ -82,9 +82,6 @@ public class PerfilMenuIFrame extends javax.swing.JInternalFrame {
                         .addComponent(imgn, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(titulo))
-                            .addGroup(layout.createSequentialGroup()
                                 .addGap(39, 39, 39)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(lblUsuario)
@@ -99,14 +96,17 @@ public class PerfilMenuIFrame extends javax.swing.JInternalFrame {
                         .addGap(377, 377, 377))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(cambiarContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(titulo)
+                        .addGap(535, 535, 535))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addGap(33, 33, 33)
                 .addComponent(titulo)
-                .addGap(149, 149, 149)
+                .addGap(139, 139, 139)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)

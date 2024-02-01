@@ -37,12 +37,12 @@ public class ControladorRegistroHerramientasIFrame implements MouseListener {
         if (event == registroHerramientasIFrame.btnGuardar){
             registroHerramientasIFrame.btnGuardar.setBorder(new BevelBorder(BevelBorder.RAISED));
         }
-
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
         Object event = e.getSource();
+
         if (event == registroHerramientasIFrame.btnGuardar){
             registroHerramientasIFrame.btnGuardar.setBorder(null);
         }
