@@ -20,25 +20,24 @@ public class CreacionIFrames {
     public static RegistroHerramientasIFrame registroHerramientasIFrame;
     public static GenerarAuditoriaIFrame generarAuditoriaIFrame;
     public static VerHerramientasIFrame verHerramientasIFrame;
+    public static SolicitarHerramientasIFrame solicitarHerramientasIFrame;
 
     public static void setPerfilMenuIFrame(PerfilMenuIFrame perfilMenuIFrame) {
         CreacionIFrames.perfilMenuIFrame = perfilMenuIFrame;
     }
-
     public static void setEmpleadosMenuIFrame(EmpleadosMenuIFrame empleadosMenuIFrame) {
         CreacionIFrames.empleadosMenuIFrame = empleadosMenuIFrame;
     }
-
     public static void setRegistroHerramientasIFrame(RegistroHerramientasIFrame registroHerramientasIFrame) {
         CreacionIFrames.registroHerramientasIFrame = registroHerramientasIFrame;
     }
-
     public static void  setGenerarAuditoriaIFrame(GenerarAuditoriaIFrame generarAuditoriaIFrame){
         CreacionIFrames.generarAuditoriaIFrame = generarAuditoriaIFrame;
     }
-
-
     public static void setVerHerramientasIFrame(VerHerramientasIFrame verHerramientasIFrame) {
         CreacionIFrames.verHerramientasIFrame = verHerramientasIFrame;
+    }
+    public static void setSolicitarHerramientasIFrame(SolicitarHerramientasIFrame solicitarHerramientasIFrame) {
+        CreacionIFrames.solicitarHerramientasIFrame = solicitarHerramientasIFrame;
     }
 }

@@ -38,7 +38,7 @@ public class ActionButton extends JButton {
             }
             @Override
             public void mouseClicked(MouseEvent e) {
-                System.out.println("sasaas");
+                System.out.println("accion");
             }
         });
     }

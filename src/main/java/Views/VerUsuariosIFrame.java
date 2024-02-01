@@ -24,6 +24,8 @@ public class VerUsuariosIFrame extends javax.swing.JInternalFrame {
     private void tablaEstilo(){
         TableActionCellRender tableActionCellRender = new TableActionCellRender();
         TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor();
+        tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
+        tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tablaEmpleados.getColumnModel().getColumn(2).setCellRenderer(tableActionCellRender);
         tablaEmpleados.getColumnModel().getColumn(2).setCellEditor(tableAccionCellEditor);
     }
