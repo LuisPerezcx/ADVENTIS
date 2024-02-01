@@ -26,7 +26,7 @@ public class ControladorEmpleadosMenuIFrame implements MouseListener {
         } else if (event == empleadosMenuIFrame.rUsuarios) {
             ventanaPrincipal.dibujarVista(registroUsuariosIFrame);
         } else if (event == empleadosMenuIFrame.verUsuarios) {
-            ventanaPrincipal.dibujarVista(verUsuarios);
+            ventanaPrincipal.dibujarVista(verUsuariosIFrame);
         }
     }
 
