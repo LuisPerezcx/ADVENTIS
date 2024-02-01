@@ -21,7 +21,7 @@
         <dependency>
             <groupId>jcalendar</groupId>
             <artifactId>jcalendar</artifactId>
-            <version>1</version>
+            <version>1.4</version>
         </dependency>
     </dependencies>
     <properties>
