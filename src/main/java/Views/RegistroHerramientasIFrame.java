@@ -83,7 +83,7 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
         lblNumSerie.setText("Num. serie: ");
 
         lblDescripcion.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        lblDescripcion.setText("Descripcion:");
+        lblDescripcion.setText("Descripción:");
 
         lblUbicacion.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
         lblUbicacion.setText("Ubicacion:");
