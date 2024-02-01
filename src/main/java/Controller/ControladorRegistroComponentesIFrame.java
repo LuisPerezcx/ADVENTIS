@@ -8,7 +8,7 @@ import java.awt.event.MouseListener;
 
 public class ControladorRegistroComponentesIFrame implements MouseListener {
 
-    public RegistroComponentesIFrame registroComponentesIFrame;
+    private final RegistroComponentesIFrame registroComponentesIFrame;
 
     public ControladorRegistroComponentesIFrame(RegistroComponentesIFrame registroComponentesIFrame){
         this.registroComponentesIFrame = registroComponentesIFrame;

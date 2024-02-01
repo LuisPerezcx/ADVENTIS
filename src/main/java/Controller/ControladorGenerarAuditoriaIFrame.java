@@ -9,7 +9,7 @@ import java.awt.event.MouseListener;
 
 public class ControladorGenerarAuditoriaIFrame implements MouseListener {
 
-    private GenerarAuditoriaIFrame generarAuditoriaIFrame;
+    private final GenerarAuditoriaIFrame generarAuditoriaIFrame;
 
     public ControladorGenerarAuditoriaIFrame(GenerarAuditoriaIFrame generarAuditoriaIFrame){
         this.generarAuditoriaIFrame = generarAuditoriaIFrame;
