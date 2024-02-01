@@ -351,6 +351,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         verEmpleadosItem.addActionListener(controladorVentanaPrincipal);
         verUsuariosItem.addActionListener(controladorVentanaPrincipal);
         rHerramientasItem.addActionListener(controladorVentanaPrincipal);
+        generarAuditoriasItem.addActionListener(controladorVentanaPrincipal);
 
     }
     public void dibujarVista(JInternalFrame internal){

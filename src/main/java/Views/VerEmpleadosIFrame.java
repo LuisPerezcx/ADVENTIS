@@ -107,6 +107,11 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
         tablaEmpleados.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         tablaEmpleados.setShowGrid(true);
         jScrollPane1.setViewportView(tablaEmpleados);
+        if (tablaEmpleados.getColumnModel().getColumnCount() > 0) {
+            tablaEmpleados.getColumnModel().getColumn(1).setHeaderValue("Apellido paterno");
+            tablaEmpleados.getColumnModel().getColumn(2).setHeaderValue("Apellido materno");
+            tablaEmpleados.getColumnModel().getColumn(3).setHeaderValue("Acciones");
+        }
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

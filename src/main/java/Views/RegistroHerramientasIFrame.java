@@ -169,7 +169,7 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
         btnGuardar.setOpaque(true);
 
         jDateChooser2.setBackground(new java.awt.Color(238, 238, 238));
-        jDateChooser2.setFont(new java.awt.Font("Axia", 0, 12)); // NOI18N
+        jDateChooser2.setFont(new java.awt.Font("Axia", 0, 18)); // NOI18N
         jDateChooser2.setPreferredSize(new java.awt.Dimension(64, 29));
 
         jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
@@ -247,16 +247,16 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
                         .addGap(82, 82, 82)
                         .addComponent(filler2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(462, 462, 462)
+                        .addGap(352, 352, 352)
                         .addComponent(titulo)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addGap(23, 23, 23)
                 .addComponent(titulo)
-                .addGap(35, 35, 35)
+                .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -321,7 +321,7 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(lblMarca)
-                                .addGap(0, 19, Short.MAX_VALUE)
+                                .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(filler2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(64, 64, 64)
                                 .addComponent(lblUbicacion))
