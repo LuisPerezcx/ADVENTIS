@@ -91,35 +91,35 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         reportesBMenu.setForeground(new java.awt.Color(255, 255, 255));
         reportesBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_documents_50px.png"))); // NOI18N
         reportesBMenu.setText("Reportes");
-        reportesBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        reportesBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         herramientasBMenu.setBackground(new java.awt.Color(31, 61, 115));
         herramientasBMenu.setFont(new java.awt.Font("Axia", 1, 24)); // NOI18N
         herramientasBMenu.setForeground(new java.awt.Color(255, 255, 255));
         herramientasBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Tools_50px.png"))); // NOI18N
         herramientasBMenu.setText("Herramientas");
-        herramientasBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        herramientasBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         auditoriasBMenu.setBackground(new java.awt.Color(31, 61, 115));
         auditoriasBMenu.setFont(new java.awt.Font("Axia", 1, 24)); // NOI18N
         auditoriasBMenu.setForeground(new java.awt.Color(255, 255, 255));
         auditoriasBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_audit_50px.png"))); // NOI18N
         auditoriasBMenu.setText("Auditorias");
-        auditoriasBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        auditoriasBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         perfilBMenu.setBackground(new java.awt.Color(31, 61, 115));
         perfilBMenu.setFont(new java.awt.Font("Axia", 1, 24)); // NOI18N
         perfilBMenu.setForeground(new java.awt.Color(255, 255, 255));
         perfilBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_User_Menu_Male_50px.png"))); // NOI18N
         perfilBMenu.setText("Mi perfil");
-        perfilBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        perfilBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         empleadosBMenu.setBackground(new java.awt.Color(31, 61, 115));
         empleadosBMenu.setFont(new java.awt.Font("Axia", 1, 24)); // NOI18N
         empleadosBMenu.setForeground(new java.awt.Color(255, 255, 255));
         empleadosBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Member_50px.png"))); // NOI18N
         empleadosBMenu.setText("Empleados");
-        empleadosBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        empleadosBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout BarraMenuLayout = new javax.swing.GroupLayout(BarraMenu);
         BarraMenu.setLayout(BarraMenuLayout);
@@ -154,11 +154,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         desktopPnl.setLayout(desktopPnlLayout);
         desktopPnlLayout.setHorizontalGroup(
             desktopPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1225, Short.MAX_VALUE)
+            .addGap(0, 1217, Short.MAX_VALUE)
         );
         desktopPnlLayout.setVerticalGroup(
             desktopPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
+            .addGap(0, 787, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout contenedorDesktokPnlLayout = new javax.swing.GroupLayout(contenedorDesktokPnl);
@@ -166,36 +166,36 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         contenedorDesktokPnlLayout.setHorizontalGroup(
             contenedorDesktokPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(contenedorDesktokPnlLayout.createSequentialGroup()
-                .addComponent(desktopPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 1225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 19, Short.MAX_VALUE))
+                .addComponent(desktopPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 1217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         contenedorDesktokPnlLayout.setVerticalGroup(
             contenedorDesktokPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(contenedorDesktokPnlLayout.createSequentialGroup()
-                .addComponent(desktopPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(desktopPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 787, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         menuBar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         menuBar.setOpaque(true);
 
         EmpleadosMenu.setText("Empleados");
-        EmpleadosMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        EmpleadosMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         rUsuariosItem.setText("Registrar usuarios");
-        rUsuariosItem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        rUsuariosItem.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         EmpleadosMenu.add(rUsuariosItem);
 
         rEmpleadosItem.setText("Registrar empleados");
-        rEmpleadosItem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        rEmpleadosItem.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         EmpleadosMenu.add(rEmpleadosItem);
 
         verUsuariosItem.setText("Ver usuarios");
-        verUsuariosItem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        verUsuariosItem.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         EmpleadosMenu.add(verUsuariosItem);
 
         verEmpleadosItem.setText("Ver empleados");
-        verEmpleadosItem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        verEmpleadosItem.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         verEmpleadosItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 verEmpleadosItemActionPerformed(evt);
@@ -206,7 +206,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         menuBar.add(EmpleadosMenu);
 
         herramientasMenu.setText("Herramientas");
-        herramientasMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        herramientasMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         rHerramientasItem.setText("Registrar herramientas");
         herramientasMenu.add(rHerramientasItem);
@@ -229,7 +229,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         menuBar.add(herramientasMenu);
 
         AuditoriasMenu.setText("Auditorias");
-        AuditoriasMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        AuditoriasMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         generarAuditoriasItem.setText("Generar auditorias");
         AuditoriasMenu.add(generarAuditoriasItem);
@@ -240,14 +240,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         menuBar.add(AuditoriasMenu);
 
         reportesMenu.setText("Reportes");
-        reportesMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        reportesMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         verReportesItem.setText("Ver Reportes");
-        verReportesItem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        verReportesItem.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         reportesMenu.add(verReportesItem);
 
         generarPDFitem.setText("Generar PDF");
-        generarPDFitem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        generarPDFitem.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         reportesMenu.add(generarPDFitem);
 
         menuBar.add(reportesMenu);
@@ -262,18 +262,18 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         iconoPerfil.setImage(imagenPerfil.getImagen());
         perfilMenu.setIcon(iconoPerfil);
         perfilMenu.setText("");
-        perfilMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        perfilMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         verPerfilItem.setText("Ver perfil");
-        verPerfilItem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        verPerfilItem.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         perfilMenu.add(verPerfilItem);
 
         cerrarSesionItem.setText("Cerrar sesión");
-        cerrarSesionItem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cerrarSesionItem.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         perfilMenu.add(cerrarSesionItem);
 
         salirItem.setText("Salir de la aplicacion");
-        salirItem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        salirItem.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         perfilMenu.add(salirItem);
 
         menuBar.add(perfilMenu);
@@ -291,10 +291,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BarraMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(BarraMenu, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(contenedorDesktokPnl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(contenedorDesktokPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
