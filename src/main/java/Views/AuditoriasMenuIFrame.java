@@ -41,28 +41,28 @@ public class AuditoriasMenuIFrame extends javax.swing.JInternalFrame {
         verAuditorias.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         verAuditorias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_archive_list_of_parts_80px.png"))); // NOI18N
         verAuditorias.setText("Ver auditorias");
-        verAuditorias.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        verAuditorias.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         generarAuditorias.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         generarAuditorias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_test_passed_80px.png"))); // NOI18N
         generarAuditorias.setText("Generar auditorias");
-        generarAuditorias.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        generarAuditorias.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(427, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(verAuditorias, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(titulo)
-                            .addGap(442, 442, 442))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(generarAuditorias, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(416, 416, 416)))))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(414, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(titulo)
+                        .addGap(442, 442, 442))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(verAuditorias, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(generarAuditorias, javax.swing.GroupLayout.PREFERRED_SIZE, 413, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(416, 416, 416))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

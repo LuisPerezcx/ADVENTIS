@@ -82,7 +82,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         setTitle("ADVENTIS");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setForeground(new java.awt.Color(242, 242, 242));
-        setPreferredSize(new java.awt.Dimension(1460, 820));
+        setPreferredSize(new java.awt.Dimension(1430, 820));
 
         BarraMenu.setBackground(new java.awt.Color(31, 61, 115));
 
@@ -91,35 +91,35 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         reportesBMenu.setForeground(new java.awt.Color(255, 255, 255));
         reportesBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_documents_50px.png"))); // NOI18N
         reportesBMenu.setText("Reportes");
-        reportesBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        reportesBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         herramientasBMenu.setBackground(new java.awt.Color(31, 61, 115));
         herramientasBMenu.setFont(new java.awt.Font("Axia", 1, 24)); // NOI18N
         herramientasBMenu.setForeground(new java.awt.Color(255, 255, 255));
         herramientasBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Tools_50px.png"))); // NOI18N
         herramientasBMenu.setText("Herramientas");
-        herramientasBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        herramientasBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         auditoriasBMenu.setBackground(new java.awt.Color(31, 61, 115));
         auditoriasBMenu.setFont(new java.awt.Font("Axia", 1, 24)); // NOI18N
         auditoriasBMenu.setForeground(new java.awt.Color(255, 255, 255));
         auditoriasBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_audit_50px.png"))); // NOI18N
         auditoriasBMenu.setText("Auditorias");
-        auditoriasBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        auditoriasBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         perfilBMenu.setBackground(new java.awt.Color(31, 61, 115));
         perfilBMenu.setFont(new java.awt.Font("Axia", 1, 24)); // NOI18N
         perfilBMenu.setForeground(new java.awt.Color(255, 255, 255));
         perfilBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_User_Menu_Male_50px.png"))); // NOI18N
         perfilBMenu.setText("Mi perfil");
-        perfilBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        perfilBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         empleadosBMenu.setBackground(new java.awt.Color(31, 61, 115));
         empleadosBMenu.setFont(new java.awt.Font("Axia", 1, 24)); // NOI18N
         empleadosBMenu.setForeground(new java.awt.Color(255, 255, 255));
         empleadosBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Member_50px.png"))); // NOI18N
         empleadosBMenu.setText("Empleados");
-        empleadosBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        empleadosBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout BarraMenuLayout = new javax.swing.GroupLayout(BarraMenu);
         BarraMenu.setLayout(BarraMenuLayout);
@@ -128,7 +128,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             .addComponent(reportesBMenu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(auditoriasBMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(perfilBMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(herramientasBMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(herramientasBMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
             .addComponent(empleadosBMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         BarraMenuLayout.setVerticalGroup(
@@ -154,11 +154,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         desktopPnl.setLayout(desktopPnlLayout);
         desktopPnlLayout.setHorizontalGroup(
             desktopPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1217, Short.MAX_VALUE)
+            .addGap(0, 1169, Short.MAX_VALUE)
         );
         desktopPnlLayout.setVerticalGroup(
             desktopPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 787, Short.MAX_VALUE)
+            .addGap(0, 760, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout contenedorDesktokPnlLayout = new javax.swing.GroupLayout(contenedorDesktokPnl);
@@ -166,14 +166,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         contenedorDesktokPnlLayout.setHorizontalGroup(
             contenedorDesktokPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(contenedorDesktokPnlLayout.createSequentialGroup()
-                .addComponent(desktopPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 1217, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(desktopPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 1169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 75, Short.MAX_VALUE))
         );
         contenedorDesktokPnlLayout.setVerticalGroup(
             contenedorDesktokPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(contenedorDesktokPnlLayout.createSequentialGroup()
-                .addComponent(desktopPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 787, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(desktopPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 760, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 18, Short.MAX_VALUE))
         );
 
         menuBar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -287,7 +287,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(BarraMenu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(contenedorDesktokPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(contenedorDesktokPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

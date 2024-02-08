@@ -46,32 +46,32 @@ public class HerramientasMenuIFrame extends javax.swing.JInternalFrame {
         prestarHerramientas.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         prestarHerramientas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_check_document_80px.png"))); // NOI18N
         prestarHerramientas.setText("Prestar herramientas");
-        prestarHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        prestarHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         solicitarHerramientas.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         solicitarHerramientas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Maintenance_80px.png"))); // NOI18N
         solicitarHerramientas.setText("Solicitar herramientas");
-        solicitarHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        solicitarHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         rHerramientas.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         rHerramientas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_add_80px.png"))); // NOI18N
         rHerramientas.setText("Registrar herramientas");
-        rHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        rHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         verHerramientas.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         verHerramientas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Tools_80px.png"))); // NOI18N
         verHerramientas.setText("Ver herramientas");
-        verHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        verHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         registrarTHerramienta.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         registrarTHerramienta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Full_Tool_Storage_Box_80px.png"))); // NOI18N
         registrarTHerramienta.setText("Registrar tipo herramienta");
-        registrarTHerramienta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        registrarTHerramienta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         registrarTComponente.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         registrarTComponente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_crane_hook_80px.png"))); // NOI18N
         registrarTComponente.setText("Registrar tipo componente");
-        registrarTComponente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        registrarTComponente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -82,27 +82,24 @@ public class HerramientasMenuIFrame extends javax.swing.JInternalFrame {
                 .addComponent(titulo)
                 .addGap(403, 403, 403))
             .addGroup(layout.createSequentialGroup()
-                .addGap(114, 114, 114)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(verHerramientas, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(registrarTHerramienta)
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(verHerramientas, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rHerramientas))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(solicitarHerramientas)
-                            .addComponent(prestarHerramientas, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(87, 87, 87))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(registrarTHerramienta)
-                        .addGap(0, 0, Short.MAX_VALUE))))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(106, 106, 106)
-                    .addComponent(rHerramientas)
-                    .addContainerGap(694, Short.MAX_VALUE)))
+                            .addComponent(prestarHerramientas))
+                        .addGap(87, 87, 87))))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(739, Short.MAX_VALUE)
-                    .addComponent(registrarTComponente, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(757, Short.MAX_VALUE)
+                    .addComponent(registrarTComponente)
                     .addContainerGap()))
         );
         layout.setVerticalGroup(
@@ -111,22 +108,19 @@ public class HerramientasMenuIFrame extends javax.swing.JInternalFrame {
                 .addGap(23, 23, 23)
                 .addComponent(titulo)
                 .addGap(94, 94, 94)
-                .addComponent(prestarHerramientas, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 243, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(prestarHerramientas, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rHerramientas, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(verHerramientas, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(solicitarHerramientas, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(129, 129, 129)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(registrarTHerramienta, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(107, 107, 107))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(175, 175, 175)
-                    .addComponent(rHerramientas, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(614, Short.MAX_VALUE)))
+                .addGap(103, 103, 103))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(689, Short.MAX_VALUE)
+                    .addContainerGap(699, Short.MAX_VALUE)
                     .addComponent(registrarTComponente, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(100, 100, 100)))
         );

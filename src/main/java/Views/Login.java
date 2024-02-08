@@ -90,7 +90,7 @@ public class Login extends javax.swing.JFrame {
         panelForm.setBackground(new java.awt.Color(255, 255, 255));
 
         iniciarSesionLbl.setFont(new java.awt.Font("Axia", 1, 36)); // NOI18N
-        iniciarSesionLbl.setText("INICIAR SESION");
+        iniciarSesionLbl.setText("INICIAR SESIÓN");
 
         usuarioLbl1.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
         usuarioLbl1.setText("Usuario");
@@ -118,8 +118,7 @@ public class Login extends javax.swing.JFrame {
         ingresarBtn.setFont(new java.awt.Font("Axia", 3, 18)); // NOI18N
         ingresarBtn.setForeground(new java.awt.Color(255, 255, 255));
         ingresarBtn.setText("Ingresar");
-        ingresarBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        ingresarBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ingresarBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         ingresarBtn.setFocusPainted(false);
 
         javax.swing.GroupLayout panelFormLayout = new javax.swing.GroupLayout(panelForm);
@@ -128,23 +127,24 @@ public class Login extends javax.swing.JFrame {
             panelFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelFormLayout.createSequentialGroup()
                 .addGroup(panelFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(paswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(panelFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(panelFormLayout.createSequentialGroup()
-                            .addGap(28, 28, 28)
-                            .addComponent(iniciarSesionLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(panelFormLayout.createSequentialGroup()
-                            .addGap(45, 45, 45)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelFormLayout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(iniciarSesionLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panelFormLayout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addGroup(panelFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(paswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(panelFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(usuarioTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 370, Short.MAX_VALUE)
                                 .addComponent(usuarioLbl1)
                                 .addComponent(jSeparator1)
                                 .addComponent(usuarioLbl)
-                                .addComponent(jSeparator2)
-                                .addGroup(panelFormLayout.createSequentialGroup()
-                                    .addGap(133, 133, 133)
-                                    .addComponent(ingresarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                .addComponent(jSeparator2)))))
                 .addGap(0, 65, Short.MAX_VALUE))
+            .addGroup(panelFormLayout.createSequentialGroup()
+                .addGap(166, 166, 166)
+                .addComponent(ingresarBtn)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelFormLayout.setVerticalGroup(
             panelFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -165,7 +165,7 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
                 .addComponent(ingresarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         getContentPane().add(panelForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 480, 400));
