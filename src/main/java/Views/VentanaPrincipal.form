@@ -248,7 +248,7 @@
       <Color blue="f2" green="f2" red="f2" type="rgb"/>
     </Property>
     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1460, 820]"/>
+      <Dimension value="[1430, 820]"/>
     </Property>
   </Properties>
   <SyntheticProperties>
@@ -271,10 +271,11 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <Component id="BarraMenu" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
               <Component id="contenedorDesktokPnl" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -302,7 +303,7 @@
               <Component id="reportesBMenu" alignment="1" max="32767" attributes="0"/>
               <Component id="auditoriasBMenu" alignment="0" max="32767" attributes="0"/>
               <Component id="perfilBMenu" alignment="0" max="32767" attributes="0"/>
-              <Component id="herramientasBMenu" alignment="0" max="32767" attributes="0"/>
+              <Component id="herramientasBMenu" alignment="0" pref="252" max="32767" attributes="0"/>
               <Component id="empleadosBMenu" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
@@ -341,7 +342,7 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Reportes"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-              <Color id="Cursor Por defecto"/>
+              <Color id="Cursor de Mano"/>
             </Property>
           </Properties>
           <AuxValues>
@@ -364,7 +365,7 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Herramientas"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-              <Color id="Cursor Por defecto"/>
+              <Color id="Cursor de Mano"/>
             </Property>
           </Properties>
           <AuxValues>
@@ -387,7 +388,7 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Auditorias"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-              <Color id="Cursor Por defecto"/>
+              <Color id="Cursor de Mano"/>
             </Property>
           </Properties>
           <AuxValues>
@@ -410,7 +411,7 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Mi perfil"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-              <Color id="Cursor Por defecto"/>
+              <Color id="Cursor de Mano"/>
             </Property>
           </Properties>
           <AuxValues>
@@ -433,7 +434,7 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Empleados"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-              <Color id="Cursor Por defecto"/>
+              <Color id="Cursor de Mano"/>
             </Property>
           </Properties>
           <AuxValues>
@@ -451,16 +452,16 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="desktopPnl" min="-2" pref="1217" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="desktopPnl" min="-2" pref="1169" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="desktopPnl" min="-2" pref="787" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="desktopPnl" min="-2" pref="760" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="18" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -482,12 +483,12 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="1217" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="1169" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="760" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>

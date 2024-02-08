@@ -35,9 +35,9 @@
               <EmptySpace pref="203" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="verEmpleados" min="-2" pref="390" max="-2" attributes="0"/>
-                  <Component id="rEmpleados" min="-2" pref="409" max="-2" attributes="0"/>
+                  <Component id="rEmpleados" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
@@ -91,7 +91,7 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Registrar Empleados"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Hand Cursor"/>
+          <Color id="Cursor Por defecto"/>
         </Property>
       </Properties>
       <AuxValues>
@@ -108,7 +108,7 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Ver empleados"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Hand Cursor"/>
+          <Color id="Cursor Por defecto"/>
         </Property>
       </Properties>
       <AuxValues>
@@ -125,7 +125,7 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Registrar usuarios"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Hand Cursor"/>
+          <Color id="Cursor Por defecto"/>
         </Property>
       </Properties>
       <AuxValues>
@@ -142,7 +142,7 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Ver usuarios"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Hand Cursor"/>
+          <Color id="Cursor Por defecto"/>
         </Property>
       </Properties>
       <AuxValues>
