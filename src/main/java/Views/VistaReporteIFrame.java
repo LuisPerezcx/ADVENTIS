@@ -1,7 +1,7 @@
 package Views;
 
 
-import Controller.ControladorRevisionAuditoriasIFrame;
+import Controller.ControladorVistaReporteIFrame;
 import Views.celdaAcciones.TableAccionCellEditor;
 import Views.celdaAcciones.TableActionCellRender;
 
@@ -9,14 +9,14 @@ import Views.celdaAcciones.TableActionCellRender;
  *
  * @author david
  */
-public class RevisionAuditoriasIFrame extends javax.swing.JInternalFrame {
+public class VistaReporteIFrame extends javax.swing.JInternalFrame {
 
     private final VentanaPrincipal ventanaPrincipal;
 
     /**
      * Creates new form VerEmpleadosIFrame
      */
-    public RevisionAuditoriasIFrame(VentanaPrincipal ventanaPrincipal) {
+    public VistaReporteIFrame(VentanaPrincipal ventanaPrincipal) {
         this.ventanaPrincipal = ventanaPrincipal;
         initComponents();
         addListeners();
@@ -135,7 +135,7 @@ public class RevisionAuditoriasIFrame extends javax.swing.JInternalFrame {
     // End of variables declaration//GEN-END:variables
 
     private void addListeners(){
-        ControladorRevisionAuditoriasIFrame controladorRevisionAuditoriasIFrame = new ControladorRevisionAuditoriasIFrame(this);
-        btnRevisar.addMouseListener(controladorRevisionAuditoriasIFrame);
+        ControladorVistaReporteIFrame controladorVistaReporteIFrame = new ControladorVistaReporteIFrame(this);
+        btnRevisar.addMouseListener(controladorVistaReporteIFrame);
     }
 }
