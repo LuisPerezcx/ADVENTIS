@@ -24,8 +24,8 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
     private void tablaEstilo(){
         TableActionCellRender tableActionCellRender = new TableActionCellRender();
         TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor();
-        tableAccionCellEditor.panelAcciones.editarBtnTable.setVisible(false);
-        tableActionCellRender.panelAcciones.editarBtnTable.setVisible(false);
+        tableAccionCellEditor.panelAcciones.pdfBtnTable.setVisible(false);
+        tableActionCellRender.panelAcciones.pdfBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);

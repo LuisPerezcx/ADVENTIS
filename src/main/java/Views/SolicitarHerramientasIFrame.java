@@ -27,8 +27,8 @@ public class SolicitarHerramientasIFrame extends javax.swing.JInternalFrame {
         tableAccionCellEditor.panelAcciones.abrirBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.eliminarBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.eliminarBtnTable.setVisible(false);
-        tableAccionCellEditor.panelAcciones.editarBtnTable.setVisible(false);
-        tableActionCellRender.panelAcciones.editarBtnTable.setVisible(false);
+        tableAccionCellEditor.panelAcciones.pdfBtnTable.setVisible(false);
+        tableActionCellRender.panelAcciones.pdfBtnTable.setVisible(false);
         tablaHerramientas.getColumnModel().getColumn(5).setCellRenderer(tableActionCellRender);
         tablaHerramientas.getColumnModel().getColumn(5).setCellEditor(tableAccionCellEditor);
     }
