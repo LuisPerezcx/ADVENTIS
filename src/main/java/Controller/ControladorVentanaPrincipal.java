@@ -28,6 +28,7 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
         setRegistroTipoHerramientasIFrame(new RegistroTipoHerramientasIFrame(ventanaPrincipal));
         setSolicitudesHerramientasIFrame(new SolicitudesHerramientasIFrame(ventanaPrincipal));
         setVistaReporteIFrame(new VistaReporteIFrame(ventanaPrincipal));
+        setRegistroComputadoras(new RegistroComputadoras(ventanaPrincipal));
     }
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -56,6 +57,8 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
             ventanaPrincipal.dibujarVista(solicitudesHerramientasIFrame);
         } else if (event == ventanaPrincipal.verReportesItem) {
             ventanaPrincipal.dibujarVista(vistaReporteIFrame);
+        } else if (event == ventanaPrincipal.rComputadorasPItem) {
+            ventanaPrincipal.dibujarVista(registroComputadoras);
         }
     }
 

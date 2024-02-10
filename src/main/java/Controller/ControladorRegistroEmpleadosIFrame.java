@@ -1,5 +1,6 @@
 package Controller;
 
+import Views.Notificaciones;
 import Views.RegistroEmpleadosIFrame;
 
 import javax.swing.border.BevelBorder;
@@ -15,7 +16,14 @@ public class ControladorRegistroEmpleadosIFrame implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
+        Object event = e.getSource();
+        if(event == registroEmpleadosIFrame.guardar){
+            registrarEmpleado();
+        }
+    }
 
+    private void registrarEmpleado(){
+        Notificaciones.mensajeOK(registroEmpleadosIFrame,"Registro exitoso","Empleado registrado");
     }
 
     @Override

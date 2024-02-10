@@ -1,12 +1,14 @@
 package Theme;
 
+import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
 
 public class Imagen extends Canvas {
-    private final int x, y;
-    private final String url;
+    private int x, y;
+    private String url;
     private Image imagen;  // Agregamos un campo para almacenar la imagen
+    public Imagen(){}
 
     public Imagen(int x, int y, String url) {
         this.x = x;
@@ -41,8 +43,10 @@ public class Imagen extends Canvas {
             System.out.println("no sirve url");
         }
     }
-
     public Image getImagen() {
         return imagen;
+    }
+    public Icon getIcon(String path, int w, int h){
+        return new ImageIcon(new ImageIcon(getClass().getResource(path)).getImage().getScaledInstance(w,h,0));
     }
 }

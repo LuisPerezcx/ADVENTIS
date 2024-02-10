@@ -1,7 +1,10 @@
 package Controller;
 
+import Theme.Imagen;
 import Views.CambiarContrasenaIFrame;
+import Views.Notificaciones;
 
+import javax.swing.*;
 import javax.swing.border.BevelBorder;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -40,7 +43,15 @@ public class ControladorCambiarContrasenaIFrame implements MouseListener {
             cambiarContrasenaIFrame.ocultarContrasenaConfirmar.setVisible(false);
             cambiarContrasenaIFrame.mostrarContrasenaConfirmar.setVisible(true);
             cambiarContrasenaIFrame.contrasenaConfirmar.setEchoChar('•');
+        } else if (event == cambiarContrasenaIFrame.aceptar) {
+            cambiarContrasena();
         }
+    }
+    private void cambiarContrasena(){
+        //if true
+        Notificaciones.mensajeOK(cambiarContrasenaIFrame,"Cambios guardados con éxito","Guardado");
+        // si confirmar contrasena no coincide
+        //Notificaciones.mensajeError(cambiarContrasenaIFrame,"Las contraseñas no coinciden","Revisar contraseñas");
     }
 
     @Override

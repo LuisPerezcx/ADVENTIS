@@ -1,1 +1,4 @@
+Views\RegistroComputadoras.class
+Controller\ControladorEmpleadosMenuIFrame.class
 Views\VistaReporteIFrame.class
+Controller\ControladorVentanaPrincipal.class
