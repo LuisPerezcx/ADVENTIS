@@ -32,22 +32,22 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="comboUbicacion" min="-2" pref="304" max="-2" attributes="0"/>
                   <Component id="txtNumeroSeire" min="-2" pref="298" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="txtMarca" alignment="0" min="-2" pref="298" max="-2" attributes="0"/>
                           <Component id="jSeparator1" alignment="0" min="-2" pref="298" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="144" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="lblComentario" min="-2" max="-2" attributes="0"/>
                           <Component id="lblResponsable" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Component id="jSeparator2" alignment="0" min="-2" pref="298" max="-2" attributes="0"/>
+                  <Component id="comboUbicacion" alignment="0" min="-2" pref="304" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" pref="39" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="jSeparator3" pref="298" max="32767" attributes="0"/>
@@ -55,7 +55,7 @@
                   </Group>
                   <Component id="jScrollPane1" alignment="0" min="-2" pref="298" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="0" pref="54" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
@@ -66,7 +66,7 @@
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="guardar" min="-2" pref="138" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="536" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="442" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -112,9 +112,9 @@
                       <Component id="jScrollPane1" min="-2" pref="114" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
               <Component id="guardar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="277" max="32767" attributes="0"/>
+              <EmptySpace pref="312" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

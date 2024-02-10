@@ -1,4 +1,6 @@
 package Views;
+import Controller.ControladorRegistroCamarasDigitalesIFrame;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -9,11 +11,15 @@ import java.awt.*;
  */
 public class RegistroCamarasDigitalesIFrame extends javax.swing.JInternalFrame {
 
+    private final VentanaPrincipal ventanaPrincipal;
+
     /**
      * Creates new form VerEmpleadosIFrame
      */
-    public RegistroCamarasDigitalesIFrame() {
+    public RegistroCamarasDigitalesIFrame(VentanaPrincipal ventanaPrincipal) {
+        this.ventanaPrincipal = ventanaPrincipal;
         initComponents();
+        addListeners();
     }
 
     /**
@@ -134,24 +140,24 @@ public class RegistroCamarasDigitalesIFrame extends javax.swing.JInternalFrame {
                     .addComponent(lblUbicacion))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(comboUbicacion, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNumeroSeire, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(144, 144, 144)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblComentario)
                             .addComponent(lblResponsable)))
-                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 39, Short.MAX_VALUE)
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboUbicacion, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jSeparator3, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
                         .addComponent(txtResponsable, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 54, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -160,7 +166,7 @@ public class RegistroCamarasDigitalesIFrame extends javax.swing.JInternalFrame {
                         .addGap(316, 316, 316))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(536, 536, 536))))
+                        .addGap(442, 442, 442))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -194,9 +200,9 @@ public class RegistroCamarasDigitalesIFrame extends javax.swing.JInternalFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(133, 133, 133)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(104, 104, 104)
+                .addGap(69, 69, 69)
                 .addComponent(guardar)
-                .addContainerGap(277, Short.MAX_VALUE))
+                .addContainerGap(312, Short.MAX_VALUE))
         );
 
         pack();
@@ -233,4 +239,9 @@ public class RegistroCamarasDigitalesIFrame extends javax.swing.JInternalFrame {
     private javax.swing.JTextField txtNumeroSeire;
     private javax.swing.JTextField txtResponsable;
     // End of variables declaration//GEN-END:variables
+
+    private void addListeners(){
+        ControladorRegistroCamarasDigitalesIFrame controladorRegistroCamarasDigitalesIFrame = new ControladorRegistroCamarasDigitalesIFrame(this);
+        guardar.addMouseListener(controladorRegistroCamarasDigitalesIFrame);
+    }
 }

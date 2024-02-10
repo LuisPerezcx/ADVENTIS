@@ -26,6 +26,7 @@ public class CreacionIFrames {
     public static VistaReporteIFrame vistaReporteIFrame;
     public static VerAuditoriasIFrame verAuditoriasIFrame;
     public static RegistroComputadoras registroComputadoras;
+    public static RegistroCamarasDigitalesIFrame registroCamarasDigitalesIFrame;
 
     public static void setPerfilMenuIFrame(PerfilMenuIFrame perfilMenuIFrame) {
         CreacionIFrames.perfilMenuIFrame = perfilMenuIFrame;
@@ -68,5 +69,9 @@ public class CreacionIFrames {
 
     public static void setRegistroComputadoras(RegistroComputadoras registroComputadoras) {
         CreacionIFrames.registroComputadoras = registroComputadoras;
+    }
+
+    public static void setRegistroCamarasDigitalesIFrame(RegistroCamarasDigitalesIFrame registroCamarasDigitalesIFrame){
+        CreacionIFrames.registroCamarasDigitalesIFrame = registroCamarasDigitalesIFrame;
     }
 }

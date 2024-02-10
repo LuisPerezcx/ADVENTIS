@@ -24,6 +24,7 @@ C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Views\SolicitudesHerramientasIFrame.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Controller\ControladorVerHerramientas.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Views\Login.java
+C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Controller\ControladorRegistroCamarasDigitalesIFrame.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Controller\ControladorRegistroComponentesIFrame.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Views\SolicitarHerramientasIFrame.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Controller\ControladorVistaReporteIFrame.java
@@ -32,6 +33,7 @@ C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Views\VerUsuariosIFrame.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Views\ReportesMenuIFrame.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Controller\ControladorSolicitudesHerramientasIFrame.java
+C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Views\Notificaciones.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Views\RegistroUsuariosIFrame.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Views\AuditoriasMenuIFrame.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Views\celdaAcciones\PanelAcciones.java
@@ -39,6 +41,7 @@ C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Views\PerfilMenuIFrame.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Views\celdaAcciones\ActionButton.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Views\HerramientasMenuIFrame.java
+C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Views\RegistroComputadoras.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Views\RegistroCamarasDigitalesIFrame.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Controller\ControladorEmpleadosMenuIFrame.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Controller\ControladorRegistroHerramientasIFrame.java
@@ -49,53 +52,3 @@ C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Controller\ControladorLogin.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Controller\ControladorVerAuditoriasIFrame.java
 C:\Users\luisa\OneDrive\Documentos\QuintoSemestre\Paradigmas de programacion II\Ordinario\ADVENTIS\src\main\java\Controller\ControladorRegistroTipoHerramientasIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorPerfilMenuIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\CambiarContrasenaIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\RegistroUsuariosIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\GenerarAuditoriaIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\Login.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\RegistroComputadoras.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorCambiarContrasenaIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\RegistroComponentesIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorVerUsuariosIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorSolicitarHerramientasIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorLogin.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorEmpleadosMenuIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\RegistroEmpleadosIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\celdaAcciones\TableAccionCellEditor.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\PerfilMenuIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorRegistroHerramientasIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorRegistroTipoHerramientasIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorReportesMenuIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorRegistroEmpleadosIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorVentanaPrincipal.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\Notificaciones.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorVistaReporteIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorGenerarAuditoriaIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorVerEmpleadosIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorVerHerramientas.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorHerramientasMenuIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorRegistroUsuariosIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\RegistroHerramientasIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Util\CreacionIFrames.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\VerEmpleadosIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\SolicitudesHerramientasIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\SolicitarHerramientasIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorRegistroComponentesIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\VerHerramientasIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Main\Main.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\AuditoriasMenuIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\VistaReporteIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Theme\Imagen.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\RegistroTipoHerramientasIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorAuditoriasMenuIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorSolicitudesHerramientasIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\celdaAcciones\PanelAcciones.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\VentanaPrincipal.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\VerUsuariosIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\HerramientasMenuIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\AA1APLANTILLA.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\EmpleadosMenuIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\ReportesMenuIFrame.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\celdaAcciones\ActionButton.java
-C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\celdaAcciones\TableActionCellRender.java
