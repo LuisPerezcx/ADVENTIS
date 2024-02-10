@@ -1,5 +1,6 @@
 package Controller;
 
+import Views.Notificaciones;
 import Views.RegistroHerramientasIFrame;
 
 import javax.swing.border.BevelBorder;
@@ -17,7 +18,14 @@ public class ControladorRegistroHerramientasIFrame implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
+        Object event = e.getSource();
+        if (event == registroHerramientasIFrame.btnGuardar){
+            registrarHerramientas();
+        }
+    }
 
+    private void registrarHerramientas(){
+        Notificaciones.mensajeOK(registroHerramientasIFrame,"Registro exitoso","Herramienta registrada");
     }
 
     @Override

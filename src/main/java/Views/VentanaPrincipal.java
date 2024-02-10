@@ -61,7 +61,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         verUsuariosItem = new javax.swing.JMenuItem();
         verEmpleadosItem = new javax.swing.JMenuItem();
         herramientasMenu = new javax.swing.JMenu();
+        RegistrarHerramientas = new javax.swing.JMenu();
         rHerramientasItem = new javax.swing.JMenuItem();
+        rComputadorasPItem = new javax.swing.JMenuItem();
+        rCamarasDItem = new javax.swing.JMenuItem();
         verHerramientasItem = new javax.swing.JMenuItem();
         prestarHerramientasItem = new javax.swing.JMenuItem();
         solicitarHerramientaItem = new javax.swing.JMenuItem();
@@ -208,8 +211,18 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         herramientasMenu.setText("Herramientas");
         herramientasMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        rHerramientasItem.setText("Registrar herramientas");
-        herramientasMenu.add(rHerramientasItem);
+        RegistrarHerramientas.setText("Registrar herramientas");
+
+        rHerramientasItem.setText("Herramientas");
+        RegistrarHerramientas.add(rHerramientasItem);
+
+        rComputadorasPItem.setText("Computadoras portatiles");
+        RegistrarHerramientas.add(rComputadorasPItem);
+
+        rCamarasDItem.setText("Camaras digitales");
+        RegistrarHerramientas.add(rCamarasDItem);
+
+        herramientasMenu.add(RegistrarHerramientas);
 
         verHerramientasItem.setText("Ver herramientas");
         herramientasMenu.add(verHerramientasItem);
@@ -310,6 +323,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu AuditoriasMenu;
     private javax.swing.JPanel BarraMenu;
     private javax.swing.JMenu EmpleadosMenu;
+    private javax.swing.JMenu RegistrarHerramientas;
     public javax.swing.JLabel auditoriasBMenu;
     public javax.swing.JMenuItem cerrarSesionItem;
     private javax.swing.JPanel contenedorDesktokPnl;
@@ -323,6 +337,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     public javax.swing.JLabel perfilBMenu;
     private javax.swing.JMenu perfilMenu;
     public javax.swing.JMenuItem prestarHerramientasItem;
+    public javax.swing.JMenuItem rCamarasDItem;
+    public javax.swing.JMenuItem rComputadorasPItem;
     public javax.swing.JMenuItem rEmpleadosItem;
     public javax.swing.JMenuItem rHerramientasItem;
     public javax.swing.JMenuItem rTipoComponente;
@@ -359,6 +375,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         rTipoHerramientaItem.addActionListener(controladorVentanaPrincipal);
         verReportesItem.addActionListener(controladorVentanaPrincipal);
         verAuditoriasItem.addActionListener(controladorVentanaPrincipal);
+        rComputadorasPItem.addActionListener(controladorVentanaPrincipal);
+        rCamarasDItem.addActionListener(controladorVentanaPrincipal);
+
     }
     public void dibujarVista(JInternalFrame internal){
         cerrarIFrames();

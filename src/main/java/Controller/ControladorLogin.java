@@ -1,7 +1,9 @@
 package Controller;
 
 import Views.Login;
+import Views.Notificaciones;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,9 +18,13 @@ public class ControladorLogin implements ActionListener, MouseListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         Object event = e.getSource();
-        if (event == login.usuarioTxt){
-            System.out.println("a");
+        if (event == login.ingresarBtn){
+            validarLogin();
         }
+    }
+    private void validarLogin(){
+        // if false
+        Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
     }
 
     @Override

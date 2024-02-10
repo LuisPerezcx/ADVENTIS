@@ -75,14 +75,37 @@
             </Property>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="rHerramientasItem">
+            <Menu class="javax.swing.JMenu" name="RegistrarHerramientas">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Registrar herramientas"/>
               </Properties>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-              </AuxValues>
-            </MenuItem>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="rHerramientasItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Herramientas"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="rComputadorasPItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Computadoras portatiles"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="rCamarasDItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Camaras digitales"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
             <MenuItem class="javax.swing.JMenuItem" name="verHerramientasItem">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Ver herramientas"/>

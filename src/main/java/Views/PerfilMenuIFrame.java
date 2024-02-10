@@ -9,6 +9,7 @@ import Controller.ControladorPerfilMenuIFrame;
  * @author david
  */
 public class PerfilMenuIFrame extends javax.swing.JInternalFrame {
+    
 
     /**
      * Creates new form HerramientasMenuIFrame
