@@ -374,6 +374,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         prestarHerramientasItem.addActionListener(controladorVentanaPrincipal);
         rTipoHerramientaItem.addActionListener(controladorVentanaPrincipal);
         verReportesItem.addActionListener(controladorVentanaPrincipal);
+        verAuditoriasItem.addActionListener(controladorVentanaPrincipal);
         rComputadorasPItem.addActionListener(controladorVentanaPrincipal);
         rCamarasDItem.addActionListener(controladorVentanaPrincipal);
 

@@ -1,6 +1,8 @@
 package Views;
 
 import Controller.ControladorRegistroHerramientasIFrame;
+import javax.swing.*;
+import java.awt.*;
 
 /**
  *
@@ -32,37 +34,35 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
         lblMarca = new javax.swing.JLabel();
         lblNombre = new javax.swing.JLabel();
         lblNumSerie = new javax.swing.JLabel();
-        lblDescripcion = new javax.swing.JLabel();
         lblUbicacion = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        comboUnidadMedida = new javax.swing.JComboBox<>();
         txtNombre = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
         txtNumSerie = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
-        txtMarca = new javax.swing.JTextField();
-        jSeparator3 = new javax.swing.JSeparator();
-        txtDescripcion = new javax.swing.JTextField();
-        jSeparator4 = new javax.swing.JSeparator();
         lblCapacidad = new javax.swing.JLabel();
         txtCapacidad = new javax.swing.JTextField();
         jSeparator5 = new javax.swing.JSeparator();
         lblFechaCalibracion = new javax.swing.JLabel();
         lblVerificacion = new javax.swing.JLabel();
-        txtDiagnostico = new javax.swing.JTextField();
-        jSeparator7 = new javax.swing.JSeparator();
         lblDiagnostico = new javax.swing.JLabel();
-        txtVerificacion = new javax.swing.JTextField();
+        txtCantidad = new javax.swing.JTextField();
         jSeparator8 = new javax.swing.JSeparator();
-        txtUbicacion = new javax.swing.JTextField();
-        jSeparator9 = new javax.swing.JSeparator();
         lblBares = new javax.swing.JLabel();
-        txtBares = new javax.swing.JTextField();
-        jSeparator10 = new javax.swing.JSeparator();
         btnGuardar = new javax.swing.JLabel();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(70, 0), new java.awt.Dimension(70, 0), new java.awt.Dimension(70, 32767));
         filler2 = new javax.swing.Box.Filler(new java.awt.Dimension(70, 0), new java.awt.Dimension(70, 0), new java.awt.Dimension(70, 32767));
         jDateChooser2 = new com.toedter.calendar.JDateChooser();
-        jSeparator6 = new javax.swing.JSeparator();
+        comboUbicacion = new javax.swing.JComboBox<>();
+        comboTipoHerramienta = new javax.swing.JComboBox<>();
+        comboEstadoHerramienta = new javax.swing.JComboBox<>();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtAreaComentarios = new javax.swing.JTextArea();
+        txtAreaComentarios.setLineWrap(true);
+        txtAreaComentarios.setWrapStyleWord(true);
+        JScrollPane scrollPaneDescripcion = new JScrollPane(txtAreaComentarios);
+        scrollPaneDescripcion.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+        scrollPaneDescripcion.setPreferredSize(new Dimension(150,50));
 
         setClosable(true);
         setTitle("Ver empleados");
@@ -74,22 +74,19 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
         lblTipo.setText("Tipo de Herramienta: ");
 
         lblMarca.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        lblMarca.setText("Marca:");
+        lblMarca.setText("Comentarios:");
 
         lblNombre.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        lblNombre.setText("Nombre:");
+        lblNombre.setText("Nombre/modelo/marca:");
 
         lblNumSerie.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
         lblNumSerie.setText("Num. serie: ");
 
-        lblDescripcion.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        lblDescripcion.setText("Descripción:");
-
         lblUbicacion.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
         lblUbicacion.setText("Ubicacion:");
 
-        jComboBox1.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        comboUnidadMedida.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
+        comboUnidadMedida.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         txtNombre.setBackground(new java.awt.Color(238, 238, 238));
         txtNombre.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
@@ -102,18 +99,6 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
         txtNumSerie.setBorder(null);
 
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
-
-        txtMarca.setBackground(new java.awt.Color(238, 238, 238));
-        txtMarca.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        txtMarca.setBorder(null);
-
-        jSeparator3.setForeground(new java.awt.Color(0, 0, 0));
-
-        txtDescripcion.setBackground(new java.awt.Color(238, 238, 238));
-        txtDescripcion.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        txtDescripcion.setBorder(null);
-
-        jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
 
         lblCapacidad.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
         lblCapacidad.setText("Capacidad:");
@@ -128,37 +113,19 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
         lblFechaCalibracion.setText("Fecha de calibracion:");
 
         lblVerificacion.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        lblVerificacion.setText("Verificacion:");
-
-        txtDiagnostico.setBackground(new java.awt.Color(238, 238, 238));
-        txtDiagnostico.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        txtDiagnostico.setBorder(null);
-
-        jSeparator7.setForeground(new java.awt.Color(0, 0, 0));
+        lblVerificacion.setText("Cantidad:");
 
         lblDiagnostico.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        lblDiagnostico.setText("Diagnostico:");
+        lblDiagnostico.setText("Unidad de media:");
 
-        txtVerificacion.setBackground(new java.awt.Color(238, 238, 238));
-        txtVerificacion.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        txtVerificacion.setBorder(null);
+        txtCantidad.setBackground(new java.awt.Color(238, 238, 238));
+        txtCantidad.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
+        txtCantidad.setBorder(null);
 
         jSeparator8.setForeground(new java.awt.Color(0, 0, 0));
 
-        txtUbicacion.setBackground(new java.awt.Color(238, 238, 238));
-        txtUbicacion.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        txtUbicacion.setBorder(null);
-
-        jSeparator9.setForeground(new java.awt.Color(0, 0, 0));
-
         lblBares.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        lblBares.setText("Bares:");
-
-        txtBares.setBackground(new java.awt.Color(238, 238, 238));
-        txtBares.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        txtBares.setBorder(null);
-
-        jSeparator10.setForeground(new java.awt.Color(0, 0, 0));
+        lblBares.setText("Estado Herramienta:");
 
         btnGuardar.setBackground(new java.awt.Color(96, 133, 188));
         btnGuardar.setFont(new java.awt.Font("Axia", 3, 36)); // NOI18N
@@ -172,7 +139,21 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
         jDateChooser2.setFont(new java.awt.Font("Axia", 0, 18)); // NOI18N
         jDateChooser2.setPreferredSize(new java.awt.Dimension(64, 29));
 
-        jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
+        comboUbicacion.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
+        comboUbicacion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        comboTipoHerramienta.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
+        comboTipoHerramienta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        comboEstadoHerramienta.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
+        comboEstadoHerramienta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        txtAreaComentarios.setBackground(new java.awt.Color(238, 238, 238));
+        txtAreaComentarios.setColumns(10);
+        txtAreaComentarios.setFont(new java.awt.Font("Axia", 0, 14)); // NOI18N
+        txtAreaComentarios.setRows(5);
+        txtAreaComentarios.setBorder(null);
+        jScrollPane1.setViewportView(txtAreaComentarios);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -182,74 +163,62 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
                 .addGap(64, 64, 64)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblDescripcion)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
+                                .addGap(109, 109, 109)
+                                .addComponent(filler2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(288, 288, 288)
+                                .addComponent(titulo)))
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblUbicacion)
+                            .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblMarca)
-                                    .addComponent(lblUbicacion))
-                                .addGap(127, 127, 127)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jSeparator4)
-                                        .addComponent(txtDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jSeparator9)
-                                        .addComponent(txtUbicacion, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(121, 121, 121)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblFechaCalibracion)
-                                    .addComponent(lblCapacidad)
-                                    .addComponent(lblDiagnostico)
-                                    .addComponent(lblBares)
-                                    .addComponent(lblVerificacion)))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(lblNombre)
+                                    .addComponent(lblNumSerie)
                                     .addComponent(lblTipo)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(lblNombre)
-                                        .addComponent(lblNumSerie))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jSeparator2)
-                                            .addComponent(txtNumSerie, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jSeparator1)
-                                            .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jSeparator3)
-                                            .addComponent(txtMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jSeparator5, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
-                            .addComponent(txtCapacidad, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
-                            .addComponent(jSeparator8, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
-                            .addComponent(txtVerificacion, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
-                            .addComponent(jSeparator10)
-                            .addComponent(txtBares, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
-                            .addComponent(jSeparator7)
-                            .addComponent(txtDiagnostico, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
-                            .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jDateChooser2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jSeparator6, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE))
-                        .addGap(78, 78, 78))))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(82, 82, 82)
-                        .addComponent(filler2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(352, 352, 352)
-                        .addComponent(titulo)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(lblMarca)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(128, 128, 128)
+                                        .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(comboTipoHerramienta, 0, 246, Short.MAX_VALUE)
+                                    .addComponent(jSeparator2)
+                                    .addComponent(txtNumSerie, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
+                                    .addComponent(jSeparator1)
+                                    .addComponent(txtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
+                                    .addComponent(comboUbicacion, 0, 246, Short.MAX_VALUE)
+                                    .addComponent(jScrollPane1))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblBares)
+                            .addComponent(lblFechaCalibracion)
+                            .addComponent(lblCapacidad)
+                            .addComponent(lblDiagnostico)
+                            .addComponent(lblVerificacion))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jSeparator5, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
+                                        .addComponent(txtCapacidad, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
+                                        .addComponent(jSeparator8, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
+                                        .addComponent(txtCantidad, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
+                                        .addComponent(jDateChooser2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(comboUnidadMedida, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(comboEstadoHerramienta, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(548, 548, 548))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -260,9 +229,9 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblTipo)
-                            .addComponent(lblCapacidad))
+                            .addComponent(lblCapacidad)
+                            .addComponent(comboTipoHerramienta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(64, 64, 64)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -277,8 +246,7 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lblFechaCalibracion)
                             .addComponent(jDateChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(16, 16, 16)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(64, 64, 64)
@@ -289,57 +257,37 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(txtNumSerie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(64, 64, 64)
-                        .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addComponent(txtDiagnostico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(55, 55, 55)
+                        .addComponent(comboUnidadMedida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(64, 64, 64)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblDescripcion)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtMarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblVerificacion))
-                        .addGap(2, 2, 2)
-                        .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(txtVerificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(7, 7, 7)
-                        .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(txtUbicacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(7, 7, 7)
+                        .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(64, 64, 64)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblMarca)
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(filler2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(64, 64, 64)
-                                .addComponent(lblUbicacion))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(txtBares, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(txtDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(lblBares))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnGuardar)))))
-                .addGap(124, 124, 124))
+                                .addGap(6, 6, 6)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lblVerificacion)
+                                    .addComponent(lblMarca)))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(33, 33, 33)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblUbicacion)
+                            .addComponent(comboUbicacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblBares)
+                            .addComponent(comboEstadoHerramienta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(15, 15, 15)
+                .addComponent(filler2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21)
+                .addComponent(btnGuardar)
+                .addGap(153, 153, 153))
         );
 
         pack();
@@ -348,23 +296,20 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JLabel btnGuardar;
+    public javax.swing.JComboBox<String> comboEstadoHerramienta;
+    public javax.swing.JComboBox<String> comboTipoHerramienta;
+    public javax.swing.JComboBox<String> comboUbicacion;
+    public javax.swing.JComboBox<String> comboUnidadMedida;
     private javax.swing.Box.Filler filler1;
     private javax.swing.Box.Filler filler2;
-    public javax.swing.JComboBox<String> jComboBox1;
     private com.toedter.calendar.JDateChooser jDateChooser2;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
-    private javax.swing.JSeparator jSeparator6;
-    private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
-    private javax.swing.JSeparator jSeparator9;
     private javax.swing.JLabel lblBares;
     private javax.swing.JLabel lblCapacidad;
-    private javax.swing.JLabel lblDescripcion;
     private javax.swing.JLabel lblDiagnostico;
     private javax.swing.JLabel lblFechaCalibracion;
     private javax.swing.JLabel lblMarca;
@@ -374,15 +319,11 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
     private javax.swing.JLabel lblUbicacion;
     private javax.swing.JLabel lblVerificacion;
     private javax.swing.JLabel titulo;
-    public javax.swing.JTextField txtBares;
+    private javax.swing.JTextArea txtAreaComentarios;
+    public javax.swing.JTextField txtCantidad;
     public javax.swing.JTextField txtCapacidad;
-    public javax.swing.JTextField txtDescripcion;
-    public javax.swing.JTextField txtDiagnostico;
-    public javax.swing.JTextField txtMarca;
     public javax.swing.JTextField txtNombre;
     public javax.swing.JTextField txtNumSerie;
-    public javax.swing.JTextField txtUbicacion;
-    public javax.swing.JTextField txtVerificacion;
     // End of variables declaration//GEN-END:variables
 
     private void addListeners(){

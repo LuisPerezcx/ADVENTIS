@@ -28,11 +28,13 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
         setRegistroTipoHerramientasIFrame(new RegistroTipoHerramientasIFrame(ventanaPrincipal));
         setSolicitudesHerramientasIFrame(new SolicitudesHerramientasIFrame(ventanaPrincipal));
         setVistaReporteIFrame(new VistaReporteIFrame(ventanaPrincipal));
+        setVerAuditoriasIFrame(new VerAuditoriasIFrame(ventanaPrincipal));
         setRegistroComputadoras(new RegistroComputadoras(ventanaPrincipal));
     }
     @Override
     public void actionPerformed(ActionEvent e) {
         Object event = e.getSource();
+
         if (event == ventanaPrincipal.rUsuariosItem){
             ventanaPrincipal.dibujarVista(registroUsuariosIFrame);
         } else if (event == ventanaPrincipal.rEmpleadosItem) {
@@ -57,6 +59,8 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
             ventanaPrincipal.dibujarVista(solicitudesHerramientasIFrame);
         } else if (event == ventanaPrincipal.verReportesItem) {
             ventanaPrincipal.dibujarVista(vistaReporteIFrame);
+        } else if (event == ventanaPrincipal.verAuditoriasItem) {
+            ventanaPrincipal.dibujarVista(verAuditoriasIFrame);
         } else if (event == ventanaPrincipal.rComputadorasPItem) {
             ventanaPrincipal.dibujarVista(registroComputadoras);
         }
