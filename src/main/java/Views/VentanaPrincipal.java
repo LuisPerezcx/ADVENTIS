@@ -91,35 +91,35 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         reportesBMenu.setForeground(new java.awt.Color(255, 255, 255));
         reportesBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_documents_50px.png"))); // NOI18N
         reportesBMenu.setText("Reportes");
-        reportesBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        reportesBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         herramientasBMenu.setBackground(new java.awt.Color(31, 61, 115));
         herramientasBMenu.setFont(new java.awt.Font("Axia", 1, 24)); // NOI18N
         herramientasBMenu.setForeground(new java.awt.Color(255, 255, 255));
         herramientasBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Tools_50px.png"))); // NOI18N
         herramientasBMenu.setText("Herramientas");
-        herramientasBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        herramientasBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         auditoriasBMenu.setBackground(new java.awt.Color(31, 61, 115));
         auditoriasBMenu.setFont(new java.awt.Font("Axia", 1, 24)); // NOI18N
         auditoriasBMenu.setForeground(new java.awt.Color(255, 255, 255));
         auditoriasBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_audit_50px.png"))); // NOI18N
         auditoriasBMenu.setText("Auditorias");
-        auditoriasBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        auditoriasBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         perfilBMenu.setBackground(new java.awt.Color(31, 61, 115));
         perfilBMenu.setFont(new java.awt.Font("Axia", 1, 24)); // NOI18N
         perfilBMenu.setForeground(new java.awt.Color(255, 255, 255));
         perfilBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_User_Menu_Male_50px.png"))); // NOI18N
         perfilBMenu.setText("Mi perfil");
-        perfilBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        perfilBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         empleadosBMenu.setBackground(new java.awt.Color(31, 61, 115));
         empleadosBMenu.setFont(new java.awt.Font("Axia", 1, 24)); // NOI18N
         empleadosBMenu.setForeground(new java.awt.Color(255, 255, 255));
         empleadosBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Member_50px.png"))); // NOI18N
         empleadosBMenu.setText("Empleados");
-        empleadosBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        empleadosBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout BarraMenuLayout = new javax.swing.GroupLayout(BarraMenu);
         BarraMenu.setLayout(BarraMenuLayout);
@@ -358,6 +358,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         prestarHerramientasItem.addActionListener(controladorVentanaPrincipal);
         rTipoHerramientaItem.addActionListener(controladorVentanaPrincipal);
         verReportesItem.addActionListener(controladorVentanaPrincipal);
+        verAuditoriasItem.addActionListener(controladorVentanaPrincipal);
     }
     public void dibujarVista(JInternalFrame internal){
         cerrarIFrames();
