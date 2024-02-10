@@ -36,13 +36,12 @@ public class VistaReporteIFrame extends javax.swing.JInternalFrame {
         btnRevisar = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblListaAuditorias = new javax.swing.JTable();
-        lblLista = new javax.swing.JLabel();
 
         setClosable(true);
         setTitle("Ver empleados");
 
         lblTituloRevision.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
-        lblTituloRevision.setText("Revision auditorias");
+        lblTituloRevision.setText("Reportes");
 
         btnRevisar.setBackground(new java.awt.Color(96, 133, 188));
         btnRevisar.setFont(new java.awt.Font("Axia", 3, 24)); // NOI18N
@@ -66,40 +65,30 @@ public class VistaReporteIFrame extends javax.swing.JInternalFrame {
         tblListaAuditorias.setRowHeight(50);
         jScrollPane1.setViewportView(tblListaAuditorias);
 
-        lblLista.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        lblLista.setText("Lista de auditorias");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 566, Short.MAX_VALUE)
+                .addComponent(btnRevisar, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(557, 557, 557))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(426, 426, 426)
-                        .addComponent(lblTituloRevision))
+                        .addGap(51, 51, 51)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1043, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(138, 138, 138)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 956, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(167, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnRevisar, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(557, 557, 557))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(lblLista)
-                        .addGap(534, 534, 534))))
+                        .addGap(475, 475, 475)
+                        .addComponent(lblTituloRevision)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addContainerGap(158, Short.MAX_VALUE)
                 .addComponent(lblTituloRevision)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 142, Short.MAX_VALUE)
-                .addComponent(lblLista)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(51, 51, 51)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39)
                 .addComponent(btnRevisar)
@@ -129,7 +118,6 @@ public class VistaReporteIFrame extends javax.swing.JInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JLabel btnRevisar;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblLista;
     private javax.swing.JLabel lblTituloRevision;
     private javax.swing.JTable tblListaAuditorias;
     // End of variables declaration//GEN-END:variables

@@ -30,6 +30,11 @@ public class SolicitudesHerramientasIFrame extends javax.swing.JInternalFrame {
         tableAccionCellEditor.panelAcciones.eliminarBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.pdfBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.pdfBtnTable.setVisible(false);
+
+        tableActionCellRender.panelAcciones.excelBtnTable.setVisible(false);
+        tableAccionCellEditor.panelAcciones.excelBtnTable.setVisible(false);
+        tableActionCellRender.panelAcciones.pdfBtnTable.setVisible(false);
+        tableAccionCellEditor.panelAcciones.pdfBtnTable.setVisible(false);
         tablaHerramientas.getColumnModel().getColumn(3).setCellRenderer(tableActionCellRender);
         tablaHerramientas.getColumnModel().getColumn(3).setCellEditor(tableAccionCellEditor);
     }
@@ -125,11 +130,11 @@ public class SolicitudesHerramientasIFrame extends javax.swing.JInternalFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(48, 48, 48)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1165, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
-                        .addComponent(jSeparator1)))
-                .addContainerGap(48, Short.MAX_VALUE))
+                        .addComponent(jSeparator1))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1089, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(124, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(476, 476, 476)

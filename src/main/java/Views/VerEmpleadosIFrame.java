@@ -30,6 +30,9 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.abrirBtnTable.setVisible(false);
+
+        tableActionCellRender.panelAcciones.excelBtnTable.setVisible(false);
+        tableAccionCellEditor.panelAcciones.excelBtnTable.setVisible(false);
         tablaEmpleados.getColumnModel().getColumn(1).setCellRenderer(tableActionCellRender);
         tablaEmpleados.getColumnModel().getColumn(1).setCellEditor(tableAccionCellEditor);
     }
