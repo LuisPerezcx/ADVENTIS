@@ -1,5 +1,6 @@
 package Controller;
 
+import Views.Notificaciones;
 import Views.RegistroUsuariosIFrame;
 
 import javax.swing.border.BevelBorder;
@@ -33,8 +34,13 @@ public class ControladorRegistroUsuariosIFrame implements MouseListener {
             registroUsuariosIFrame.ocultarConfirmarContrasena.setVisible(false);
             registroUsuariosIFrame.contrasenaConfirmar.setEchoChar('•');
         } else if (event == registroUsuariosIFrame.guardar) {
-            System.out.println("codigo para aceptar");
+            registrarUsuarios();
         }
+    }
+
+    private void registrarUsuarios(){
+        //if true
+        Notificaciones.mensajeOK(registroUsuariosIFrame,"Registro exitoso","Usuario registrado");
     }
 
     @Override
