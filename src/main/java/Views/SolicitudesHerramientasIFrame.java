@@ -28,8 +28,8 @@ public class SolicitudesHerramientasIFrame extends javax.swing.JInternalFrame {
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.eliminarBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.eliminarBtnTable.setVisible(false);
-        tableAccionCellEditor.panelAcciones.editarBtnTable.setVisible(false);
-        tableActionCellRender.panelAcciones.editarBtnTable.setVisible(false);
+        tableAccionCellEditor.panelAcciones.pdfBtnTable.setVisible(false);
+        tableActionCellRender.panelAcciones.pdfBtnTable.setVisible(false);
         tablaHerramientas.getColumnModel().getColumn(3).setCellRenderer(tableActionCellRender);
         tablaHerramientas.getColumnModel().getColumn(3).setCellEditor(tableAccionCellEditor);
     }
