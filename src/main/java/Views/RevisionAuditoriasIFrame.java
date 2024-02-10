@@ -117,7 +117,7 @@ public class RevisionAuditoriasIFrame extends javax.swing.JInternalFrame {
         tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.abrirBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.editarBtnTable1.setVisible(false);
-        
+
         tableActionCellRender.panelAcciones.editarBtnTable1.setVisible(false);
         tableActionCellRender.panelAcciones.eliminarBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.eliminarBtnTable.setVisible(false);

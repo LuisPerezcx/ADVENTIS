@@ -72,7 +72,7 @@ public class CambiarContrasenaIFrame extends javax.swing.JInternalFrame {
         cancelar.setForeground(new java.awt.Color(255, 255, 255));
         cancelar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         cancelar.setText("Cancelar");
-        cancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         cancelar.setOpaque(true);
 
         aceptar.setBackground(new java.awt.Color(96, 133, 188));
@@ -80,7 +80,7 @@ public class CambiarContrasenaIFrame extends javax.swing.JInternalFrame {
         aceptar.setForeground(new java.awt.Color(255, 255, 255));
         aceptar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         aceptar.setText("Aceptar");
-        aceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        aceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         aceptar.setOpaque(true);
 
         txtTipoUsuario1.setFont(new java.awt.Font("Axia", 2, 36)); // NOI18N
@@ -100,11 +100,11 @@ public class CambiarContrasenaIFrame extends javax.swing.JInternalFrame {
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         mostrarContrasenaNueva.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_eye_25px.png"))); // NOI18N
-        mostrarContrasenaNueva.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        mostrarContrasenaNueva.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel6.add(mostrarContrasenaNueva, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
 
         ocultarContrasenaNueva.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_hide_25px.png"))); // NOI18N
-        ocultarContrasenaNueva.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ocultarContrasenaNueva.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel6.add(ocultarContrasenaNueva, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 9, -1, -1));
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -147,11 +147,11 @@ public class CambiarContrasenaIFrame extends javax.swing.JInternalFrame {
         jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         mostrarContrasenaActual.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_eye_25px.png"))); // NOI18N
-        mostrarContrasenaActual.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        mostrarContrasenaActual.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel8.add(mostrarContrasenaActual, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
 
         ocultarContrasenaActual.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_hide_25px.png"))); // NOI18N
-        ocultarContrasenaActual.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ocultarContrasenaActual.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel8.add(ocultarContrasenaActual, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 9, -1, -1));
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
@@ -164,7 +164,7 @@ public class CambiarContrasenaIFrame extends javax.swing.JInternalFrame {
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(contrasenaActual, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE)
+                        .addComponent(contrasenaActual)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())
@@ -194,11 +194,11 @@ public class CambiarContrasenaIFrame extends javax.swing.JInternalFrame {
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         mostrarContrasenaConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_eye_25px.png"))); // NOI18N
-        mostrarContrasenaConfirmar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        mostrarContrasenaConfirmar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel10.add(mostrarContrasenaConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
 
         ocultarContrasenaConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_hide_25px.png"))); // NOI18N
-        ocultarContrasenaConfirmar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ocultarContrasenaConfirmar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel10.add(ocultarContrasenaConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 9, -1, -1));
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
@@ -211,7 +211,7 @@ public class CambiarContrasenaIFrame extends javax.swing.JInternalFrame {
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(contrasenaConfirmar)
+                        .addComponent(contrasenaConfirmar, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())
@@ -235,22 +235,24 @@ public class CambiarContrasenaIFrame extends javax.swing.JInternalFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(342, 342, 342)
+                .addGap(334, 334, 334)
                 .addComponent(cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(215, 215, 215)
+                .addGap(226, 226, 226)
                 .addComponent(aceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(301, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(355, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(titulo)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(txtTipoUsuario1)
-                        .addComponent(txtTipoUsuario2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtTipoUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtTipoUsuario1)
+                            .addComponent(txtTipoUsuario2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtTipoUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(30, 30, 30)))
                 .addGap(387, 387, 387))
         );
         layout.setVerticalGroup(
@@ -258,7 +260,7 @@ public class CambiarContrasenaIFrame extends javax.swing.JInternalFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(titulo)
-                .addGap(104, 104, 104)
+                .addGap(64, 64, 64)
                 .addComponent(txtTipoUsuario1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -270,11 +272,11 @@ public class CambiarContrasenaIFrame extends javax.swing.JInternalFrame {
                 .addComponent(txtTipoUsuario)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cancelar)
                     .addComponent(aceptar))
-                .addGap(86, 86, 86))
+                .addGap(25, 25, 25))
         );
 
         pack();

@@ -47,22 +47,22 @@ public class EmpleadosMenuIFrame extends javax.swing.JInternalFrame {
         rEmpleados.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         rEmpleados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_worker_80px.png"))); // NOI18N
         rEmpleados.setText("Registrar Empleados");
-        rEmpleados.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        rEmpleados.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         verEmpleados.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         verEmpleados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_workers_80px.png"))); // NOI18N
         verEmpleados.setText("Ver empleados");
-        verEmpleados.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        verEmpleados.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         rUsuarios.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         rUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_add_user_male_80px_2.png"))); // NOI18N
         rUsuarios.setText("Registrar usuarios");
-        rUsuarios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        rUsuarios.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         verUsuarios.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         verUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_group_80px.png"))); // NOI18N
         verUsuarios.setText("Ver usuarios");
-        verUsuarios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        verUsuarios.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -78,8 +78,8 @@ public class EmpleadosMenuIFrame extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 203, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(verEmpleados, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rEmpleados, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(95, 95, 95))
+                    .addComponent(rEmpleados))
+                .addGap(71, 71, 71))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(106, 106, 106)

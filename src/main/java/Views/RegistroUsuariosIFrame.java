@@ -84,11 +84,11 @@ public class RegistroUsuariosIFrame extends javax.swing.JInternalFrame {
         jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         mostrarConfirmarContrasena.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_eye_25px.png"))); // NOI18N
-        mostrarConfirmarContrasena.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        mostrarConfirmarContrasena.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel8.add(mostrarConfirmarContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
 
         ocultarConfirmarContrasena.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_hide_25px.png"))); // NOI18N
-        ocultarConfirmarContrasena.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ocultarConfirmarContrasena.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel8.add(ocultarConfirmarContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 9, -1, -1));
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
@@ -135,7 +135,7 @@ public class RegistroUsuariosIFrame extends javax.swing.JInternalFrame {
         guardar.setForeground(new java.awt.Color(255, 255, 255));
         guardar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guardar.setText("Guardar");
-        guardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        guardar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         guardar.setOpaque(true);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_lock_25px_1.png"))); // NOI18N
@@ -149,11 +149,11 @@ public class RegistroUsuariosIFrame extends javax.swing.JInternalFrame {
         jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         mostrarContrasena.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_eye_25px.png"))); // NOI18N
-        mostrarContrasena.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        mostrarContrasena.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel12.add(mostrarContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
 
         ocultarContrasena.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_hide_25px.png"))); // NOI18N
-        ocultarContrasena.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ocultarContrasena.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel12.add(ocultarContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 9, -1, -1));
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
@@ -212,7 +212,7 @@ public class RegistroUsuariosIFrame extends javax.swing.JInternalFrame {
                         .addGap(397, 397, 397))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(71, 71, 71))))
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -239,7 +239,7 @@ public class RegistroUsuariosIFrame extends javax.swing.JInternalFrame {
                     .addComponent(comboTipoUsrs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 176, Short.MAX_VALUE)
                 .addComponent(guardar)
-                .addGap(63, 63, 63))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
