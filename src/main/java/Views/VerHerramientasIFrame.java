@@ -26,6 +26,11 @@ public class VerHerramientasIFrame extends javax.swing.JInternalFrame {
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.abrirBtnTable.setVisible(false);
+
+        tableActionCellRender.panelAcciones.excelBtnTable.setVisible(false);
+        tableAccionCellEditor.panelAcciones.excelBtnTable.setVisible(false);
+        tableActionCellRender.panelAcciones.pdfBtnTable.setVisible(false);
+        tableAccionCellEditor.panelAcciones.pdfBtnTable.setVisible(false);
         tablaEmpleados.getColumnModel().getColumn(5).setCellRenderer(tableActionCellRender);
         tablaEmpleados.getColumnModel().getColumn(5).setCellEditor(tableAccionCellEditor);
     }
@@ -128,14 +133,19 @@ public class VerHerramientasIFrame extends javax.swing.JInternalFrame {
                 .addComponent(titulo)
                 .addGap(388, 388, 388))
             .addGroup(layout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(verSolicitudes, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
-                            .addComponent(jSeparator1))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(48, 48, 48)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(verSolicitudes, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                                    .addComponent(jSeparator1))
+                                .addGap(765, 765, 765))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(72, 72, 72)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1034, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(48, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()

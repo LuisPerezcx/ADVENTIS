@@ -28,6 +28,11 @@ public class VerUsuariosIFrame extends javax.swing.JInternalFrame {
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.abrirBtnTable.setVisible(false);
+
+        tableActionCellRender.panelAcciones.excelBtnTable.setVisible(false);
+        tableAccionCellEditor.panelAcciones.excelBtnTable.setVisible(false);
+        tableActionCellRender.panelAcciones.pdfBtnTable.setVisible(false);
+        tableAccionCellEditor.panelAcciones.pdfBtnTable.setVisible(false);
         tablaEmpleados.getColumnModel().getColumn(2).setCellRenderer(tableActionCellRender);
         tablaEmpleados.getColumnModel().getColumn(2).setCellEditor(tableAccionCellEditor);
     }
