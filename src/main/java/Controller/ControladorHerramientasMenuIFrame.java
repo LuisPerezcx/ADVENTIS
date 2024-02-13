@@ -1,21 +1,36 @@
 package Controller;
 
 import Views.HerramientasMenuIFrame;
+import Views.RegistroHerramientasIFrame;
+import Views.VentanaPrincipal;
 
 import javax.swing.border.BevelBorder;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+import static Util.CreacionIFrames.*;
+
 public class ControladorHerramientasMenuIFrame implements MouseListener {
     private final HerramientasMenuIFrame herramientasMenuIFrame;
+    private final VentanaPrincipal ventanaPrincipal;
 
-    public ControladorHerramientasMenuIFrame(HerramientasMenuIFrame herramientasMenuIFrame) {
+    public ControladorHerramientasMenuIFrame(HerramientasMenuIFrame herramientasMenuIFrame, VentanaPrincipal ventanaPrincipal) {
         this.herramientasMenuIFrame = herramientasMenuIFrame;
+        this.ventanaPrincipal = ventanaPrincipal;
     }
 
     @Override
     public void mouseClicked(MouseEvent e) {
-
+        Object event = e.getSource();
+        if (event == herramientasMenuIFrame.rHerramientas){
+            ventanaPrincipal.dibujarVista(registroHerramientasIFrame);
+        }
+        if (event == herramientasMenuIFrame.verHerramientas){
+            ventanaPrincipal.dibujarVista(verHerramientasIFrame);
+        }
+        if (event == herramientasMenuIFrame.registrarTHerramienta){
+            ventanaPrincipal.dibujarVista(registroTipoHerramientasIFrame);
+        }
     }
 
     @Override
