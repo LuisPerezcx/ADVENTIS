@@ -11,11 +11,13 @@ import Controller.ControladorHerramientasMenuIFrame;
  * @author david
  */
 public class HerramientasMenuIFrame extends javax.swing.JInternalFrame {
+    private final VentanaPrincipal ventanaPrincipal;
 
     /**
      * Creates new form HerramientasMenuIFrame
      */
-    public HerramientasMenuIFrame() {
+    public HerramientasMenuIFrame(VentanaPrincipal ventanaPrincipal) {
+        this.ventanaPrincipal=ventanaPrincipal;
         initComponents();
         addListeners();
     }
@@ -140,7 +142,7 @@ public class HerramientasMenuIFrame extends javax.swing.JInternalFrame {
     // End of variables declaration//GEN-END:variables
 
     private void addListeners(){
-        ControladorHerramientasMenuIFrame controladorHerramientasMenuIFrame = new ControladorHerramientasMenuIFrame(this);
+        ControladorHerramientasMenuIFrame controladorHerramientasMenuIFrame = new ControladorHerramientasMenuIFrame(this,ventanaPrincipal);
         prestarHerramientas.addMouseListener(controladorHerramientasMenuIFrame);
         rHerramientas.addMouseListener(controladorHerramientasMenuIFrame);
         solicitarHerramientas.addMouseListener(controladorHerramientasMenuIFrame);
