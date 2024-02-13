@@ -45,7 +45,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         reportesBMenu = new javax.swing.JLabel();
         herramientasBMenu = new javax.swing.JLabel();
         auditoriasBMenu = new javax.swing.JLabel();
-        perfilBMenu = new javax.swing.JLabel();
         empleadosBMenu = new javax.swing.JLabel();
         contenedorDesktokPnl = new javax.swing.JPanel(new BorderLayout());
         Image imagen = new ImageIcon(getClass().getResource("/Images/adventisbk.png")).getImage();
@@ -110,13 +109,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         auditoriasBMenu.setText("Auditorias");
         auditoriasBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        perfilBMenu.setBackground(new java.awt.Color(31, 61, 115));
-        perfilBMenu.setFont(new java.awt.Font("Axia", 1, 24)); // NOI18N
-        perfilBMenu.setForeground(new java.awt.Color(255, 255, 255));
-        perfilBMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_User_Menu_Male_50px.png"))); // NOI18N
-        perfilBMenu.setText("Mi perfil");
-        perfilBMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
         empleadosBMenu.setBackground(new java.awt.Color(31, 61, 115));
         empleadosBMenu.setFont(new java.awt.Font("Axia", 1, 24)); // NOI18N
         empleadosBMenu.setForeground(new java.awt.Color(255, 255, 255));
@@ -130,7 +122,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             BarraMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(reportesBMenu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(auditoriasBMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(perfilBMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(herramientasBMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
             .addComponent(empleadosBMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -145,8 +136,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 .addComponent(auditoriasBMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(100, 100, 100)
                 .addComponent(reportesBMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(perfilBMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -334,7 +323,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     public javax.swing.JLabel herramientasBMenu;
     private javax.swing.JMenu herramientasMenu;
     private javax.swing.JMenuBar menuBar;
-    public javax.swing.JLabel perfilBMenu;
     private javax.swing.JMenu perfilMenu;
     public javax.swing.JMenuItem prestarHerramientasItem;
     public javax.swing.JMenuItem rCamarasDItem;
@@ -363,7 +351,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         herramientasBMenu.addMouseListener(controladorVentanaPrincipal);
         auditoriasBMenu.addMouseListener(controladorVentanaPrincipal);
         reportesBMenu.addMouseListener(controladorVentanaPrincipal);
-        perfilBMenu.addMouseListener(controladorVentanaPrincipal);
         verEmpleadosItem.addActionListener(controladorVentanaPrincipal);
         verUsuariosItem.addActionListener(controladorVentanaPrincipal);
         rHerramientasItem.addActionListener(controladorVentanaPrincipal);
@@ -377,7 +364,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         verAuditoriasItem.addActionListener(controladorVentanaPrincipal);
         rComputadorasPItem.addActionListener(controladorVentanaPrincipal);
         rCamarasDItem.addActionListener(controladorVentanaPrincipal);
-
+        verPerfilItem.addActionListener(controladorVentanaPrincipal);
     }
     public void dibujarVista(JInternalFrame internal){
         cerrarIFrames();

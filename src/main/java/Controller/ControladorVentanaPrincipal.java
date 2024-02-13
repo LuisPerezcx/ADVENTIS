@@ -66,6 +66,8 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
             ventanaPrincipal.dibujarVista(registroComputadoras);
         } else if (event == ventanaPrincipal.rCamarasDItem) {
             ventanaPrincipal.dibujarVista(registroCamarasDigitalesIFrame);
+        } else if (event == ventanaPrincipal.verPerfilItem) {
+            ventanaPrincipal.dibujarVista(perfilMenuIFrame);
         }
     }
 
@@ -80,8 +82,6 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
             ventanaPrincipal.dibujarVista(auditoriasMenuIFrame);
         } else if (event == ventanaPrincipal.reportesBMenu) {
             ventanaPrincipal.dibujarVista(reportesMenuIFrame);
-        } else if (event == ventanaPrincipal.perfilBMenu) {
-            ventanaPrincipal.dibujarVista(perfilMenuIFrame);
         }
     }
 
@@ -106,8 +106,6 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
             ventanaPrincipal.auditoriasBMenu.setBorder(new BevelBorder(BevelBorder.RAISED));
         } else if (event == ventanaPrincipal.reportesBMenu) {
             ventanaPrincipal.reportesBMenu.setBorder(new BevelBorder(BevelBorder.RAISED));
-        } else if (event == ventanaPrincipal.perfilBMenu) {
-            ventanaPrincipal.perfilBMenu.setBorder(new BevelBorder(BevelBorder.RAISED));
         }
     }
 
@@ -122,9 +120,6 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
             ventanaPrincipal.auditoriasBMenu.setBorder(null);
         } else if (event == ventanaPrincipal.reportesBMenu) {
             ventanaPrincipal.reportesBMenu.setBorder(null);
-        } else if (event == ventanaPrincipal.perfilBMenu) {
-            ventanaPrincipal.perfilBMenu.setBorder(null);
         }
-
     }
 }
