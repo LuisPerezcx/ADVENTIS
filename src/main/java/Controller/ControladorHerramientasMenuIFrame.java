@@ -3,6 +3,7 @@ package Controller;
 import Views.HerramientasMenuIFrame;
 import Views.RegistroHerramientasIFrame;
 import Views.VentanaPrincipal;
+import Views.VentanaPrincipal;
 
 import javax.swing.border.BevelBorder;
 import java.awt.event.MouseEvent;
@@ -19,16 +20,21 @@ public class ControladorHerramientasMenuIFrame implements MouseListener {
         this.ventanaPrincipal = ventanaPrincipal;
     }
 
+
     @Override
     public void mouseClicked(MouseEvent e) {
         Object event = e.getSource();
-        if (event == herramientasMenuIFrame.rHerramientas){
+        if (event == herramientasMenuIFrame.prestarHerramientas){
+            ventanaPrincipal.dibujarVista(solicitudesHerramientasIFrame);
+        } else if (event == herramientasMenuIFrame.solicitarHerramientas) {
+            ventanaPrincipal.dibujarVista(solicitarHerramientasIFrame);
+        } else if (event == herramientasMenuIFrame.registrarTComponente) {
+            ventanaPrincipal.dibujarVista(registroComponentesIFrame);
+        }else if (event == herramientasMenuIFrame.rHerramientas){
             ventanaPrincipal.dibujarVista(registroHerramientasIFrame);
-        }
-        if (event == herramientasMenuIFrame.verHerramientas){
+        }else if (event == herramientasMenuIFrame.verHerramientas){
             ventanaPrincipal.dibujarVista(verHerramientasIFrame);
-        }
-        if (event == herramientasMenuIFrame.registrarTHerramienta){
+        }else if (event == herramientasMenuIFrame.registrarTHerramienta){
             ventanaPrincipal.dibujarVista(registroTipoHerramientasIFrame);
         }
     }

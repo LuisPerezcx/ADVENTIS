@@ -12,12 +12,11 @@ import Controller.ControladorHerramientasMenuIFrame;
  */
 public class HerramientasMenuIFrame extends javax.swing.JInternalFrame {
     private final VentanaPrincipal ventanaPrincipal;
-
     /**
      * Creates new form HerramientasMenuIFrame
      */
     public HerramientasMenuIFrame(VentanaPrincipal ventanaPrincipal) {
-        this.ventanaPrincipal=ventanaPrincipal;
+        this.ventanaPrincipal = ventanaPrincipal;
         initComponents();
         addListeners();
     }

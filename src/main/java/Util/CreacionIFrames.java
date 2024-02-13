@@ -7,7 +7,7 @@ la razon de que esta clase sea static es para evitar que existan 2 o mas interna
 del mismo tipo al mismo tiempo.
  */
 public class CreacionIFrames {
-    public static HerramientasMenuIFrame herramientasMenuIFrame;
+    public static  HerramientasMenuIFrame herramientasMenuIFrame;
     public static final AuditoriasMenuIFrame auditoriasMenuIFrame = new AuditoriasMenuIFrame();
     public static final ReportesMenuIFrame reportesMenuIFrame = new ReportesMenuIFrame();
     public static final RegistroUsuariosIFrame registroUsuariosIFrame = new RegistroUsuariosIFrame();
