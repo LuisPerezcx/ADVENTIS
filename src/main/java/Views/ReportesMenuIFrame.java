@@ -4,16 +4,23 @@ package Views;
 
 import Controller.ControladorReportesMenuIFrame;
 
+import javax.swing.*;
+import java.awt.*;
+import java.beans.PropertyVetoException;
+
 /**
  *
  * @author david
  */
 public class ReportesMenuIFrame extends javax.swing.JInternalFrame {
 
+    private final VentanaPrincipal ventanaPrincipal;
+
     /**
      * Creates new form HerramientasMenuIFrame
      */
-    public ReportesMenuIFrame() {
+    public ReportesMenuIFrame(VentanaPrincipal ventanaPrincipal) {
+        this.ventanaPrincipal = ventanaPrincipal;
         initComponents();
         addListeners();
     }
@@ -28,7 +35,6 @@ public class ReportesMenuIFrame extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         titulo = new javax.swing.JLabel();
-        generarPDF = new javax.swing.JLabel();
         verReportes = new javax.swing.JLabel();
 
         setClosable(true);
@@ -36,11 +42,6 @@ public class ReportesMenuIFrame extends javax.swing.JInternalFrame {
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Menú reportes");
-
-        generarPDF.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
-        generarPDF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_export_pdf_80px_1.png"))); // NOI18N
-        generarPDF.setText("Generar PDF");
-        generarPDF.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         verReportes.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         verReportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_archive_list_of_parts_80px.png"))); // NOI18N
@@ -52,29 +53,23 @@ public class ReportesMenuIFrame extends javax.swing.JInternalFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(114, 114, 114)
-                .addComponent(verReportes, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 729, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(432, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(generarPDF)
-                        .addGap(87, 87, 87))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(titulo)
-                        .addGap(442, 442, 442))))
+                        .addGap(442, 442, 442))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(verReportes, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(411, 411, 411))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(titulo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 344, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(verReportes, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(generarPDF, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(361, 361, 361))
+                .addGap(345, 345, 345)
+                .addComponent(verReportes, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(360, Short.MAX_VALUE))
         );
 
         pack();
@@ -82,14 +77,14 @@ public class ReportesMenuIFrame extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JLabel generarPDF;
     private javax.swing.JLabel titulo;
     public javax.swing.JLabel verReportes;
     // End of variables declaration//GEN-END:variables
 
+
+
     private void addListeners(){
-        ControladorReportesMenuIFrame controladorReportesMenuIFrame = new ControladorReportesMenuIFrame(this);
-        generarPDF.addMouseListener(controladorReportesMenuIFrame);
+        ControladorReportesMenuIFrame controladorReportesMenuIFrame = new ControladorReportesMenuIFrame(this,ventanaPrincipal);
         verReportes.addMouseListener(controladorReportesMenuIFrame);
     }
 }

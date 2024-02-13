@@ -71,7 +71,7 @@ public class VerUsuariosIFrame extends javax.swing.JInternalFrame {
         buscar.setForeground(new java.awt.Color(255, 255, 255));
         buscar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         buscar.setText("Buscar");
-        buscar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        buscar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         buscar.setOpaque(true);
 
         tablaEmpleados.setAutoCreateRowSorter(true);

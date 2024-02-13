@@ -72,7 +72,7 @@ public class CambiarContrasenaIFrame extends javax.swing.JInternalFrame {
         cancelar.setForeground(new java.awt.Color(255, 255, 255));
         cancelar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         cancelar.setText("Cancelar");
-        cancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        cancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cancelar.setOpaque(true);
 
         aceptar.setBackground(new java.awt.Color(96, 133, 188));
@@ -80,7 +80,7 @@ public class CambiarContrasenaIFrame extends javax.swing.JInternalFrame {
         aceptar.setForeground(new java.awt.Color(255, 255, 255));
         aceptar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         aceptar.setText("Aceptar");
-        aceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        aceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         aceptar.setOpaque(true);
 
         txtTipoUsuario1.setFont(new java.awt.Font("Axia", 2, 36)); // NOI18N

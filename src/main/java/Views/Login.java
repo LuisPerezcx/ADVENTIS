@@ -56,6 +56,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         imgTurbinas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/imgLogin.png"))); // NOI18N
+        imgTurbinas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().add(imgTurbinas, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, 330, 500));
 
         fondoAzul.setBackground(new java.awt.Color(255, 255, 255));
@@ -88,6 +89,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(pnlArriba, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 130));
 
         panelForm.setBackground(new java.awt.Color(255, 255, 255));
+        panelForm.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         iniciarSesionLbl.setFont(new java.awt.Font("Axia", 1, 36)); // NOI18N
         iniciarSesionLbl.setText("INICIAR SESIÓN");
@@ -118,7 +120,7 @@ public class Login extends javax.swing.JFrame {
         ingresarBtn.setFont(new java.awt.Font("Axia", 3, 18)); // NOI18N
         ingresarBtn.setForeground(new java.awt.Color(255, 255, 255));
         ingresarBtn.setText("Ingresar");
-        ingresarBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        ingresarBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         ingresarBtn.setFocusPainted(false);
 
         javax.swing.GroupLayout panelFormLayout = new javax.swing.GroupLayout(panelForm);

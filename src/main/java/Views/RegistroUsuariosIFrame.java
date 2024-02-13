@@ -135,7 +135,7 @@ public class RegistroUsuariosIFrame extends javax.swing.JInternalFrame {
         guardar.setForeground(new java.awt.Color(255, 255, 255));
         guardar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guardar.setText("Guardar");
-        guardar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        guardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         guardar.setOpaque(true);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_lock_25px_1.png"))); // NOI18N
