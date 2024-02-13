@@ -105,15 +105,19 @@ public class RegistroComputadoras extends javax.swing.JInternalFrame {
 
         btnGroupSEALPATH.add(btnSiSealpath);
         btnSiSealpath.setText("Si");
+        btnSiSealpath.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btnGroupSEALPATH.add(btnNoSealpath);
         btnNoSealpath.setText("No");
+        btnNoSealpath.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btnGroupSMP.add(btnNoSmp);
         btnNoSmp.setText("No");
+        btnNoSmp.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btnGroupSMP.add(btnSiSmp);
         btnSiSmp.setText("Si");
+        btnSiSmp.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btnGroupSEFE.add(btnNoSefe);
         btnNoSefe.setText("No");
@@ -126,7 +130,7 @@ public class RegistroComputadoras extends javax.swing.JInternalFrame {
         guardar.setForeground(new java.awt.Color(255, 255, 255));
         guardar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guardar.setText("Guardar");
-        guardar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        guardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         guardar.setOpaque(true);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

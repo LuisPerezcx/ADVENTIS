@@ -91,7 +91,7 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Registrar Empleados"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Cursor Por defecto"/>
+          <Color id="Hand Cursor"/>
         </Property>
       </Properties>
       <AuxValues>
@@ -108,7 +108,7 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Ver empleados"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Cursor Por defecto"/>
+          <Color id="Hand Cursor"/>
         </Property>
       </Properties>
       <AuxValues>
@@ -125,7 +125,7 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Registrar usuarios"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Cursor Por defecto"/>
+          <Color id="Hand Cursor"/>
         </Property>
       </Properties>
       <AuxValues>
@@ -142,7 +142,7 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Ver usuarios"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Cursor Por defecto"/>
+          <Color id="Hand Cursor"/>
         </Property>
       </Properties>
       <AuxValues>

@@ -11,11 +11,12 @@ import Controller.ControladorHerramientasMenuIFrame;
  * @author david
  */
 public class HerramientasMenuIFrame extends javax.swing.JInternalFrame {
-
+    private final VentanaPrincipal ventanaPrincipal;
     /**
      * Creates new form HerramientasMenuIFrame
      */
-    public HerramientasMenuIFrame() {
+    public HerramientasMenuIFrame(VentanaPrincipal ventanaPrincipal) {
+        this.ventanaPrincipal = ventanaPrincipal;
         initComponents();
         addListeners();
     }
@@ -46,32 +47,32 @@ public class HerramientasMenuIFrame extends javax.swing.JInternalFrame {
         prestarHerramientas.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         prestarHerramientas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_check_document_80px.png"))); // NOI18N
         prestarHerramientas.setText("Prestar herramientas");
-        prestarHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        prestarHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         solicitarHerramientas.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         solicitarHerramientas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Maintenance_80px.png"))); // NOI18N
         solicitarHerramientas.setText("Solicitar herramientas");
-        solicitarHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        solicitarHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         rHerramientas.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         rHerramientas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_add_80px.png"))); // NOI18N
         rHerramientas.setText("Registrar herramientas");
-        rHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        rHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         verHerramientas.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         verHerramientas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Tools_80px.png"))); // NOI18N
         verHerramientas.setText("Ver herramientas");
-        verHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        verHerramientas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         registrarTHerramienta.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         registrarTHerramienta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Full_Tool_Storage_Box_80px.png"))); // NOI18N
         registrarTHerramienta.setText("Registrar tipo herramienta");
-        registrarTHerramienta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        registrarTHerramienta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         registrarTComponente.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         registrarTComponente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_crane_hook_80px.png"))); // NOI18N
         registrarTComponente.setText("Registrar tipo componente");
-        registrarTComponente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        registrarTComponente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -140,7 +141,7 @@ public class HerramientasMenuIFrame extends javax.swing.JInternalFrame {
     // End of variables declaration//GEN-END:variables
 
     private void addListeners(){
-        ControladorHerramientasMenuIFrame controladorHerramientasMenuIFrame = new ControladorHerramientasMenuIFrame(this);
+        ControladorHerramientasMenuIFrame controladorHerramientasMenuIFrame = new ControladorHerramientasMenuIFrame(this,ventanaPrincipal);
         prestarHerramientas.addMouseListener(controladorHerramientasMenuIFrame);
         rHerramientas.addMouseListener(controladorHerramientasMenuIFrame);
         solicitarHerramientas.addMouseListener(controladorHerramientasMenuIFrame);

@@ -10,10 +10,12 @@ import Controller.ControladorAuditoriasMenuIFrame;
  */
 public class AuditoriasMenuIFrame extends javax.swing.JInternalFrame {
 
+    private final VentanaPrincipal ventanaPrincipal;
     /**
      * Creates new form HerramientasMenuIFrame
      */
-    public AuditoriasMenuIFrame() {
+    public AuditoriasMenuIFrame(VentanaPrincipal ventanaPrincipal) {
+        this.ventanaPrincipal = ventanaPrincipal;
         initComponents();
         addListeners();
     }
@@ -41,12 +43,12 @@ public class AuditoriasMenuIFrame extends javax.swing.JInternalFrame {
         verAuditorias.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         verAuditorias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_archive_list_of_parts_80px.png"))); // NOI18N
         verAuditorias.setText("Ver auditorias");
-        verAuditorias.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        verAuditorias.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         generarAuditorias.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         generarAuditorias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_test_passed_80px.png"))); // NOI18N
         generarAuditorias.setText("Generar auditorias");
-        generarAuditorias.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        generarAuditorias.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -87,7 +89,7 @@ public class AuditoriasMenuIFrame extends javax.swing.JInternalFrame {
     // End of variables declaration//GEN-END:variables
 
     private void addListeners(){
-        ControladorAuditoriasMenuIFrame controladorAuditoriasMenuIFrame = new ControladorAuditoriasMenuIFrame(this);
+        ControladorAuditoriasMenuIFrame controladorAuditoriasMenuIFrame = new ControladorAuditoriasMenuIFrame(this, ventanaPrincipal);
         generarAuditorias.addMouseListener(controladorAuditoriasMenuIFrame);
         verAuditorias.addMouseListener(controladorAuditoriasMenuIFrame);
     }
