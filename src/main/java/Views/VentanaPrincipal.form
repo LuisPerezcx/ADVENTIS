@@ -325,7 +325,6 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Component id="reportesBMenu" alignment="1" max="32767" attributes="0"/>
               <Component id="auditoriasBMenu" alignment="0" max="32767" attributes="0"/>
-              <Component id="perfilBMenu" alignment="0" max="32767" attributes="0"/>
               <Component id="herramientasBMenu" alignment="0" pref="252" max="32767" attributes="0"/>
               <Component id="empleadosBMenu" alignment="0" max="32767" attributes="0"/>
           </Group>
@@ -341,8 +340,6 @@
                   <Component id="auditoriasBMenu" min="-2" pref="50" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
                   <Component id="reportesBMenu" min="-2" pref="50" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
-                  <Component id="perfilBMenu" min="-2" pref="50" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -410,29 +407,6 @@
               <Image iconType="3" name="/Images/icons8_audit_50px.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Auditorias"/>
-            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-              <Color id="Default Cursor"/>
-            </Property>
-          </Properties>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-          </AuxValues>
-        </Component>
-        <Component class="javax.swing.JLabel" name="perfilBMenu">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="73" green="3d" red="1f" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Axia" size="24" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Images/icons8_User_Menu_Male_50px.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Mi perfil"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Default Cursor"/>
             </Property>
