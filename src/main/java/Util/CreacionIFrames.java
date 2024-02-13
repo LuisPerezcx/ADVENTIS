@@ -9,7 +9,7 @@ del mismo tipo al mismo tiempo.
 public class CreacionIFrames {
     public static  HerramientasMenuIFrame herramientasMenuIFrame;
     public static AuditoriasMenuIFrame auditoriasMenuIFrame ;
-    public static final ReportesMenuIFrame reportesMenuIFrame = new ReportesMenuIFrame();
+    public static ReportesMenuIFrame reportesMenuIFrame;
     public static final RegistroUsuariosIFrame registroUsuariosIFrame = new RegistroUsuariosIFrame();
     public static final RegistroEmpleadosIFrame registroEmpleadosIFrame = new RegistroEmpleadosIFrame();
     public static final VerEmpleadosIFrame verEmpleadosIFrame = new VerEmpleadosIFrame();
@@ -27,6 +27,7 @@ public class CreacionIFrames {
     public static VerAuditoriasIFrame verAuditoriasIFrame;
     public static RegistroComputadoras registroComputadoras;
     public static RegistroCamarasDigitalesIFrame registroCamarasDigitalesIFrame;
+
 
     public static void setPerfilMenuIFrame(PerfilMenuIFrame perfilMenuIFrame) {
         CreacionIFrames.perfilMenuIFrame = perfilMenuIFrame;
@@ -73,6 +74,10 @@ public class CreacionIFrames {
 
     public static void setRegistroCamarasDigitalesIFrame(RegistroCamarasDigitalesIFrame registroCamarasDigitalesIFrame){
         CreacionIFrames.registroCamarasDigitalesIFrame = registroCamarasDigitalesIFrame;
+    }
+
+    public static void setReportesMenuIFrame (ReportesMenuIFrame reportesMenuIFrame){
+        CreacionIFrames.reportesMenuIFrame = reportesMenuIFrame;
     }
 
     public static void setHerramientasMenuIFrame(HerramientasMenuIFrame herramientasMenuIFrame) {
