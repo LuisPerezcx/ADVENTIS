@@ -10,10 +10,12 @@ import Controller.ControladorAuditoriasMenuIFrame;
  */
 public class AuditoriasMenuIFrame extends javax.swing.JInternalFrame {
 
+    private final VentanaPrincipal ventanaPrincipal;
     /**
      * Creates new form HerramientasMenuIFrame
      */
-    public AuditoriasMenuIFrame() {
+    public AuditoriasMenuIFrame(VentanaPrincipal ventanaPrincipal) {
+        this.ventanaPrincipal = ventanaPrincipal;
         initComponents();
         addListeners();
     }
@@ -87,7 +89,7 @@ public class AuditoriasMenuIFrame extends javax.swing.JInternalFrame {
     // End of variables declaration//GEN-END:variables
 
     private void addListeners(){
-        ControladorAuditoriasMenuIFrame controladorAuditoriasMenuIFrame = new ControladorAuditoriasMenuIFrame(this);
+        ControladorAuditoriasMenuIFrame controladorAuditoriasMenuIFrame = new ControladorAuditoriasMenuIFrame(this, ventanaPrincipal);
         generarAuditorias.addMouseListener(controladorAuditoriasMenuIFrame);
         verAuditorias.addMouseListener(controladorAuditoriasMenuIFrame);
     }
