@@ -31,6 +31,7 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
         setVerAuditoriasIFrame(new VerAuditoriasIFrame(ventanaPrincipal));
         setRegistroComputadoras(new RegistroComputadoras(ventanaPrincipal));
         setRegistroCamarasDigitalesIFrame(new RegistroCamarasDigitalesIFrame(ventanaPrincipal));
+        setDatosGeneralesIFrame(new DatosGeneralesIFrame(ventanaPrincipal));
     }
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -68,6 +69,8 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
             ventanaPrincipal.dibujarVista(registroCamarasDigitalesIFrame);
         } else if (event == ventanaPrincipal.verPerfilItem) {
             ventanaPrincipal.dibujarVista(perfilMenuIFrame);
+        } else if (event == ventanaPrincipal.crearAuditoriaItem) {
+            ventanaPrincipal.dibujarVista(datosGeneralesIFrame);
         }
     }
 

@@ -72,6 +72,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         AuditoriasMenu = new javax.swing.JMenu();
         generarAuditoriasItem = new javax.swing.JMenuItem();
         verAuditoriasItem = new javax.swing.JMenuItem();
+        crearAuditoriaItem = new javax.swing.JMenuItem();
         reportesMenu = new javax.swing.JMenu();
         verReportesItem = new javax.swing.JMenuItem();
         generarPDFitem = new javax.swing.JMenuItem();
@@ -146,11 +147,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         desktopPnl.setLayout(desktopPnlLayout);
         desktopPnlLayout.setHorizontalGroup(
             desktopPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1169, Short.MAX_VALUE)
+            .addGap(0, 1167, Short.MAX_VALUE)
         );
         desktopPnlLayout.setVerticalGroup(
             desktopPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 760, Short.MAX_VALUE)
+            .addGap(0, 752, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout contenedorDesktokPnlLayout = new javax.swing.GroupLayout(contenedorDesktokPnl);
@@ -158,14 +159,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         contenedorDesktokPnlLayout.setHorizontalGroup(
             contenedorDesktokPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(contenedorDesktokPnlLayout.createSequentialGroup()
-                .addComponent(desktopPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 1169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 75, Short.MAX_VALUE))
+                .addComponent(desktopPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 1167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 77, Short.MAX_VALUE))
         );
         contenedorDesktokPnlLayout.setVerticalGroup(
             contenedorDesktokPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(contenedorDesktokPnlLayout.createSequentialGroup()
-                .addComponent(desktopPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 760, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 18, Short.MAX_VALUE))
+                .addComponent(desktopPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 752, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 26, Short.MAX_VALUE))
         );
 
         menuBar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -188,11 +189,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         verEmpleadosItem.setText("Ver empleados");
         verEmpleadosItem.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        verEmpleadosItem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                verEmpleadosItemActionPerformed(evt);
-            }
-        });
         EmpleadosMenu.add(verEmpleadosItem);
 
         menuBar.add(EmpleadosMenu);
@@ -238,6 +234,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         verAuditoriasItem.setText("Ver auditorias");
         AuditoriasMenu.add(verAuditoriasItem);
+
+        crearAuditoriaItem.setText("Crear auditoria");
+        AuditoriasMenu.add(crearAuditoriaItem);
 
         menuBar.add(AuditoriasMenu);
 
@@ -303,10 +302,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void verEmpleadosItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verEmpleadosItemActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_verEmpleadosItemActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu AuditoriasMenu;
@@ -316,6 +311,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     public javax.swing.JLabel auditoriasBMenu;
     public javax.swing.JMenuItem cerrarSesionItem;
     private javax.swing.JPanel contenedorDesktokPnl;
+    public javax.swing.JMenuItem crearAuditoriaItem;
     public javax.swing.JDesktopPane desktopPnl;
     public javax.swing.JLabel empleadosBMenu;
     public javax.swing.JMenuItem generarAuditoriasItem;
@@ -365,6 +361,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         rComputadorasPItem.addActionListener(controladorVentanaPrincipal);
         rCamarasDItem.addActionListener(controladorVentanaPrincipal);
         verPerfilItem.addActionListener(controladorVentanaPrincipal);
+        crearAuditoriaItem.addActionListener(controladorVentanaPrincipal);
     }
     public void dibujarVista(JInternalFrame internal){
         cerrarIFrames();
