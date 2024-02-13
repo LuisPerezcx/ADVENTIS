@@ -47,22 +47,22 @@ public class EmpleadosMenuIFrame extends javax.swing.JInternalFrame {
         rEmpleados.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         rEmpleados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_worker_80px.png"))); // NOI18N
         rEmpleados.setText("Registrar Empleados");
-        rEmpleados.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        rEmpleados.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         verEmpleados.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         verEmpleados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_workers_80px.png"))); // NOI18N
         verEmpleados.setText("Ver empleados");
-        verEmpleados.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        verEmpleados.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         rUsuarios.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         rUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_add_user_male_80px_2.png"))); // NOI18N
         rUsuarios.setText("Registrar usuarios");
-        rUsuarios.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        rUsuarios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         verUsuarios.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
         verUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_group_80px.png"))); // NOI18N
         verUsuarios.setText("Ver usuarios");
-        verUsuarios.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        verUsuarios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
