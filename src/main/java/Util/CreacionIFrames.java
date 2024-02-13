@@ -8,7 +8,7 @@ del mismo tipo al mismo tiempo.
  */
 public class CreacionIFrames {
     public static  HerramientasMenuIFrame herramientasMenuIFrame;
-    public static final AuditoriasMenuIFrame auditoriasMenuIFrame = new AuditoriasMenuIFrame();
+    public static AuditoriasMenuIFrame auditoriasMenuIFrame ;
     public static final ReportesMenuIFrame reportesMenuIFrame = new ReportesMenuIFrame();
     public static final RegistroUsuariosIFrame registroUsuariosIFrame = new RegistroUsuariosIFrame();
     public static final RegistroEmpleadosIFrame registroEmpleadosIFrame = new RegistroEmpleadosIFrame();
@@ -78,4 +78,9 @@ public class CreacionIFrames {
     public static void setHerramientasMenuIFrame(HerramientasMenuIFrame herramientasMenuIFrame) {
         CreacionIFrames.herramientasMenuIFrame = herramientasMenuIFrame;
     }
+
+    public static void setAuditoriasMenuIFrame(AuditoriasMenuIFrame auditoriasMenuIFrame) {
+        CreacionIFrames.auditoriasMenuIFrame = auditoriasMenuIFrame;
+    }
+
 }
