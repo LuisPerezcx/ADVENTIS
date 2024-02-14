@@ -54,7 +54,8 @@ public class ControladorRegistroUsuariosIFrame implements MouseListener {
 
 
     private void registrarUsuarios(){
-        //if true
+
+
         Notificaciones.mensajeOK(registroUsuariosIFrame,"Registro exitoso","Usuario registrado");
     }
 
