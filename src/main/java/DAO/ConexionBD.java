@@ -118,7 +118,7 @@ public class ConexionBD {
         int lastID = -1;
         conectar();
         try (Statement statement = conn.createStatement()) {
-            String query = "SELECT last_value FROM " + tabla + "_id_" + tabla + "_seq";
+            String query = "SELECT last_value FROM " + tabla + "id" + tabla + "_seq";
             ResultSet resultSet = statement.executeQuery(query);
 
             if (resultSet.next()) {
