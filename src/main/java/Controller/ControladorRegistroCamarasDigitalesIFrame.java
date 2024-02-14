@@ -20,14 +20,15 @@ public class ControladorRegistroCamarasDigitalesIFrame implements MouseListener 
     public void mouseClicked(MouseEvent e) {
         Object event = e.getSource();
         if(event == registroCamarasDigitalesIFrame.guardar){
-            validarMarcaModelo();
+            validarNombre();
             validarNumeroSerie();
             validarResponsable();
+            validarNombre();
         }
     }
 
-    private void validarMarcaModelo(){
-        if(Regex.validarLetrasNumeros(registroCamarasDigitalesIFrame.txtMarca.getText())){
+    private void validarNombre(){
+        if(Regex.validarCadenaDeSoloLetras(registroCamarasDigitalesIFrame.txtMarca.getText())){
             System.out.println("Marca modelo correctos");
         }else {
             Notificaciones.mensajeError(registroCamarasDigitalesIFrame,"marca o modelo  invalidos","Marca/Modelo");
