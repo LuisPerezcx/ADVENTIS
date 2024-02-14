@@ -30,6 +30,8 @@ public class ControladorDatosGeneralesIFrame implements MouseListener {
             ventanaPrincipal.dibujarVista(crearCatalogoIFrame);
         } else if (event == datosGeneralesIFrame.btnAgregar) {
             Notificaciones.mensajeOK(datosGeneralesIFrame,"Registro exitoso","Dato registrado");
+        } else if (event == datosGeneralesIFrame.btnAgregar) {
+            Notificaciones.mensajeOK(datosGeneralesIFrame,"Registro exitoso","Dato guardado");
         }
     }
 

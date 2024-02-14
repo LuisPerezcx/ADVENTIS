@@ -29,6 +29,8 @@ public class ControladorCrearCatalogoIFrame implements MouseListener {
         Object event = e.getSource();
         if (event == crearCatalogoIFrame.btnAgregar){
             Notificaciones.mensajeOK(crearCatalogoIFrame,"Registro exitoso","Dato registrado");
+        }else if (event == crearCatalogoIFrame.btnAgregar) {
+            Notificaciones.mensajeOK(crearCatalogoIFrame,"Registro exitoso","Dato guardado");
         }
     }
 
