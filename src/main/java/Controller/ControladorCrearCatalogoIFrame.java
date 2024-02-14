@@ -1,11 +1,15 @@
 package Controller;
 
 import Views.CrearCatalogoIFrame;
+import Views.Notificaciones;
 import Views.VentanaPrincipal;
 
 import javax.swing.border.BevelBorder;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+
+import static Util.CreacionIFrames.crearCatalogoIFrame;
+import static Util.CreacionIFrames.registroHerramientasIFrame;
 
 public class ControladorCrearCatalogoIFrame implements MouseListener {
 
@@ -22,7 +26,10 @@ public class ControladorCrearCatalogoIFrame implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-
+        Object event = e.getSource();
+        if (event == crearCatalogoIFrame.btnAgregar){
+            Notificaciones.mensajeOK(crearCatalogoIFrame,"Registro exitoso","Dato registrado");
+        }
     }
 
     @Override
