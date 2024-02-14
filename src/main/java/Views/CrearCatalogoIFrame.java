@@ -201,7 +201,7 @@ public class CrearCatalogoIFrame extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JLabel btnAceptar;
-    private javax.swing.JLabel btnAgregar;
+    public javax.swing.JLabel btnAgregar;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

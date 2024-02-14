@@ -235,5 +235,6 @@ public class DatosGeneralesIFrame extends javax.swing.JInternalFrame {
     private void addListeners(){
         ControladorDatosGeneralesIFrame controladorDatosGeneralesIFrame = new ControladorDatosGeneralesIFrame(this,ventanaPrincipal);
         btnSiguiente.addMouseListener(controladorDatosGeneralesIFrame);
+        btnAgregar.addMouseListener(controladorDatosGeneralesIFrame);
     }
 }
