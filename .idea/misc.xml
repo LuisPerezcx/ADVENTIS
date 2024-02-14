@@ -9,10 +9,8 @@
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK" />
-<<<<<<< HEAD
-=======
+
   <component name="ProjectType">
     <option name="id" value="jpab" />
   </component>
->>>>>>> 71043bdc35ad4612b682f5ae15cfc04295fd1fb0
 </project>
