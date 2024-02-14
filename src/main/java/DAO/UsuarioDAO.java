@@ -1,10 +1,12 @@
 package DAO;
 
 import Model.Usuario;
+import org.w3c.dom.ls.LSOutput;
 
 import java.sql.SQLException;
 
 public class UsuarioDAO extends ConexionBD implements OperacionesBD<Usuario> {
+
 
     final String idUsuario = "idUsuario";
     final String columnaEmail = "Email";
@@ -13,9 +15,9 @@ public class UsuarioDAO extends ConexionBD implements OperacionesBD<Usuario> {
     final String columnaIdTipoUsuario = "idTipoUsuario";
     final String tabla = "usuario";
 
-
     @Override
     public Boolean insert(Usuario usuario) {
+        System.out.printf("Hola ");
         StringBuilder stringFields = new StringBuilder();
         StringBuilder stringValues = new StringBuilder();
 

@@ -19,7 +19,7 @@ public class ConexionBD {
             // Conectamos con la base de datos
             conn = DriverManager.getConnection(
                     "jdbc:postgresql://localhost:5432/ADVENTIS",
-                    "luisperez", "Davidpg12?");
+                    "efrenDLD", "efren.27");
 
             boolean valid = conn	.isValid(50000);
             System.out.println(valid ? "TEST OK" : "TEST FAIL");
@@ -118,7 +118,7 @@ public class ConexionBD {
         int lastID = -1;
         conectar();
         try (Statement statement = conn.createStatement()) {
-            String query = "SELECT last_value FROM " + tabla + "_id_" + tabla + "_seq";
+            String query = "SELECT last_value FROM " + tabla + "id" + tabla + "_seq";
             ResultSet resultSet = statement.executeQuery(query);
 
             if (resultSet.next()) {
