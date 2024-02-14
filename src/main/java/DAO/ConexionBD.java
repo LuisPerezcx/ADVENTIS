@@ -27,6 +27,7 @@ public class ConexionBD {
             System.out.println("Error: " + sqle);
         }
     }
+
     public void close(){
         try{
             conn.close();
