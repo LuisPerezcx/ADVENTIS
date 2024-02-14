@@ -119,7 +119,7 @@ public class GenerarAuditoriaIFrame extends javax.swing.JInternalFrame {
     // End of variables declaration//GEN-END:variables
 
     private void addListeners(){
-        ControladorGenerarAuditoriaIFrame controladorGenerarAuditoriaIFrame = new ControladorGenerarAuditoriaIFrame(this);
+        ControladorGenerarAuditoriaIFrame controladorGenerarAuditoriaIFrame = new ControladorGenerarAuditoriaIFrame(this,ventanaPrincipal);
         btnGenerar.addMouseListener(controladorGenerarAuditoriaIFrame);
     }
 }

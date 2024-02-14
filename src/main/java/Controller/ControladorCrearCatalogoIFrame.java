@@ -1,26 +1,27 @@
 package Controller;
 
-import Views.GenerarAuditoriaIFrame;
+import Views.CrearCatalogoIFrame;
 import Views.VentanaPrincipal;
 
 import javax.swing.border.BevelBorder;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import static Util.CreacionIFrames.*;
 
-public class ControladorGenerarAuditoriaIFrame implements MouseListener {
+public class ControladorCrearCatalogoIFrame implements MouseListener {
 
-    private final GenerarAuditoriaIFrame generarAuditoriaIFrame;
+    private final CrearCatalogoIFrame crearCatalogoIFrame;
     private final VentanaPrincipal ventanaPrincipal;
 
-    public ControladorGenerarAuditoriaIFrame(GenerarAuditoriaIFrame generarAuditoriaIFrame, VentanaPrincipal ventanaPrincipal){
-        this.generarAuditoriaIFrame = generarAuditoriaIFrame;
+    public ControladorCrearCatalogoIFrame(CrearCatalogoIFrame crearCatalogoIFrame, VentanaPrincipal ventanaPrincipal){
+
+        this.crearCatalogoIFrame = crearCatalogoIFrame;
         this.ventanaPrincipal = ventanaPrincipal;
     }
 
+
+
     @Override
     public void mouseClicked(MouseEvent e) {
-
 
     }
 
@@ -38,8 +39,8 @@ public class ControladorGenerarAuditoriaIFrame implements MouseListener {
     public void mouseEntered(MouseEvent e) {
         Object event = e.getSource();
 
-        if (event == generarAuditoriaIFrame.btnGenerar){
-            generarAuditoriaIFrame.btnGenerar.setBorder(new BevelBorder(BevelBorder.RAISED));
+        if (event == crearCatalogoIFrame.btnAceptar){
+            crearCatalogoIFrame.btnAceptar.setBorder(new BevelBorder(BevelBorder.RAISED));
         }
     }
 
@@ -47,8 +48,8 @@ public class ControladorGenerarAuditoriaIFrame implements MouseListener {
     public void mouseExited(MouseEvent e) {
         Object event = e.getSource();
 
-        if (event == generarAuditoriaIFrame.btnGenerar){
-            generarAuditoriaIFrame.btnGenerar.setBorder(null);
+        if (event == crearCatalogoIFrame.btnAceptar){
+            crearCatalogoIFrame.btnAceptar.setBorder(null);
         }
     }
 }
