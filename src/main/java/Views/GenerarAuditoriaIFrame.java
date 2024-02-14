@@ -3,6 +3,7 @@ package Views;
 
 import Controller.ControladorGenerarAuditoriaIFrame;
 import Controller.ControladorRegistroHerramientasIFrame;
+import DAO.TipoComponenteDAO;
 
 /**
  *
@@ -11,6 +12,7 @@ import Controller.ControladorRegistroHerramientasIFrame;
 public class GenerarAuditoriaIFrame extends javax.swing.JInternalFrame {
 
     private VentanaPrincipal ventanaPrincipal;
+    private TipoComponenteDAO tipoComponenteDAO;
 
     /**
      * Creates new form VerEmpleadosIFrame
@@ -121,5 +123,6 @@ public class GenerarAuditoriaIFrame extends javax.swing.JInternalFrame {
     private void addListeners(){
         ControladorGenerarAuditoriaIFrame controladorGenerarAuditoriaIFrame = new ControladorGenerarAuditoriaIFrame(this,ventanaPrincipal);
         btnGenerar.addMouseListener(controladorGenerarAuditoriaIFrame);
+        comboCentroSAP.addActionListener(controladorGenerarAuditoriaIFrame);
     }
 }
