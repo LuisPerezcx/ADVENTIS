@@ -12,8 +12,8 @@ public class CreacionIFrames {
     public static ReportesMenuIFrame reportesMenuIFrame;
     public static final RegistroUsuariosIFrame registroUsuariosIFrame = new RegistroUsuariosIFrame();
     public static final RegistroEmpleadosIFrame registroEmpleadosIFrame = new RegistroEmpleadosIFrame();
-    public static final VerEmpleadosIFrame verEmpleadosIFrame = new VerEmpleadosIFrame();
-    public static final VerUsuariosIFrame verUsuariosIFrame = new VerUsuariosIFrame();
+    public static VerEmpleadosIFrame verEmpleadosIFrame;
+    public static VerUsuariosIFrame verUsuariosIFrame;
     public static PerfilMenuIFrame perfilMenuIFrame;
     public static EmpleadosMenuIFrame empleadosMenuIFrame;
     public static RegistroHerramientasIFrame registroHerramientasIFrame;
@@ -29,6 +29,7 @@ public class CreacionIFrames {
     public static RegistroCamarasDigitalesIFrame registroCamarasDigitalesIFrame;
     public static DatosGeneralesIFrame datosGeneralesIFrame;
     public static CrearCatalogoIFrame crearCatalogoIFrame;
+    public static AuditoriaGeneradaIFrame auditoriaGeneradaIFrame;
 
 
     public static void setPerfilMenuIFrame(PerfilMenuIFrame perfilMenuIFrame) {
@@ -97,5 +98,17 @@ public class CreacionIFrames {
 
     public static void setCrearCatalogoIFrame(CrearCatalogoIFrame crearCatalogoIFrame){
         CreacionIFrames.crearCatalogoIFrame = crearCatalogoIFrame;
+    }
+
+    public static void setVerUsuariosIFrame(VerUsuariosIFrame verUsuariosIFrame) {
+        CreacionIFrames.verUsuariosIFrame = verUsuariosIFrame;
+    }
+
+    public static void setVerEmpleadosIFrame(VerEmpleadosIFrame verEmpleadosIFrame) {
+        CreacionIFrames.verEmpleadosIFrame = verEmpleadosIFrame;
+    }
+
+    public static void setAuditoriaGeneradaIFrame(AuditoriaGeneradaIFrame auditoriaGeneradaIFrame) {
+        CreacionIFrames.auditoriaGeneradaIFrame = auditoriaGeneradaIFrame;
     }
 }

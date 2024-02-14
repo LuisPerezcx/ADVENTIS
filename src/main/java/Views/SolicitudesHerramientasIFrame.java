@@ -22,8 +22,8 @@ public class SolicitudesHerramientasIFrame extends javax.swing.JInternalFrame {
     }
 
     private void tablaEstilo(){
-        TableActionCellRender tableActionCellRender = new TableActionCellRender(tablaHerramientas);
-        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(tablaHerramientas);
+        TableActionCellRender tableActionCellRender = new TableActionCellRender(ventanaPrincipal,tablaHerramientas);
+        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(ventanaPrincipal,tablaHerramientas);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.eliminarBtnTable.setVisible(false);

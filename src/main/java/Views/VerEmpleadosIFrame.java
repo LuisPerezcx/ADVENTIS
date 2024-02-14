@@ -11,19 +11,17 @@ import Views.celdaAcciones.TableActionCellRender;
  * @author david
  */
 public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
-
-    /**
-     * Creates new form VerEmpleadosIFrame
-     */
-    public VerEmpleadosIFrame() {
+    private final VentanaPrincipal ventanaPrincipal;
+    public VerEmpleadosIFrame(VentanaPrincipal ventanaPrincipal) {
+        this.ventanaPrincipal = ventanaPrincipal;
         initComponents();
         tablaEstilo();
         addListeners();
     }
 
     private void tablaEstilo(){
-        TableActionCellRender tableActionCellRender = new TableActionCellRender(tablaEmpleados);
-        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(tablaEmpleados);
+        TableActionCellRender tableActionCellRender = new TableActionCellRender(ventanaPrincipal,tablaEmpleados);
+        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(ventanaPrincipal,tablaEmpleados);
         tableAccionCellEditor.panelAcciones.pdfBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.pdfBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
