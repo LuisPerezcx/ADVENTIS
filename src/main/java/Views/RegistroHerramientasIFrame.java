@@ -319,7 +319,7 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
     private javax.swing.JLabel lblUbicacion;
     private javax.swing.JLabel lblVerificacion;
     private javax.swing.JLabel titulo;
-    private javax.swing.JTextArea txtAreaComentarios;
+    public javax.swing.JTextArea txtAreaComentarios;
     public javax.swing.JTextField txtCantidad;
     public javax.swing.JTextField txtCapacidad;
     public javax.swing.JTextField txtNombre;

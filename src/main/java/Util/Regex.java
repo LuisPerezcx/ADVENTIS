@@ -19,4 +19,18 @@ public class Regex {
         matcher = pattern.matcher(validar);
         return matcher.matches();
     }
+
+    public static boolean validarSoloNumeros(String validar){
+        regex = "^[0-9]+$";
+        pattern = Pattern.compile(regex);
+        matcher = pattern.matcher(validar);
+        return matcher.matches();
+    }
+
+    public static boolean validarCadenaDeSoloLetras(String validar){
+        regex = "^[a-zA-Z\\s]+$";
+        pattern = Pattern.compile(regex);
+        matcher = pattern.matcher(validar);
+        return matcher.matches();
+    }
 }
