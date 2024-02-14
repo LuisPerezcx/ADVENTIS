@@ -45,7 +45,7 @@ public class VerHerramientasIFrame extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         titulo = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtBuscarHerramienta = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
         verSolicitudes = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -58,9 +58,9 @@ public class VerHerramientasIFrame extends javax.swing.JInternalFrame {
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Ver herramientas");
 
-        jTextField1.setBackground(new java.awt.Color(238, 238, 238));
-        jTextField1.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        jTextField1.setBorder(null);
+        txtBuscarHerramienta.setBackground(new java.awt.Color(238, 238, 238));
+        txtBuscarHerramienta.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
+        txtBuscarHerramienta.setBorder(null);
 
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
@@ -140,7 +140,7 @@ public class VerHerramientasIFrame extends javax.swing.JInternalFrame {
                             .addComponent(verSolicitudes, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                                    .addComponent(txtBuscarHerramienta, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
                                     .addComponent(jSeparator1))
                                 .addGap(765, 765, 765))))
                     .addGroup(layout.createSequentialGroup()
@@ -161,7 +161,7 @@ public class VerHerramientasIFrame extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(64, 64, 64)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtBuscarHerramienta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(95, 95, 95)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -185,9 +185,9 @@ public class VerHerramientasIFrame extends javax.swing.JInternalFrame {
     public javax.swing.JLabel buscar;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTable tablaEmpleados;
     private javax.swing.JLabel titulo;
+    public javax.swing.JTextField txtBuscarHerramienta;
     public javax.swing.JLabel verSolicitudes;
     // End of variables declaration//GEN-END:variables
     private void addListeners(){

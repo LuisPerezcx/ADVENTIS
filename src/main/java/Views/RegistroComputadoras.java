@@ -1,5 +1,8 @@
 package Views;
 
+import Controller.ControladorRegistroComputadorasIFrame;
+import Controller.ControladorRegistroEmpleadosIFrame;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -16,6 +19,7 @@ public class RegistroComputadoras extends javax.swing.JInternalFrame {
     public RegistroComputadoras(VentanaPrincipal ventanaPrincipal) {
         this.ventanaPrincipal = ventanaPrincipal;
         initComponents();
+        addListeners();
     }
 
     /**
@@ -259,8 +263,13 @@ public class RegistroComputadoras extends javax.swing.JInternalFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel titulo;
-    private javax.swing.JTextArea txtComentarios;
-    private javax.swing.JTextField txtMarcaModelo;
-    private javax.swing.JTextField txtNserie;
+    public javax.swing.JTextArea txtComentarios;
+    public javax.swing.JTextField txtMarcaModelo;
+    public javax.swing.JTextField txtNserie;
     // End of variables declaration//GEN-END:variables
+
+    private void addListeners(){
+        ControladorRegistroComputadorasIFrame controladorRegistroComputadorasIFrame = new ControladorRegistroComputadorasIFrame(this);
+        guardar.addMouseListener(controladorRegistroComputadorasIFrame);
+    }
 }

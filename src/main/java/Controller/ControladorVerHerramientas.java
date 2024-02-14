@@ -1,5 +1,7 @@
 package Controller;
 
+import Util.Regex;
+import Views.Notificaciones;
 import Views.VerHerramientasIFrame;
 
 import javax.swing.border.BevelBorder;
@@ -15,7 +17,21 @@ public class ControladorVerHerramientas implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
+        Object event = e.getSource();
+        if(event == verHerramientasIFrame.buscar){
+            validarHerramienta();
 
+        }
+
+    }
+    private void validarHerramienta(){
+        /*if(Regex.validarComputadora(verHerramientasIFrame.txtBuscarHerramienta.getText())){
+            System.out.println("Marca o modelo validos");
+        }else {
+            Notificaciones.mensajeError(registroComputadoras,"Nombre de la marca o modelo invalidos","Error en validaciones");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");*/
     }
 
     @Override
