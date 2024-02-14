@@ -26,6 +26,8 @@ public class ControladorRegistroEmpleadosIFrame implements MouseListener {
         }
     }
 
+
+
     private void validarNombreEmpleado(){
         if(Regex.validarLetramayusculaLetraminuscula(registroEmpleadosIFrame.nombreEmpleado.getText())){
             System.out.println("nombreValido");
@@ -55,6 +57,7 @@ public class ControladorRegistroEmpleadosIFrame implements MouseListener {
         // if false
         //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
     }
+
     private void registrarEmpleado(){
         Notificaciones.mensajeOK(registroEmpleadosIFrame,"Registro exitoso","Empleado registrado");
     }

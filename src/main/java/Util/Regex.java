@@ -33,4 +33,5 @@ public class Regex {
         matcher = pattern.matcher(validar);
         return  matcher.matches();
     }
+
 }
