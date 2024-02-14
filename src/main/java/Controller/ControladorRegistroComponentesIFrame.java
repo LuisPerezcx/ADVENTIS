@@ -1,5 +1,7 @@
 package Controller;
 
+import Util.Regex;
+import Views.Notificaciones;
 import Views.RegistroComponentesIFrame;
 
 import javax.swing.border.BevelBorder;
@@ -17,8 +19,55 @@ public class ControladorRegistroComponentesIFrame implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-
+//        Object event = e.getSource();
+//        if(event == registroComponentesIFrame.btnBuscar){
+//            validaNombre();
+//            validaFabricante();
+//            validaDescripcion();
+//            validaBusqueda();
+//        }
     }
+
+    private void validaNombre(){
+        if(Regex.validarNombreComponente(registroComponentesIFrame.txtNombreComponentes.getText())){
+            System.out.println("nombreValido");
+        }else {
+            Notificaciones.mensajeError(registroComponentesIFrame,"Nombre invalido","Error en la verificacion del nombre");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
+    }
+
+    private void validaFabricante(){
+        if(Regex.validarNombreComponente(registroComponentesIFrame.txtFabricanteComponente.getText())){
+            System.out.println("nombreValido");
+        }else {
+            Notificaciones.mensajeError(registroComponentesIFrame,"Nombre de fabricante no cumple con las validaciones","Error en la verificacion del fabricante");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
+    }
+
+    private void validaDescripcion(){
+        if(Regex.validarCadenaDeSoloLetras(registroComponentesIFrame.txtDescripcionComponentes.getText())){
+            System.out.println("nombreValido");
+        }else {
+            Notificaciones.mensajeError(registroComponentesIFrame,"Descripcion con caracteres invalidos","Error en la verificacion de la descripcion");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
+    }
+
+    private void validaBusqueda(){
+        if(Regex.validarNombreComponente(registroComponentesIFrame.txtBuscarComponente.getText())){
+            System.out.println("nombreValido");
+        }else {
+            Notificaciones.mensajeError(registroComponentesIFrame,"Ocurrio un error al tratar de buscar, verifique sus datos","Error en la verificacion de busquda");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
+    }
+
 
     @Override
     public void mousePressed(MouseEvent e) {

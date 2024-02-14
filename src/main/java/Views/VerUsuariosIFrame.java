@@ -20,8 +20,8 @@ public class VerUsuariosIFrame extends javax.swing.JInternalFrame {
     }
 
     private void tablaEstilo(){
-        TableActionCellRender tableActionCellRender = new TableActionCellRender(ventanaPrincipal,tablaEmpleados);
-        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(ventanaPrincipal,tablaEmpleados);
+        TableActionCellRender tableActionCellRender = new TableActionCellRender(ventanaPrincipal,tblUsuarios);
+        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(ventanaPrincipal,tblUsuarios);
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);
@@ -31,8 +31,8 @@ public class VerUsuariosIFrame extends javax.swing.JInternalFrame {
         tableAccionCellEditor.panelAcciones.excelBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.pdfBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.pdfBtnTable.setVisible(false);
-        tablaEmpleados.getColumnModel().getColumn(2).setCellRenderer(tableActionCellRender);
-        tablaEmpleados.getColumnModel().getColumn(2).setCellEditor(tableAccionCellEditor);
+        tblUsuarios.getColumnModel().getColumn(2).setCellRenderer(tableActionCellRender);
+        tblUsuarios.getColumnModel().getColumn(2).setCellEditor(tableAccionCellEditor);
     }
 
     /**
@@ -44,18 +44,18 @@ public class VerUsuariosIFrame extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        titulo = new javax.swing.JLabel();
+        lblTitulo = new javax.swing.JLabel();
         txtBusqueda = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
-        buscar = new javax.swing.JLabel();
+        btnBuscar = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tablaEmpleados = new javax.swing.JTable();
+        tblUsuarios = new javax.swing.JTable();
 
         setClosable(true);
         setTitle("Ver usuarios");
 
-        titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
-        titulo.setText("Ver usuarios");
+        lblTitulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
+        lblTitulo.setText("Ver usuarios");
 
         txtBusqueda.setBackground(new java.awt.Color(238, 238, 238));
         txtBusqueda.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
@@ -64,17 +64,17 @@ public class VerUsuariosIFrame extends javax.swing.JInternalFrame {
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
 
-        buscar.setBackground(new java.awt.Color(96, 133, 188));
-        buscar.setFont(new java.awt.Font("Axia", 3, 24)); // NOI18N
-        buscar.setForeground(new java.awt.Color(255, 255, 255));
-        buscar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        buscar.setText("Buscar");
-        buscar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        buscar.setOpaque(true);
+        btnBuscar.setBackground(new java.awt.Color(96, 133, 188));
+        btnBuscar.setFont(new java.awt.Font("Axia", 3, 24)); // NOI18N
+        btnBuscar.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuscar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnBuscar.setText("Buscar");
+        btnBuscar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBuscar.setOpaque(true);
 
-        tablaEmpleados.setAutoCreateRowSorter(true);
-        tablaEmpleados.setFont(new java.awt.Font("Axia", 0, 18)); // NOI18N
-        tablaEmpleados.setModel(new javax.swing.table.DefaultTableModel(
+        tblUsuarios.setAutoCreateRowSorter(true);
+        tblUsuarios.setFont(new java.awt.Font("Axia", 0, 18)); // NOI18N
+        tblUsuarios.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -109,19 +109,19 @@ public class VerUsuariosIFrame extends javax.swing.JInternalFrame {
                 return canEdit [columnIndex];
             }
         });
-        tablaEmpleados.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        tablaEmpleados.setRowHeight(50);
-        tablaEmpleados.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        tablaEmpleados.setShowGrid(true);
-        jScrollPane1.setViewportView(tablaEmpleados);
+        tblUsuarios.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tblUsuarios.setRowHeight(50);
+        tblUsuarios.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        tblUsuarios.setShowGrid(true);
+        jScrollPane1.setViewportView(tblUsuarios);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(508, Short.MAX_VALUE)
-                .addComponent(titulo)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblTitulo)
                 .addGap(388, 388, 388))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -132,20 +132,20 @@ public class VerUsuariosIFrame extends javax.swing.JInternalFrame {
                             .addComponent(txtBusqueda, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
                             .addComponent(jSeparator1))
                         .addGap(18, 18, 18)
-                        .addComponent(buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addComponent(titulo)
+                .addComponent(lblTitulo)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(64, 64, 64)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtBusqueda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(buscar)))
+                            .addComponent(btnBuscar)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(95, 95, 95)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -159,15 +159,15 @@ public class VerUsuariosIFrame extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JLabel buscar;
+    public javax.swing.JLabel btnBuscar;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTable tablaEmpleados;
-    private javax.swing.JLabel titulo;
+    private javax.swing.JLabel lblTitulo;
+    public javax.swing.JTable tblUsuarios;
     public javax.swing.JTextField txtBusqueda;
     // End of variables declaration//GEN-END:variables
     private void addListeners(){
         ControladorVerUsuariosIFrame controladorVerUsuariosIFrame = new ControladorVerUsuariosIFrame(this);
-        buscar.addMouseListener(controladorVerUsuariosIFrame);
+        btnBuscar.addMouseListener(controladorVerUsuariosIFrame);
     }
 }

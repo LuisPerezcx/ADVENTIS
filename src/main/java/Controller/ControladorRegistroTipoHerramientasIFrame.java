@@ -1,5 +1,7 @@
 package Controller;
 
+import Util.Regex;
+import Views.Notificaciones;
 import Views.RegistroTipoHerramientasIFrame;
 
 import javax.swing.border.BevelBorder;
@@ -16,7 +18,20 @@ public class ControladorRegistroTipoHerramientasIFrame implements MouseListener 
 
     @Override
     public void mouseClicked(MouseEvent e) {
+        Object event = e.getSource();
+        if(event == registroTipoHerramientasIFrame.btnGuardarTipo){
+            validarNombre();
+        }
+    }
 
+    private void validarNombre(){
+        if(Regex.validarCadenaDeSoloLetras(registroTipoHerramientasIFrame.txtNombreTipoHerramienta.getText())){
+            System.out.println("Nombre de tipo herramienta correcto");
+        }else {
+            Notificaciones.mensajeError(registroTipoHerramientasIFrame,"nombre del tipo de herramienta  invalidos","Nombre del tipo de herramienta");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
     }
 
     @Override

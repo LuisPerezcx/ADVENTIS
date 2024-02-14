@@ -1,5 +1,7 @@
 package Controller;
 
+import Arreglos.Arreglos;
+import DAO.UbicacionesDAO;
 import Util.Regex;
 import Views.Notificaciones;
 import Views.RegistroHerramientasIFrame;
@@ -11,12 +13,20 @@ import java.awt.event.MouseListener;
 public class ControladorRegistroHerramientasIFrame implements MouseListener {
 
     private final RegistroHerramientasIFrame registroHerramientasIFrame;
+    UbicacionesDAO ubicacionesDAO = new UbicacionesDAO();
 
     public ControladorRegistroHerramientasIFrame(RegistroHerramientasIFrame registroHerramientasIFrame) {
         this.registroHerramientasIFrame = registroHerramientasIFrame;
+        llenarCombo();
     }
 
-
+    private void llenarCombo(){
+        registroHerramientasIFrame.comboUbicacion.removeAllItems();
+        ubicacionesDAO.obtenerUbicaciones();
+        for (String item : Arreglos.ubicacionArray){
+            registroHerramientasIFrame.comboUbicacion.addItem(item);
+        }
+    }
     @Override
     public void mouseClicked(MouseEvent e) {
         Object event = e.getSource();
@@ -42,14 +52,14 @@ public class ControladorRegistroHerramientasIFrame implements MouseListener {
     }
 
     private void validarHerramientas(){
-        /*if(Regex.validarSoloLetras(registroHerramientasIFrame.txtNombre.getText())){
+        if(Regex.validaHerramientas(registroHerramientasIFrame.txtNombre.getText())){
             System.out.println("Nombre Herramienta Valido");
         }else {
             Notificaciones.mensajeError(registroHerramientasIFrame,"Nombre de la herramienta invalida","Error al validar Herramienta");
         }
         // if false
         //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
-    */
+
     }
 
     private void validarNumeroSerie(){

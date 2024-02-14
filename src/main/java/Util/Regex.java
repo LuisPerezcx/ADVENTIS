@@ -41,8 +41,15 @@ public class Regex {
         return matcher.matches();
     }
 
-    public static boolean validarLetrasNumeros(String validar){
-        regex = "^([A-Za-z]+)\\s*([0-9]+)$";
+    public static boolean validaHerramientas(String validar){
+        regex = "^[a-zA-Z0-9\\s\\/]*$";
+        pattern = Pattern.compile(regex);
+        matcher = pattern.matcher(validar);
+        return  matcher.matches();
+    }
+
+    public static boolean validarNombreComponente(String validar){
+        regex = "^[a-zA-Z]+\\s?[a-zA-Z\\s]*$";
         pattern = Pattern.compile(regex);
         matcher = pattern.matcher(validar);
         return  matcher.matches();

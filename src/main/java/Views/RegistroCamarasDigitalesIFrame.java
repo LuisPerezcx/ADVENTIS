@@ -234,10 +234,10 @@ public class RegistroCamarasDigitalesIFrame extends javax.swing.JInternalFrame {
     private javax.swing.JLabel lblResponsable;
     private javax.swing.JLabel lblUbicacion;
     private javax.swing.JLabel titulo;
-    private javax.swing.JTextArea txtAreaComentarios;
-    private javax.swing.JTextField txtMarca;
-    private javax.swing.JTextField txtNumeroSeire;
-    private javax.swing.JTextField txtResponsable;
+    public javax.swing.JTextArea txtAreaComentarios;
+    public javax.swing.JTextField txtMarca;
+    public javax.swing.JTextField txtNumeroSeire;
+    public javax.swing.JTextField txtResponsable;
     // End of variables declaration//GEN-END:variables
 
     private void addListeners(){
