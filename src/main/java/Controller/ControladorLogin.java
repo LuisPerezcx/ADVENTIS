@@ -1,5 +1,6 @@
 package Controller;
 
+import Util.Regex;
 import Views.Login;
 import Views.Notificaciones;
 
@@ -23,8 +24,13 @@ public class ControladorLogin implements ActionListener, MouseListener {
         }
     }
     private void validarLogin(){
+        if(Regex.validarCorreo(login.usuarioTxt.getText())){
+            System.out.println("correoValido");
+        }else {
+            Notificaciones.mensajeError(login,"Correo invalido","x");
+        }
         // if false
-        Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
     }
 
     @Override
