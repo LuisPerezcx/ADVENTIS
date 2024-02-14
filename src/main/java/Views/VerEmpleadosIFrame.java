@@ -47,7 +47,7 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
         titulo = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
-        buscar = new javax.swing.JLabel();
+        buscar1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaEmpleados = new javax.swing.JTable();
 
@@ -64,13 +64,13 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
 
-        buscar.setBackground(new java.awt.Color(96, 133, 188));
-        buscar.setFont(new java.awt.Font("Axia", 3, 24)); // NOI18N
-        buscar.setForeground(new java.awt.Color(255, 255, 255));
-        buscar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        buscar.setText("Buscar");
-        buscar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        buscar.setOpaque(true);
+        buscar1.setBackground(new java.awt.Color(96, 133, 188));
+        buscar1.setFont(new java.awt.Font("Axia", 3, 24)); // NOI18N
+        buscar1.setForeground(new java.awt.Color(255, 255, 255));
+        buscar1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        buscar1.setText("Buscar");
+        buscar1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        buscar1.setOpaque(true);
 
         tablaEmpleados.setAutoCreateRowSorter(true);
         tablaEmpleados.setFont(new java.awt.Font("Axia", 0, 18)); // NOI18N
@@ -132,7 +132,7 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
                             .addComponent(txtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
                             .addComponent(jSeparator1))
                         .addGap(18, 18, 18)
-                        .addComponent(buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(buscar1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -145,7 +145,7 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
                         .addGap(64, 64, 64)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(buscar)))
+                            .addComponent(buscar1)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(95, 95, 95)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -159,15 +159,15 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JLabel buscar;
+    public javax.swing.JLabel buscar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTable tablaEmpleados;
+    public javax.swing.JTable tablaEmpleados;
     private javax.swing.JLabel titulo;
     public javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
     private void addListeners(){
         ControladorVerEmpleadosIFrame controladorVerEmpleadosIFrame = new ControladorVerEmpleadosIFrame(this);
-        buscar.addMouseListener(controladorVerEmpleadosIFrame);
+        buscar1.addMouseListener(controladorVerEmpleadosIFrame);
     }
 }
