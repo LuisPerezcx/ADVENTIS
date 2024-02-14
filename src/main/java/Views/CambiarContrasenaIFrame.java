@@ -59,7 +59,7 @@ public class CambiarContrasenaIFrame extends javax.swing.JInternalFrame {
         ocultarContrasenaConfirmar.setVisible(false);
 
         setClosable(true);
-        setTitle("Menú herramientas");
+        setTitle("Cambiar contraseña");
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Cambiar contraseña");

@@ -34,7 +34,7 @@ public class RegistroEmpleadosIFrame extends javax.swing.JInternalFrame {
         lblUsuario = new javax.swing.JLabel();
         lblContrasena = new javax.swing.JLabel();
         lblConfirmarContrasena = new javax.swing.JLabel();
-        txtUsuario = new javax.swing.JTextField();
+        nombreEmpleado = new javax.swing.JTextField();
         jSeparator4 = new javax.swing.JSeparator();
         guardar = new javax.swing.JLabel();
         txtUsuario1 = new javax.swing.JTextField();
@@ -57,9 +57,9 @@ public class RegistroEmpleadosIFrame extends javax.swing.JInternalFrame {
         lblConfirmarContrasena.setFont(new java.awt.Font("Axia", 3, 36)); // NOI18N
         lblConfirmarContrasena.setText("Apellido materno:");
 
-        txtUsuario.setBackground(new java.awt.Color(238, 238, 238));
-        txtUsuario.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
-        txtUsuario.setBorder(null);
+        nombreEmpleado.setBackground(new java.awt.Color(238, 238, 238));
+        nombreEmpleado.setFont(new java.awt.Font("Axia", 0, 36)); // NOI18N
+        nombreEmpleado.setBorder(null);
 
         jSeparator4.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
@@ -104,9 +104,8 @@ public class RegistroEmpleadosIFrame extends javax.swing.JInternalFrame {
                             .addComponent(lblUsuario))
                         .addGap(66, 66, 66)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jSeparator4)
-                                .addComponent(txtUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE))
+                            .addComponent(jSeparator4)
+                            .addComponent(nombreEmpleado, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
                             .addComponent(txtUsuario1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
                             .addComponent(jSeparator7)
                             .addComponent(txtUsuario2, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
@@ -128,7 +127,7 @@ public class RegistroEmpleadosIFrame extends javax.swing.JInternalFrame {
                                 .addGap(100, 100, 100)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(lblUsuario)
-                                    .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(nombreEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(100, 100, 100)
@@ -160,10 +159,10 @@ public class RegistroEmpleadosIFrame extends javax.swing.JInternalFrame {
     private javax.swing.JLabel lblConfirmarContrasena;
     private javax.swing.JLabel lblContrasena;
     private javax.swing.JLabel lblUsuario;
+    public javax.swing.JTextField nombreEmpleado;
     private javax.swing.JLabel titulo;
-    private javax.swing.JTextField txtUsuario;
-    private javax.swing.JTextField txtUsuario1;
-    private javax.swing.JTextField txtUsuario2;
+    public javax.swing.JTextField txtUsuario1;
+    public javax.swing.JTextField txtUsuario2;
     // End of variables declaration//GEN-END:variables
 
     private void addListeners(){

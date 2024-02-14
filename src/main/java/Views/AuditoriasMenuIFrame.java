@@ -34,7 +34,7 @@ public class AuditoriasMenuIFrame extends javax.swing.JInternalFrame {
         generarAuditorias = new javax.swing.JLabel();
 
         setClosable(true);
-        setTitle("Menú herramientas");
+        setTitle("Menú auditoria");
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Menú auditorias");

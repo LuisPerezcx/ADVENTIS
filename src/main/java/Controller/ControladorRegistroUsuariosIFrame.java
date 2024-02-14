@@ -1,5 +1,6 @@
 package Controller;
 
+import Util.Regex;
 import Views.Notificaciones;
 import Views.RegistroUsuariosIFrame;
 
@@ -37,8 +38,20 @@ public class ControladorRegistroUsuariosIFrame implements MouseListener {
             registroUsuariosIFrame.contrasenaConfirmar.setEchoChar('•');
         } else if (event == registroUsuariosIFrame.guardar) {
             registrarUsuarios();
+            validarRegistroUsuario();
         }
     }
+
+    private void validarRegistroUsuario(){
+        if(Regex.validarLetramayusculaLetraminuscula(registroUsuariosIFrame.txtUsuario.getText())){
+            System.out.println("nombreValido");
+        }else {
+            Notificaciones.mensajeError(registroUsuariosIFrame,"Nombre invalido","Nombre");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
+    }
+
 
     private void registrarUsuarios(){
         //if true
@@ -70,4 +83,6 @@ public class ControladorRegistroUsuariosIFrame implements MouseListener {
             registroUsuariosIFrame.guardar.setBorder(null);
         }
     }
+
+
 }
