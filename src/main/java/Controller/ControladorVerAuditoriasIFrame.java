@@ -1,6 +1,6 @@
 package Controller;
 
-import Views.VerAuditoriasIFrame;
+import Views.VerCatalogoAuditoriasIFrame;
 
 import javax.swing.border.BevelBorder;
 import java.awt.event.MouseEvent;
@@ -8,9 +8,9 @@ import java.awt.event.MouseListener;
 
 public class ControladorVerAuditoriasIFrame implements MouseListener {
 
-    private final VerAuditoriasIFrame verAuditoriasIFrame;
+    private final VerCatalogoAuditoriasIFrame verAuditoriasIFrame;
 
-    public ControladorVerAuditoriasIFrame(VerAuditoriasIFrame verAuditoriasIFrame){
+    public ControladorVerAuditoriasIFrame(VerCatalogoAuditoriasIFrame verAuditoriasIFrame){
         this.verAuditoriasIFrame = verAuditoriasIFrame;
     }
 

@@ -51,7 +51,7 @@ public class ControladorPanelAcciones implements MouseListener {
             switch (iFrameTitulo){
                 case "Solicitudes de herramientas"->
                     abrirSolicitudHerramienta();
-                case "Ver auditoria" ->
+                case "Catalogo auditorias" ->
                     verAuditoriaGenerada();
             }
         } else if (event == panelAcciones.agregarBtnTable) {

@@ -163,7 +163,7 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="verAuditoriasItem">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Ver auditorias"/>
+                <Property name="text" type="java.lang.String" value="Ver catalogo de auditorias"/>
               </Properties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
