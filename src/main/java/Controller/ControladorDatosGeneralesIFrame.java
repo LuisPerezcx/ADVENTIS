@@ -2,6 +2,7 @@ package Controller;
 
 import Util.CreacionIFrames;
 import Views.DatosGeneralesIFrame;
+import Views.Notificaciones;
 import Views.VentanaPrincipal;
 
 import javax.swing.border.BevelBorder;
@@ -25,7 +26,6 @@ public class ControladorDatosGeneralesIFrame implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         Object event = e.getSource();
-
         if (event == datosGeneralesIFrame.btnSiguiente){
             ventanaPrincipal.dibujarVista(crearCatalogoIFrame);
         }

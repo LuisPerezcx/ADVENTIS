@@ -65,7 +65,7 @@ public class CrearCatalogoIFrame extends javax.swing.JInternalFrame {
         btnAceptar = new javax.swing.JLabel();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Crear auditoria");
 
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
@@ -200,7 +200,7 @@ public class CrearCatalogoIFrame extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JLabel btnAceptar;
-    private javax.swing.JLabel btnAgregar;
+    public javax.swing.JLabel btnAgregar;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

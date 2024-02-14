@@ -38,7 +38,7 @@ public class VistaReporteIFrame extends javax.swing.JInternalFrame {
         tblListaAuditorias = new javax.swing.JTable();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Reportes");
 
         lblTituloRevision.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         lblTituloRevision.setText("Reportes");
