@@ -13,8 +13,8 @@ public class Regex {
         matcher = pattern.matcher(validar);
         return matcher.matches();
     }
-    public static boolean validarNombre(String validar){
-        regex = "expresion regular para nombres";
+    public static boolean validarNombreCompleto(String validar){
+        regex = "^[A-Z][a-z]+(?: [A-Z][a-z]+)+$";
         pattern = Pattern.compile(regex);
         matcher = pattern.matcher(validar);
         return matcher.matches();

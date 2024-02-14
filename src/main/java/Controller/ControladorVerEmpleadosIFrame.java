@@ -1,5 +1,7 @@
 package Controller;
 
+import Util.Regex;
+import Views.Notificaciones;
 import Views.VerEmpleadosIFrame;
 
 import javax.swing.border.BevelBorder;
@@ -15,7 +17,20 @@ public class ControladorVerEmpleadosIFrame implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
+        Object event = e.getSource();
+        if (event == verEmpleadosIFrame.buscar){
+            validarBusqueda();
+        }
+    }
 
+    private void validarBusqueda(){
+        if(Regex.validarNombreCompleto(verEmpleadosIFrame.txtNombre.getText())){
+            System.out.println("Busqueda exitosa");
+        }else {
+            Notificaciones.mensajeError(verEmpleadosIFrame,"No se puede realizar la busqueda, verifique sus datos","Error al intentar buscar");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
     }
 
     @Override
