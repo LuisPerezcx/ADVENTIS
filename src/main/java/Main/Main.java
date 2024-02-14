@@ -13,10 +13,5 @@ public class Main {
     public static void main(String[] args) {
        new Login();
        new VentanaPrincipal();
-<<<<<<< HEAD
-=======
-        //ConexionBD conexionBD = new ConexionBD();
-        //conexionBD.conectar();
->>>>>>> b0385d96f370d5556c76b1215258000bfc118770
     }
 }
