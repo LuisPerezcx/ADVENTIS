@@ -14,7 +14,7 @@ public class Regex {
         return matcher.matches();
     }
     public static boolean validarLetramayusculaLetraminuscula(String validar){
-        regex = "^[A-Z][a-záéíóúüñ\\s'-]+$";
+        regex = "^[A-Za-zÁÉÍÓÚáéíóúÜüÑñ\\s'-]+ [A-Za-zÁÉÍÓÚáéíóúÜüÑñ\\s'-]+$";
         pattern = Pattern.compile(regex);
         matcher = pattern.matcher(validar);
         return matcher.matches();
