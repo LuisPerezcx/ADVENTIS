@@ -25,8 +25,8 @@ public class CrearCatalogoIFrame extends javax.swing.JInternalFrame {
 
 
     private void tablaEstilo(){
-        TableActionCellRender tableActionCellRender = new TableActionCellRender();
-        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor();
+        TableActionCellRender tableActionCellRender = new TableActionCellRender(tblAuditorias);
+        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(tblAuditorias);
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);
