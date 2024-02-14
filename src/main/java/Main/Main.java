@@ -4,6 +4,7 @@
 
 package Main;
 
+import DAO.ConexionBD;
 import Views.Login;
 import Views.VentanaPrincipal;
 
@@ -16,5 +17,7 @@ public class Main {
     public static void main(String[] args) {
        new Login();
        new VentanaPrincipal();
+        ConexionBD conexionBD = new ConexionBD();
+        conexionBD.conectar();
     }
 }
