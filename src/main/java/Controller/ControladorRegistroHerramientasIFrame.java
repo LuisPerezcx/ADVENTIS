@@ -1,5 +1,7 @@
 package Controller;
 
+import Arreglos.Arreglos;
+import DAO.UbicacionesDAO;
 import Util.Regex;
 import Views.Notificaciones;
 import Views.RegistroHerramientasIFrame;
@@ -11,12 +13,20 @@ import java.awt.event.MouseListener;
 public class ControladorRegistroHerramientasIFrame implements MouseListener {
 
     private final RegistroHerramientasIFrame registroHerramientasIFrame;
+    UbicacionesDAO ubicacionesDAO = new UbicacionesDAO();
 
     public ControladorRegistroHerramientasIFrame(RegistroHerramientasIFrame registroHerramientasIFrame) {
         this.registroHerramientasIFrame = registroHerramientasIFrame;
+        llenarCombo();
     }
 
-
+    private void llenarCombo(){
+        registroHerramientasIFrame.comboUbicacion.removeAllItems();
+        ubicacionesDAO.obtenerUbicaciones();
+        for (String item : Arreglos.ubicacionArray){
+            registroHerramientasIFrame.comboUbicacion.addItem(item);
+        }
+    }
     @Override
     public void mouseClicked(MouseEvent e) {
         Object event = e.getSource();
