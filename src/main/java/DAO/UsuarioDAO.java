@@ -1,9 +1,12 @@
 package DAO;
 
+import Model.Empleado;
 import Model.Usuario;
 import org.w3c.dom.ls.LSOutput;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class UsuarioDAO extends ConexionBD implements OperacionesBD<Usuario> {
 
@@ -91,6 +94,32 @@ public class UsuarioDAO extends ConexionBD implements OperacionesBD<Usuario> {
     @Override
     public Boolean selectByName(String name) {
         return null;
+    }
+
+    public ArrayList<Usuario> getAllUsuarios() {
+        ArrayList<Usuario> usuarios = new ArrayList<>();
+
+        try {
+            String query = "SELECT * FROM " + tabla;
+            ResultSet resultSet = executeQuery(query);
+
+            while (resultSet.next()) {
+                String email = resultSet.getString("email");
+                String contrasena = resultSet.getString("Contrasenia");
+                int tipoUsuario = Integer.parseInt(resultSet.getString("idTipoUsuario"));
+                int empleado = Integer.parseInt(resultSet.getString("idEmpleado"));
+
+                Usuario usuario = new Usuario(email,contrasena,tipoUsuario,empleado);
+                usuarios.add(usuario);
+            }
+
+            resultSet.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            // Manejar la excepción según tus necesidades
+        }
+
+        return usuarios;
     }
 
     @Override
