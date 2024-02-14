@@ -14,6 +14,8 @@ public class ControladorRegistroUsuariosIFrame implements MouseListener {
         this.registroUsuariosIFrame = registroUsuariosIFrame;
     }
 
+
+
     @Override
     public void mouseClicked(MouseEvent e) {
         Object event = e.getSource();
