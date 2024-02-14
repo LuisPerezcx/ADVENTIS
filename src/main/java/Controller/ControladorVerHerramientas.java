@@ -1,5 +1,7 @@
 package Controller;
 
+import Util.Regex;
+import Views.Notificaciones;
 import Views.VerHerramientasIFrame;
 
 import javax.swing.border.BevelBorder;
@@ -15,7 +17,20 @@ public class ControladorVerHerramientas implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
+        Object event = e.getSource();
+        if(event == verHerramientasIFrame.buscar){
+            validaNombre();
+        }
+    }
 
+    private void validaNombre(){
+        if(Regex.validaHerramientas(verHerramientasIFrame.buscar.getText())){
+            System.out.println("nombreValido");
+        }else {
+            Notificaciones.mensajeError(verHerramientasIFrame,"Nombre invalido","Error en la verificacion del nombre");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
     }
 
     @Override
