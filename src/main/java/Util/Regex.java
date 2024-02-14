@@ -20,14 +20,8 @@ public class Regex {
         return matcher.matches();
     }
 
-    public static boolean validarApellidoPaterno(String validar){
-        regex = "^[A-Z][a-záéíóúüñ\\s'-]+$";
-        pattern = Pattern.compile(regex);
-        matcher = pattern.matcher(validar);
-        return matcher.matches();
-    }
-    public static boolean validarApellidoMaterno(String validar){
-        regex = "^[A-Z][a-záéíóúüñ\\s'-]+$";
+    public static boolean validarNombreCompleto(String validar){
+        regex = "^[A-Z][a-z]+(?: [A-Z][a-z]+)+$";
         pattern = Pattern.compile(regex);
         matcher = pattern.matcher(validar);
         return matcher.matches();
