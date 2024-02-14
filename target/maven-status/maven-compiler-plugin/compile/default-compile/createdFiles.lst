@@ -1,2 +1,4 @@
 Views\DatosGeneralesIFrame$1.class
 Views\DatosGeneralesIFrame.class
+DAO\OperacionesBD.class
+Model\WICHO.class
