@@ -1,23 +1,36 @@
 package Controller;
 
+import Arreglos.Arreglos;
+import DAO.UbicacionesDAO;
 import Util.Regex;
 import Views.Notificaciones;
 import DAO.CamarasDAO;
 import Views.RegistroCamarasDigitalesIFrame;
 
+import javax.swing.*;
 import javax.swing.border.BevelBorder;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.lang.reflect.Array;
 
 public class ControladorRegistroCamarasDigitalesIFrame implements MouseListener {
 
     private final RegistroCamarasDigitalesIFrame registroCamarasDigitalesIFrame;
     CamarasDAO camarasDAO = new CamarasDAO();
+    UbicacionesDAO ubicacionesDAO = new UbicacionesDAO();
 
     public ControladorRegistroCamarasDigitalesIFrame(RegistroCamarasDigitalesIFrame registroCamarasDigitalesIFrame1){
         this.registroCamarasDigitalesIFrame = registroCamarasDigitalesIFrame1;
+        llenarCombo();
     }
-    public void AgregarCamara(){
+    private void llenarCombo(){
+        registroCamarasDigitalesIFrame.comboUbicacion.removeAllItems();
+        ubicacionesDAO.obtenerUbicaciones();
+        for (String item : Arreglos.ubicacionArray){
+            registroCamarasDigitalesIFrame.comboUbicacion.addItem(item);
+        }
+    }
+    private void AgregarCamara(){
 
     }
 
