@@ -4,6 +4,8 @@
  */
 package Views.celdaAcciones;
 
+import Views.VentanaPrincipal;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
 import java.awt.*;
@@ -15,8 +17,8 @@ import java.awt.*;
 public class TableActionCellRender extends DefaultTableCellRenderer {
     public PanelAcciones panelAcciones;
 
-    public TableActionCellRender(JTable table) {
-        panelAcciones = new PanelAcciones(table);
+    public TableActionCellRender(VentanaPrincipal ventanaPrincipal, JTable table) {
+        panelAcciones = new PanelAcciones(ventanaPrincipal,table);
     }
 
     @Override

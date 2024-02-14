@@ -1,13 +1,15 @@
 package Views.celdaAcciones;
 
+import Views.VentanaPrincipal;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class TableAccionCellEditor extends DefaultCellEditor {
     public PanelAcciones panelAcciones;
-    public TableAccionCellEditor(JTable table) {
+    public TableAccionCellEditor(VentanaPrincipal ventanaPrincipal, JTable table) {
         super(new JCheckBox());
-        panelAcciones = new PanelAcciones(table);
+        panelAcciones = new PanelAcciones(ventanaPrincipal, table);
     }
 
     @Override

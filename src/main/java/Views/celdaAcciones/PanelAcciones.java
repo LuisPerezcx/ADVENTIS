@@ -5,6 +5,7 @@
 package Views.celdaAcciones;
 
 import Controller.ControladorPanelAcciones;
+import Views.VentanaPrincipal;
 import Views.VerEmpleadosIFrame;
 
 import javax.swing.*;
@@ -14,11 +15,9 @@ import javax.swing.*;
  * @author david
  */
 public class PanelAcciones extends javax.swing.JPanel {
-    private final JTable tablaAccion;
-    public PanelAcciones(JTable table) {
-        this.tablaAccion = table;
+    public PanelAcciones(VentanaPrincipal ventanaPrincipal, JTable table) {
         initComponents();
-        addListeners(table);
+        addListeners(ventanaPrincipal,table);
     }
 
     /**
@@ -93,8 +92,8 @@ public class PanelAcciones extends javax.swing.JPanel {
     public Views.celdaAcciones.ActionButton pdfBtnTable;
     // End of variables declaration//GEN-END:variables
 
-    private void addListeners(JTable a){
-        ControladorPanelAcciones controladorPanelAcciones = new ControladorPanelAcciones(this,a);
+    private void addListeners(VentanaPrincipal ventanaPrincipal,JTable a){
+        ControladorPanelAcciones controladorPanelAcciones = new ControladorPanelAcciones(ventanaPrincipal,this,a);
         abrirBtnTable.addMouseListener(controladorPanelAcciones);
         editarBtnTable1.addMouseListener(controladorPanelAcciones);
         eliminarBtnTable.addMouseListener(controladorPanelAcciones);

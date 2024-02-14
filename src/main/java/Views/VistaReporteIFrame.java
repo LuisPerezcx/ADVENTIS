@@ -99,8 +99,8 @@ public class VistaReporteIFrame extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void tablaEstilo(){
-        TableActionCellRender tableActionCellRender = new TableActionCellRender(tblListaAuditorias);
-        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(tblListaAuditorias);
+        TableActionCellRender tableActionCellRender = new TableActionCellRender(ventanaPrincipal,tblListaAuditorias);
+        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(ventanaPrincipal,tblListaAuditorias);
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);
