@@ -19,13 +19,13 @@ public class ControladorRegistroComponentesIFrame implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        Object event = e.getSource();
-        if(event == registroComponentesIFrame.btnBuscar){
-            validaNombre();
-            validaFabricante();
-            validaDescripcion();
-            validaBusqueda();
-        }
+//        Object event = e.getSource();
+//        if(event == registroComponentesIFrame.btnBuscar){
+//            validaNombre();
+//            validaFabricante();
+//            validaDescripcion();
+//            validaBusqueda();
+//        }
     }
 
     private void validaNombre(){
