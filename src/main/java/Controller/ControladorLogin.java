@@ -26,8 +26,9 @@ public class ControladorLogin implements ActionListener, MouseListener {
     private void validarLogin(){
         if(Regex.validarCorreo(login.usuarioTxt.getText())){
             System.out.println("correoValido");
-        }else {
-            Notificaciones.mensajeError(login,"Correo invalido","Eror");
+        }
+        else {
+            Notificaciones.mensajeError(login,"Correo invalido","x");
         }
         // if false
         //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
@@ -37,7 +38,6 @@ public class ControladorLogin implements ActionListener, MouseListener {
     public void mouseClicked(MouseEvent e) {
 
     }
-
     @Override
     public void mousePressed(MouseEvent e) {
         Object event = e.getSource();
