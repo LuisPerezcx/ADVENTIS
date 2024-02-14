@@ -42,7 +42,7 @@ public class Regex {
     }
 
     public static boolean validarLetrasNumeros(String validar){
-        regex = "^([A-Za-z]+)\\s*([0-9]+)$";
+        regex = "^[A-Za-z0-9\\s]+$";
         pattern = Pattern.compile(regex);
         matcher = pattern.matcher(validar);
         return  matcher.matches();
