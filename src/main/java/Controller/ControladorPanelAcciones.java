@@ -23,15 +23,101 @@ public class ControladorPanelAcciones implements MouseListener {
         Object event = e.getSource();
         if (event == panelAcciones.editarBtnTable1){
             switch (iFrameTitulo){
-                case "Ver empleados"-> System.out.println("editar accion  desde ver empleados");
+                case "Ver empleados"->
+                        editarEmpleado();
+                case "Ver usuarios"->
+                    editarUsuario();
+                case "Ver herramientas"->
+                    editarHerramientas();
+                case "Solicitudes de herramientas"->
+                    editarSolicitudHerramienta();
+                case "Solicitar herramienta"->
+                    editarSolicitarHerramienta();
             }
         } else if (event == panelAcciones.eliminarBtnTable) {
             switch (iFrameTitulo){
-                case "Ver empleados"-> System.out.println("eliminar accion  desde ver empleados");
+                case "Ver empleados"->
+                        eliminarEmpleado();
+                case "Ver usuarios"->
+                    eliminarUsuario();
+                case "Ver herramientas"->
+                    eliminarHerramientas();
+            }
+        } else if (event == panelAcciones.abrirBtnTable) {
+            switch (iFrameTitulo){
+                case "Solicitudes de herramientas"->
+                    abrirSolicitudHerramienta();
+            }
+        } else if (event == panelAcciones.agregarBtnTable) {
+            switch (iFrameTitulo){
+                case "Solicitar herramienta"->
+                    agregarSolicitarHerramienta();
+            }
+        } else if (event == panelAcciones.pdfBtnTable) {
+            switch (iFrameTitulo){
+                case "Reportes"->
+                    pdfReportes();
+            }
+        } else if (event == panelAcciones.excelBtnTable) {
+            switch (iFrameTitulo){
+                case "Reportes"->
+                   excelReportes();
             }
         }
     }
 
+    // -------Ver empleados
+
+    public void editarEmpleado(){
+
+    }
+    public void eliminarEmpleado(){
+
+    }
+
+
+    // -------Ver usuarios
+    public void editarUsuario(){
+
+    }
+    public void eliminarUsuario(){
+
+    }
+
+
+    // -------Ver herramientas
+    public void editarHerramientas(){
+
+    }
+    public void eliminarHerramientas(){
+
+    }
+
+
+    // -------Solicitudes de herramientas
+    public void  editarSolicitudHerramienta(){
+
+    }
+    public void   abrirSolicitudHerramienta(){
+
+    }
+
+
+    // -------Solicitar herramienta
+    public void editarSolicitarHerramienta(){
+
+    }
+    public void agregarSolicitarHerramienta(){
+
+    }
+
+    // ------- Reportes
+    public void pdfReportes(){
+
+    }
+    public void excelReportes(){
+
+    }
     @Override
     public void mousePressed(MouseEvent e) {
 

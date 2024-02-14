@@ -98,5 +98,8 @@ public class PanelAcciones extends javax.swing.JPanel {
         abrirBtnTable.addMouseListener(controladorPanelAcciones);
         editarBtnTable1.addMouseListener(controladorPanelAcciones);
         eliminarBtnTable.addMouseListener(controladorPanelAcciones);
+        agregarBtnTable.addMouseListener(controladorPanelAcciones);
+        excelBtnTable.addMouseListener(controladorPanelAcciones);
+        pdfBtnTable.addMouseListener(controladorPanelAcciones);
     }
 }
