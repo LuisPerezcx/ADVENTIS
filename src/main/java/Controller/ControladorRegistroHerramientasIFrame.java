@@ -42,14 +42,14 @@ public class ControladorRegistroHerramientasIFrame implements MouseListener {
     }
 
     private void validarHerramientas(){
-        /*if(Regex.validarSoloLetras(registroHerramientasIFrame.txtNombre.getText())){
+        if(Regex.validaHerramientas(registroHerramientasIFrame.txtNombre.getText())){
             System.out.println("Nombre Herramienta Valido");
         }else {
             Notificaciones.mensajeError(registroHerramientasIFrame,"Nombre de la herramienta invalida","Error al validar Herramienta");
         }
         // if false
         //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
-    */
+
     }
 
     private void validarNumeroSerie(){

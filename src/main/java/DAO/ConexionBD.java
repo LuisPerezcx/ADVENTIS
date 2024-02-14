@@ -18,8 +18,8 @@ public class ConexionBD {
             // Database connect
             // Conectamos con la base de datos
             conn = DriverManager.getConnection(
-                    "jdbc:postgresql://localhost:5433/AdventisBD",
-                    "Yenisleydi", "Miyos.19*");
+                    "jdbc:postgresql://localhost:5432/ADVENTIS",
+                    "luisperez", "Davidpg12?");
 
             boolean valid = conn	.isValid(50000);
             System.out.println(valid ? "TEST OK" : "TEST FAIL");
