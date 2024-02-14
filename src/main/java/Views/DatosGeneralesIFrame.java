@@ -61,7 +61,7 @@ public class DatosGeneralesIFrame extends javax.swing.JInternalFrame {
         btnAgregar = new javax.swing.JLabel();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Agregar datos generales ");
         setPreferredSize(new java.awt.Dimension(1194, 903));
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);

@@ -65,7 +65,7 @@ public class CrearCatalogoIFrame extends javax.swing.JInternalFrame {
         btnAceptar = new javax.swing.JLabel();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Crear auditoria");
 
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
