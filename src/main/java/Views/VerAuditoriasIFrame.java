@@ -25,8 +25,8 @@ public class VerAuditoriasIFrame extends javax.swing.JInternalFrame {
 
 
     private void tablaEstilo(){
-        TableActionCellRender tableActionCellRender = new TableActionCellRender();
-        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor();
+        TableActionCellRender tableActionCellRender = new TableActionCellRender(tblAuditorias);
+        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(tblAuditorias);
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.eliminarBtnTable.setVisible(false);
@@ -147,6 +147,5 @@ public class VerAuditoriasIFrame extends javax.swing.JInternalFrame {
   private void addListeners(){
       ControladorVerAuditoriasIFrame controladorVerAuditoriasIFrame = new ControladorVerAuditoriasIFrame(this);
       btnBuscar.addMouseListener(controladorVerAuditoriasIFrame);
-      
   }
 }

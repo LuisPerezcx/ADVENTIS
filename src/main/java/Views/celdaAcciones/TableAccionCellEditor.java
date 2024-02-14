@@ -5,10 +5,9 @@ import java.awt.*;
 
 public class TableAccionCellEditor extends DefaultCellEditor {
     public PanelAcciones panelAcciones;
-
-    public TableAccionCellEditor() {
+    public TableAccionCellEditor(JTable table) {
         super(new JCheckBox());
-        panelAcciones = new PanelAcciones();
+        panelAcciones = new PanelAcciones(table);
     }
 
     @Override

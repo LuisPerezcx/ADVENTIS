@@ -4,17 +4,21 @@
  */
 package Views.celdaAcciones;
 
+import Controller.ControladorPanelAcciones;
+import Views.VerEmpleadosIFrame;
+
+import javax.swing.*;
+
 /**
  *
  * @author david
  */
 public class PanelAcciones extends javax.swing.JPanel {
-
-    /**
-     * Creates new form panelAcciones
-     */
-    public PanelAcciones() {
+    private final JTable tablaAccion;
+    public PanelAcciones(JTable table) {
+        this.tablaAccion = table;
         initComponents();
+        addListeners(table);
     }
 
     /**
@@ -88,4 +92,11 @@ public class PanelAcciones extends javax.swing.JPanel {
     public Views.celdaAcciones.ActionButton excelBtnTable;
     public Views.celdaAcciones.ActionButton pdfBtnTable;
     // End of variables declaration//GEN-END:variables
+
+    private void addListeners(JTable a){
+        ControladorPanelAcciones controladorPanelAcciones = new ControladorPanelAcciones(this,a);
+        abrirBtnTable.addMouseListener(controladorPanelAcciones);
+        editarBtnTable1.addMouseListener(controladorPanelAcciones);
+        eliminarBtnTable.addMouseListener(controladorPanelAcciones);
+    }
 }

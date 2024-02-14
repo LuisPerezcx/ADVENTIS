@@ -15,8 +15,8 @@ import java.awt.*;
 public class TableActionCellRender extends DefaultTableCellRenderer {
     public PanelAcciones panelAcciones;
 
-    public TableActionCellRender() {
-        panelAcciones = new PanelAcciones();
+    public TableActionCellRender(JTable table) {
+        panelAcciones = new PanelAcciones(table);
     }
 
     @Override
