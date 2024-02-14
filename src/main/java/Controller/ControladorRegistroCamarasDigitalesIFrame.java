@@ -1,5 +1,6 @@
 package Controller;
 
+import DAO.CamarasDAO;
 import Views.RegistroCamarasDigitalesIFrame;
 
 import javax.swing.border.BevelBorder;
@@ -9,9 +10,13 @@ import java.awt.event.MouseListener;
 public class ControladorRegistroCamarasDigitalesIFrame implements MouseListener {
 
     private final RegistroCamarasDigitalesIFrame registroCamarasDigitalesIFrame;
+    CamarasDAO camarasDAO = new CamarasDAO();
 
     public ControladorRegistroCamarasDigitalesIFrame(RegistroCamarasDigitalesIFrame registroCamarasDigitalesIFrame1){
         this.registroCamarasDigitalesIFrame = registroCamarasDigitalesIFrame1;
+    }
+    public void AgregarCamara(){
+
     }
 
     @Override
