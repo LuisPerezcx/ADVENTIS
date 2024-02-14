@@ -59,7 +59,7 @@ public class VerAuditoriasIFrame extends javax.swing.JInternalFrame {
         jSeparator1 = new javax.swing.JSeparator();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Ver auditoria");
 
         lblTituloAuditorias.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         lblTituloAuditorias.setText("Ver auditorias");
