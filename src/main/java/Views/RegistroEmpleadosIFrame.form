@@ -39,10 +39,8 @@
                       </Group>
                       <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jSeparator4" max="32767" attributes="0"/>
-                              <Component id="txtUsuario" pref="400" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="jSeparator4" max="32767" attributes="0"/>
+                          <Component id="nombreEmpleado" pref="400" max="32767" attributes="0"/>
                           <Component id="txtUsuario1" alignment="0" pref="400" max="32767" attributes="0"/>
                           <Component id="jSeparator7" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtUsuario2" alignment="0" pref="400" max="32767" attributes="0"/>
@@ -70,7 +68,7 @@
                               <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="lblUsuario" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtUsuario" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nombreEmpleado" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jSeparator4" min="-2" pref="10" max="-2" attributes="0"/>
@@ -132,7 +130,7 @@
         <Property name="text" type="java.lang.String" value="Apellido materno:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtUsuario">
+    <Component class="javax.swing.JTextField" name="nombreEmpleado">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ee" green="ee" red="ee" type="rgb"/>
@@ -144,6 +142,9 @@
           <Border info="null"/>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator4">
       <Properties>
@@ -189,6 +190,9 @@
           <Border info="null"/>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="txtUsuario2">
       <Properties>
@@ -202,6 +206,9 @@
           <Border info="null"/>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator7">
       <Properties>
