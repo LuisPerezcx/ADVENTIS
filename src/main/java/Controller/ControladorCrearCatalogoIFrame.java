@@ -8,6 +8,9 @@ import javax.swing.border.BevelBorder;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+import static Util.CreacionIFrames.crearCatalogoIFrame;
+import static Util.CreacionIFrames.registroHerramientasIFrame;
+
 public class ControladorCrearCatalogoIFrame implements MouseListener {
 
     private final CrearCatalogoIFrame crearCatalogoIFrame;
@@ -24,7 +27,9 @@ public class ControladorCrearCatalogoIFrame implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         Object event = e.getSource();
-         if (event == crearCatalogoIFrame.btnAgregar) {
+        if (event == crearCatalogoIFrame.btnAgregar){
+            Notificaciones.mensajeOK(crearCatalogoIFrame,"Registro exitoso","Dato registrado");
+        }else if (event == crearCatalogoIFrame.btnAgregar) {
             Notificaciones.mensajeOK(crearCatalogoIFrame,"Registro exitoso","Dato guardado");
         }
     }
