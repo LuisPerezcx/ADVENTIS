@@ -58,7 +58,7 @@ public class RegistroComputadoras extends javax.swing.JInternalFrame {
         guardar = new javax.swing.JLabel();
 
         setClosable(true);
-        setTitle("Registrar computadoras portatiles");
+        setTitle("Registrar computadoras");
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Registro de computadoras");

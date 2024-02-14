@@ -25,8 +25,8 @@ public class CrearCatalogoIFrame extends javax.swing.JInternalFrame {
 
 
     private void tablaEstilo(){
-        TableActionCellRender tableActionCellRender = new TableActionCellRender();
-        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor();
+        TableActionCellRender tableActionCellRender = new TableActionCellRender(tblAuditorias);
+        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(tblAuditorias);
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);
@@ -65,7 +65,7 @@ public class CrearCatalogoIFrame extends javax.swing.JInternalFrame {
         btnAceptar = new javax.swing.JLabel();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Crear auditoria");
 
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 

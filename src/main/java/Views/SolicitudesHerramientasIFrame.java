@@ -22,8 +22,8 @@ public class SolicitudesHerramientasIFrame extends javax.swing.JInternalFrame {
     }
 
     private void tablaEstilo(){
-        TableActionCellRender tableActionCellRender = new TableActionCellRender();
-        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor();
+        TableActionCellRender tableActionCellRender = new TableActionCellRender(tablaHerramientas);
+        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(tablaHerramientas);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.eliminarBtnTable.setVisible(false);
@@ -56,7 +56,7 @@ public class SolicitudesHerramientasIFrame extends javax.swing.JInternalFrame {
         buscar = new javax.swing.JLabel();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Solicitudes de herramientas ");
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Solicitudes de herramientas");

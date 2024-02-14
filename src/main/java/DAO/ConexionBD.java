@@ -18,7 +18,7 @@ public class ConexionBD {
             // Database connect
             // Conectamos con la base de datos
             conn = DriverManager.getConnection(
-                    "jdbc:postgresql://localhost:5432/AdventisBD",
+                    "jdbc:postgresql://localhost:5432/ADVENTIS",
                     "luisperez", "Davidpg12?");
 
             boolean valid = conn	.isValid(50000);
@@ -37,7 +37,7 @@ public class ConexionBD {
         }
     }
 
-    public boolean insertTabla(String tabla, String columna, String valor) throws SQLException {
+    public boolean insertTabla(String tabla, StringBuilder columna, StringBuilder valor) throws SQLException {
         boolean flag = true;
         conectar();
         try {

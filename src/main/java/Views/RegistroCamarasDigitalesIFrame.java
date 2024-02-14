@@ -54,7 +54,7 @@ public class RegistroCamarasDigitalesIFrame extends javax.swing.JInternalFrame {
         comboUbicacion = new javax.swing.JComboBox<>();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Registro de camaras digitales ");
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Registro de camaras digitales");

@@ -38,7 +38,8 @@ public class ReportesMenuIFrame extends javax.swing.JInternalFrame {
         verReportes = new javax.swing.JLabel();
 
         setClosable(true);
-        setTitle("Menú herramientas");
+        setTitle("Menú reporte ");
+        setToolTipText("");
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Menú reportes");

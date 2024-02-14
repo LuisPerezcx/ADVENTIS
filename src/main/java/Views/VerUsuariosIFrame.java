@@ -22,8 +22,8 @@ public class VerUsuariosIFrame extends javax.swing.JInternalFrame {
     }
 
     private void tablaEstilo(){
-        TableActionCellRender tableActionCellRender = new TableActionCellRender();
-        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor();
+        TableActionCellRender tableActionCellRender = new TableActionCellRender(tablaEmpleados);
+        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(tablaEmpleados);
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);
@@ -54,7 +54,7 @@ public class VerUsuariosIFrame extends javax.swing.JInternalFrame {
         tablaEmpleados = new javax.swing.JTable();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Ver usuarios");
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Ver usuarios");

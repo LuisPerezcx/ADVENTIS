@@ -65,7 +65,7 @@ public class RegistroHerramientasIFrame extends javax.swing.JInternalFrame {
         scrollPaneDescripcion.setPreferredSize(new Dimension(150,50));
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Registro de herramientas");
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Registro de herramientas");
