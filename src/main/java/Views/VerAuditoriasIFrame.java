@@ -131,6 +131,8 @@ public class VerAuditoriasIFrame extends javax.swing.JInternalFrame {
                 .addContainerGap(261, Short.MAX_VALUE))
         );
 
+        getAccessibleContext().setAccessibleName("Ver auditorias");
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 

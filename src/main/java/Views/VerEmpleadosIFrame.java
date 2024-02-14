@@ -54,7 +54,7 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
         tablaEmpleados = new javax.swing.JTable();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Ver empleado");
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Ver empleados");

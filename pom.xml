@@ -25,7 +25,7 @@
         </dependency>
         <dependency>
             <groupId>postgres</groupId>
-            <artifactId>postgresql</artifactId>
+            <artifactId>posrtgresql</artifactId>
             <version>42.7.0</version>
         </dependency>
     </dependencies>

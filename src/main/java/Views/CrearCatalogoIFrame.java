@@ -65,7 +65,7 @@ public class CrearCatalogoIFrame extends javax.swing.JInternalFrame {
         btnAceptar = new javax.swing.JLabel();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Crear auditorias");
 
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
@@ -95,6 +95,7 @@ public class CrearCatalogoIFrame extends javax.swing.JInternalFrame {
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
 
         btnAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_add_25px.png"))); // NOI18N
+        btnAgregar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         tblAuditorias.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

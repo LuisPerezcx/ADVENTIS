@@ -40,7 +40,7 @@ public class PerfilMenuIFrame extends javax.swing.JInternalFrame {
         cambiarContrasena = new javax.swing.JLabel();
 
         setClosable(true);
-        setTitle("Menú herramientas");
+        setTitle("Mi perfil");
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Mi perfil");

@@ -56,7 +56,7 @@ public class SolicitarHerramientasIFrame extends javax.swing.JInternalFrame {
         buscar = new javax.swing.JLabel();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Solicitar herramienta");
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Solicitar herramientas");

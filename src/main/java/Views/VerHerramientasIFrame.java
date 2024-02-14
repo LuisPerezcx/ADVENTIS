@@ -53,7 +53,8 @@ public class VerHerramientasIFrame extends javax.swing.JInternalFrame {
         buscar = new javax.swing.JLabel();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Ver herramientas");
+        setName(""); // NOI18N
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Ver herramientas");
@@ -176,6 +177,8 @@ public class VerHerramientasIFrame extends javax.swing.JInternalFrame {
                     .addComponent(buscar)
                     .addContainerGap(685, Short.MAX_VALUE)))
         );
+
+        getAccessibleContext().setAccessibleName("Ver herramientas");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
