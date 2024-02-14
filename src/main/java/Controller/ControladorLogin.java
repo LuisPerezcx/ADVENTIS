@@ -27,7 +27,7 @@ public class ControladorLogin implements ActionListener, MouseListener {
         if(Regex.validarCorreo(login.usuarioTxt.getText())){
             System.out.println("correoValido");
         }else {
-            Notificaciones.mensajeError(login,"Correo invalido","x");
+            Notificaciones.mensajeError(login,"Correo invalido","Eror");
         }
         // if false
         //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");

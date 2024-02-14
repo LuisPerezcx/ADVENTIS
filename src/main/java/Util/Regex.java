@@ -14,7 +14,20 @@ public class Regex {
         return matcher.matches();
     }
     public static boolean validarNombre(String validar){
-        regex = "expresion regular para nombres";
+        regex = "^[A-Z][a-záéíóúüñ\\s'-]+$";
+        pattern = Pattern.compile(regex);
+        matcher = pattern.matcher(validar);
+        return matcher.matches();
+    }
+
+    public static boolean validarApellidoPaterno(String validar){
+        regex = "^[A-Z][a-záéíóúüñ\\s'-]+$";
+        pattern = Pattern.compile(regex);
+        matcher = pattern.matcher(validar);
+        return matcher.matches();
+    }
+    public static boolean validarApellidoMaterno(String validar){
+        regex = "^[A-Z][a-záéíóúüñ\\s'-]+$";
         pattern = Pattern.compile(regex);
         matcher = pattern.matcher(validar);
         return matcher.matches();

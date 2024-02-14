@@ -1,9 +1,12 @@
 package Controller;
 
+import Util.Regex;
 import Views.Notificaciones;
 import Views.RegistroUsuariosIFrame;
 
 import javax.swing.border.BevelBorder;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -13,6 +16,8 @@ public class ControladorRegistroUsuariosIFrame implements MouseListener {
     public ControladorRegistroUsuariosIFrame(RegistroUsuariosIFrame registroUsuariosIFrame) {
         this.registroUsuariosIFrame = registroUsuariosIFrame;
     }
+
+
 
     @Override
     public void mouseClicked(MouseEvent e) {
@@ -35,8 +40,20 @@ public class ControladorRegistroUsuariosIFrame implements MouseListener {
             registroUsuariosIFrame.contrasenaConfirmar.setEchoChar('•');
         } else if (event == registroUsuariosIFrame.guardar) {
             registrarUsuarios();
+            validarRegistroUsuario();
         }
     }
+
+    private void validarRegistroUsuario(){
+        if(Regex.validarNombre(registroUsuariosIFrame.txtUsuario.getText())){
+            System.out.println("nombreValido");
+        }else {
+            Notificaciones.mensajeError(registroUsuariosIFrame,"Nombre invalido","Nombre");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
+    }
+
 
     private void registrarUsuarios(){
         //if true
@@ -68,4 +85,6 @@ public class ControladorRegistroUsuariosIFrame implements MouseListener {
             registroUsuariosIFrame.guardar.setBorder(null);
         }
     }
+
+
 }
