@@ -28,7 +28,7 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
         setRegistroTipoHerramientasIFrame(new RegistroTipoHerramientasIFrame(ventanaPrincipal));
         setSolicitudesHerramientasIFrame(new SolicitudesHerramientasIFrame(ventanaPrincipal));
         setVistaReporteIFrame(new VistaReporteIFrame(ventanaPrincipal));
-        setVerAuditoriasIFrame(new VerAuditoriasIFrame(ventanaPrincipal));
+        setVerAuditoriasIFrame(new VerCatalogoAuditoriasIFrame(ventanaPrincipal));
         setRegistroComputadoras(new RegistroComputadoras(ventanaPrincipal));
         setRegistroCamarasDigitalesIFrame(new RegistroCamarasDigitalesIFrame(ventanaPrincipal));
         setReportesMenuIFrame(new ReportesMenuIFrame(ventanaPrincipal));

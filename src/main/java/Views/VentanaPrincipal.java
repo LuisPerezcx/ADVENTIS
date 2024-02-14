@@ -232,7 +232,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         generarAuditoriasItem.setText("Generar auditorias");
         AuditoriasMenu.add(generarAuditoriasItem);
 
-        verAuditoriasItem.setText("Ver auditorias");
+        verAuditoriasItem.setText("Ver catalogo de auditorias");
         AuditoriasMenu.add(verAuditoriasItem);
 
         crearAuditoriaItem.setText("Crear auditoria");

@@ -24,7 +24,7 @@ public class CreacionIFrames {
     public static SolicitudesHerramientasIFrame solicitudesHerramientasIFrame;
     public static RegistroTipoHerramientasIFrame registroTipoHerramientasIFrame;
     public static VistaReporteIFrame vistaReporteIFrame;
-    public static VerAuditoriasIFrame verAuditoriasIFrame;
+    public static VerCatalogoAuditoriasIFrame verAuditoriasIFrame;
     public static RegistroComputadoras registroComputadoras;
     public static RegistroCamarasDigitalesIFrame registroCamarasDigitalesIFrame;
     public static DatosGeneralesIFrame datosGeneralesIFrame;
@@ -67,7 +67,7 @@ public class CreacionIFrames {
         CreacionIFrames.vistaReporteIFrame = vistaReporteIFrame;
     }
 
-    public static void setVerAuditoriasIFrame (VerAuditoriasIFrame verAuditoriasIFrame){
+    public static void setVerAuditoriasIFrame (VerCatalogoAuditoriasIFrame verAuditoriasIFrame){
         CreacionIFrames.verAuditoriasIFrame = verAuditoriasIFrame;
     }
 
