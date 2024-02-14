@@ -20,8 +20,8 @@ public class VerHerramientasIFrame extends javax.swing.JInternalFrame {
     }
 
     private void tablaEstilo(){
-        TableActionCellRender tableActionCellRender = new TableActionCellRender(tablaEmpleados);
-        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(tablaEmpleados);
+        TableActionCellRender tableActionCellRender = new TableActionCellRender(ventanaPrincipal,tablaEmpleados);
+        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(ventanaPrincipal,tablaEmpleados);
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);

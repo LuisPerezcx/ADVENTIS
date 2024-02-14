@@ -1,16 +1,20 @@
 package Controller;
 
+import Views.VentanaPrincipal;
 import Views.celdaAcciones.PanelAcciones;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import static Util.CreacionIFrames.*;
 
 public class ControladorPanelAcciones implements MouseListener {
+    private final VentanaPrincipal ventanaPrincipal;
     private final PanelAcciones panelAcciones;
     private final JTable tablaAccion;
-    public ControladorPanelAcciones(PanelAcciones panelAcciones,JTable table){
+    public ControladorPanelAcciones(VentanaPrincipal ventanaPrincipal,PanelAcciones panelAcciones,JTable table){
+        this.ventanaPrincipal = ventanaPrincipal;
         this.panelAcciones = panelAcciones;
         this.tablaAccion = table;
     }
@@ -47,6 +51,8 @@ public class ControladorPanelAcciones implements MouseListener {
             switch (iFrameTitulo){
                 case "Solicitudes de herramientas"->
                     abrirSolicitudHerramienta();
+                case "Ver auditoria" ->
+                    verAuditoriaGenerada();
             }
         } else if (event == panelAcciones.agregarBtnTable) {
             switch (iFrameTitulo){
@@ -116,8 +122,15 @@ public class ControladorPanelAcciones implements MouseListener {
 
     }
     public void excelReportes(){
-
     }
+
+    // ------- ver auditoria generada
+    private void verAuditoriaGenerada(){
+        ventanaPrincipal.dibujarVista(auditoriaGeneradaIFrame);
+    }
+
+
+
     @Override
     public void mousePressed(MouseEvent e) {
 

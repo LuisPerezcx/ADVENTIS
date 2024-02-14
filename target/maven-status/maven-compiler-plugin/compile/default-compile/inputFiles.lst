@@ -1,3 +1,4 @@
+C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Arreglos\Arreglos.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\DAO\ConexionBD.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorPerfilMenuIFrame.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\CambiarContrasenaIFrame.java
@@ -7,10 +8,12 @@ C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\Ver
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\CrearCatalogoIFrame.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\Login.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\RegistroComputadoras.java
+C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\DAO\UsuarioDAO.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorCambiarContrasenaIFrame.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorPanelAcciones.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\RegistroComponentesIFrame.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorVerUsuariosIFrame.java
+C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Model\Usuario.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\RegistroCamarasDigitalesIFrame.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorSolicitarHerramientasIFrame.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorLogin.java
@@ -19,6 +22,7 @@ C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controlle
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\RegistroEmpleadosIFrame.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorVerAuditoriasIFrame.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\celdaAcciones\TableAccionCellEditor.java
+C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Model\Empleado.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\PerfilMenuIFrame.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorRegistroHerramientasIFrame.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorRegistroTipoHerramientasIFrame.java
@@ -48,6 +52,7 @@ C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controlle
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\VistaReporteIFrame.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Theme\Imagen.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Util\Regex.java
+C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\DAO\EmpleadoDAO.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Views\RegistroTipoHerramientasIFrame.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorAuditoriasMenuIFrame.java
 C:\Users\david\Documents\NetBeansProjects\VistasAdventis\src\main\java\Controller\ControladorSolicitudesHerramientasIFrame.java

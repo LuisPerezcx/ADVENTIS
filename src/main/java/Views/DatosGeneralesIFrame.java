@@ -22,8 +22,8 @@ public class DatosGeneralesIFrame extends javax.swing.JInternalFrame {
         addListeners();
     }
     private void tablaEstilo(){
-        TableActionCellRender tableActionCellRender = new TableActionCellRender(tbleDatos);
-        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(tbleDatos);
+        TableActionCellRender tableActionCellRender = new TableActionCellRender(ventanaPrincipal,tbleDatos);
+        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(ventanaPrincipal,tbleDatos);
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);
