@@ -355,7 +355,7 @@ public class RegistroUsuariosIFrame extends javax.swing.JInternalFrame {
     public javax.swing.JLabel ocultarContrasena;
     private javax.swing.JTable tablaEmpleados;
     private javax.swing.JLabel titulo;
-    private javax.swing.JTextField txtUsuario;
+    public javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 
     private void addListeners(){

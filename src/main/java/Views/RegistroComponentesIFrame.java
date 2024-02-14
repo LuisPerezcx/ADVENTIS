@@ -48,7 +48,7 @@ public class RegistroComponentesIFrame extends javax.swing.JInternalFrame {
         btnBuscar = new javax.swing.JLabel();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Registro de tipo de componentes ");
 
         lblTitulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         lblTitulo.setText("Registro de tipo de componentes");
@@ -138,9 +138,8 @@ public class RegistroComponentesIFrame extends javax.swing.JInternalFrame {
                                     .addComponent(lblDescripcionComponentes))
                                 .addGap(121, 121, 121)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jSeparator3)
-                                        .addComponent(txtDescripcionComponentes, javax.swing.GroupLayout.DEFAULT_SIZE, 255, Short.MAX_VALUE))
+                                    .addComponent(jSeparator3)
+                                    .addComponent(txtDescripcionComponentes, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE)
                                     .addComponent(jSeparator2)
                                     .addComponent(txtFabricanteComponente, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE)
                                     .addComponent(txtNombreComponentes)

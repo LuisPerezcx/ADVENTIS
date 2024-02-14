@@ -38,7 +38,7 @@ public class GenerarAuditoriaIFrame extends javax.swing.JInternalFrame {
         btnGenerar = new javax.swing.JLabel();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Generar auditoria");
 
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Generar auditoria");

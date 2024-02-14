@@ -22,8 +22,8 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
     }
 
     private void tablaEstilo(){
-        TableActionCellRender tableActionCellRender = new TableActionCellRender();
-        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor();
+        TableActionCellRender tableActionCellRender = new TableActionCellRender(tablaEmpleados);
+        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(tablaEmpleados);
         tableAccionCellEditor.panelAcciones.pdfBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.pdfBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
@@ -47,7 +47,7 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         titulo = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
         buscar = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -59,9 +59,9 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
         titulo.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         titulo.setText("Ver empleados");
 
-        jTextField1.setBackground(new java.awt.Color(238, 238, 238));
-        jTextField1.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
-        jTextField1.setBorder(null);
+        txtNombre.setBackground(new java.awt.Color(238, 238, 238));
+        txtNombre.setFont(new java.awt.Font("Axia", 0, 24)); // NOI18N
+        txtNombre.setBorder(null);
 
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
@@ -131,7 +131,7 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1147, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                            .addComponent(txtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
                             .addComponent(jSeparator1))
                         .addGap(18, 18, 18)
                         .addComponent(buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -146,7 +146,7 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(64, 64, 64)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(buscar)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(95, 95, 95)
@@ -164,9 +164,9 @@ public class VerEmpleadosIFrame extends javax.swing.JInternalFrame {
     public javax.swing.JLabel buscar;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTable tablaEmpleados;
     private javax.swing.JLabel titulo;
+    public javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
     private void addListeners(){
         ControladorVerEmpleadosIFrame controladorVerEmpleadosIFrame = new ControladorVerEmpleadosIFrame(this);

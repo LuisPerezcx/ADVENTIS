@@ -19,6 +19,16 @@ public class Notificaciones {
     public static void mensajeOK(Component padre, String mensaje, String titulo) {
         JOptionPane.showMessageDialog(padre, mensaje, titulo, JOptionPane.PLAIN_MESSAGE, iconOK);
     }
+    public static void mensajePregunta(Component padre, String mensaje, String titulo) {
+        int opcion = JOptionPane.showConfirmDialog(padre, mensaje, titulo, JOptionPane.OK_CANCEL_OPTION);
+        if (opcion == JOptionPane.OK_OPTION) {
+            // Aquí iría la lógica para manejar la acción de aceptar
+            System.out.println("Aceptar");
+        } else if (opcion == JOptionPane.CANCEL_OPTION || opcion == JOptionPane.CLOSED_OPTION) {
+            // Aquí iría la lógica para manejar la acción de cancelar
+            System.out.println("Cancelar");
+        }
+    }
 
     public static void mensajeError(Component padre, String mensaje, String titulo) {
         JOptionPane.showMessageDialog(padre, mensaje, titulo, JOptionPane.PLAIN_MESSAGE, iconError);

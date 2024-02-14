@@ -37,9 +37,7 @@ public class ActionButton extends JButton {
                 setCursor(Cursor.getDefaultCursor());
             }
             @Override
-            public void mouseClicked(MouseEvent e) {
-                System.out.println("accion");
-            }
+            public void mouseClicked(MouseEvent e) { }
         });
     }
 

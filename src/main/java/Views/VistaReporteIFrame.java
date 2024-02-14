@@ -38,7 +38,7 @@ public class VistaReporteIFrame extends javax.swing.JInternalFrame {
         tblListaAuditorias = new javax.swing.JTable();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setTitle("Reportes");
 
         lblTituloRevision.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         lblTituloRevision.setText("Reportes");
@@ -99,8 +99,8 @@ public class VistaReporteIFrame extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void tablaEstilo(){
-        TableActionCellRender tableActionCellRender = new TableActionCellRender();
-        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor();
+        TableActionCellRender tableActionCellRender = new TableActionCellRender(tblListaAuditorias);
+        TableAccionCellEditor tableAccionCellEditor = new TableAccionCellEditor(tblListaAuditorias);
         tableAccionCellEditor.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.agregarBtnTable.setVisible(false);
         tableActionCellRender.panelAcciones.abrirBtnTable.setVisible(false);

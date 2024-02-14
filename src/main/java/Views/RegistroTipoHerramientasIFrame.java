@@ -41,7 +41,8 @@ public class RegistroTipoHerramientasIFrame extends javax.swing.JInternalFrame {
         jTable1 = new javax.swing.JTable();
 
         setClosable(true);
-        setTitle("Ver empleados");
+        setResizable(true);
+        setTitle("Registro de tipo de herramientas");
 
         lblTituloTipoHerramienta.setFont(new java.awt.Font("Axia", 3, 48)); // NOI18N
         lblTituloTipoHerramienta.setText("Registro de tipo de herramientas");
