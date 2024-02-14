@@ -1,6 +1,7 @@
 package Views;
 
 
+import Controller.ControladorDatosGeneralesIFrame;
 import Views.celdaAcciones.TableAccionCellEditor;
 import Views.celdaAcciones.TableActionCellRender;
 
@@ -18,6 +19,7 @@ public class DatosGeneralesIFrame extends javax.swing.JInternalFrame {
         this.ventanaPrincipal = ventanaPrincipal;
         initComponents();
         tablaEstilo();
+        addListeners();
     }
     private void tablaEstilo(){
         TableActionCellRender tableActionCellRender = new TableActionCellRender();
@@ -229,4 +231,9 @@ public class DatosGeneralesIFrame extends javax.swing.JInternalFrame {
     private javax.swing.JLabel titulo1;
     private javax.swing.JLabel titulo2;
     // End of variables declaration//GEN-END:variables
+
+    private void addListeners(){
+        ControladorDatosGeneralesIFrame controladorDatosGeneralesIFrame = new ControladorDatosGeneralesIFrame(this,ventanaPrincipal);
+        btnSiguiente.addMouseListener(controladorDatosGeneralesIFrame);
+    }
 }

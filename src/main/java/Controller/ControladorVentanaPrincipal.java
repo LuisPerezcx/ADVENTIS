@@ -36,6 +36,7 @@ public class ControladorVentanaPrincipal implements ActionListener, MouseListene
         setAuditoriasMenuIFrame(new AuditoriasMenuIFrame(ventanaPrincipal));
 
         setDatosGeneralesIFrame(new DatosGeneralesIFrame(ventanaPrincipal));
+        setCrearCatalogoIFrame(new CrearCatalogoIFrame(ventanaPrincipal));
     }
     @Override
     public void actionPerformed(ActionEvent e) {
