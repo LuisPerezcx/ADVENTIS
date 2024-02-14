@@ -1,5 +1,7 @@
 package Controller;
 
+import Util.Regex;
+import Views.Notificaciones;
 import DAO.CamarasDAO;
 import Views.RegistroCamarasDigitalesIFrame;
 
@@ -21,9 +23,54 @@ public class ControladorRegistroCamarasDigitalesIFrame implements MouseListener 
 
     @Override
     public void mouseClicked(MouseEvent e) {
-
+        Object event = e.getSource();
+        if(event == registroCamarasDigitalesIFrame.guardar){
+            validarNombre();
+            validarNumeroSerie();
+            validarResponsable();
+            validarNombre();
+        }
     }
 
+    private void validarNombre(){
+        if(Regex.validarCadenaDeSoloLetras(registroCamarasDigitalesIFrame.txtMarca.getText())){
+            System.out.println("Marca modelo correctos");
+        }else {
+            Notificaciones.mensajeError(registroCamarasDigitalesIFrame,"marca o modelo  invalidos","Marca/Modelo");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
+    }
+
+    private void validarNumeroSerie(){
+        if(Regex.validarSoloNumeros(registroCamarasDigitalesIFrame.txtNumeroSeire.getText())){
+            System.out.println("Numero de serie correctos");
+        }else {
+            Notificaciones.mensajeError(registroCamarasDigitalesIFrame,"numero de serie invalido","Numero de Serie");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
+    }
+
+    private void validarComentarios(){
+        if(Regex.validarCadenaDeSoloLetras(registroCamarasDigitalesIFrame.txtAreaComentarios.getText())){
+            System.out.println("Comentarios correctos");
+        }else {
+            Notificaciones.mensajeError(registroCamarasDigitalesIFrame,"comentarios invalidos","Comentarios");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
+    }
+
+    private void validarResponsable(){
+        if(Regex.validarCadenaDeSoloLetras(registroCamarasDigitalesIFrame.txtResponsable.getText())){
+            System.out.println("Responsable correctos");
+        }else {
+            Notificaciones.mensajeError(registroCamarasDigitalesIFrame,"Responsable invalido","Responsable");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
+    }
     @Override
     public void mousePressed(MouseEvent e) {
 
