@@ -31,9 +31,11 @@ public class EmpleadoDAO extends ConexionBD implements OperacionesBD<Empleado> {
         return null;
     }
 
+
+
     @Override
     public Boolean update(Empleado empleado, int id) {
-
+        System.out.println("Nada");
         return null;
     }
 
