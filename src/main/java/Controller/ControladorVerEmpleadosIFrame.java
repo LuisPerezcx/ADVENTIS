@@ -40,6 +40,7 @@ public class ControladorVerEmpleadosIFrame implements MouseListener {
         // if false
         //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
     }
+
     public void mostrarDatos() {
         DefaultTableModel modelo = (DefaultTableModel) verEmpleadosIFrame.tablaEmpleados.getModel();
         modelo.setRowCount(0);  // Clear existing rows
