@@ -1,5 +1,6 @@
 package Controller;
 
+import Util.Regex;
 import Views.Notificaciones;
 import Views.RegistroEmpleadosIFrame;
 
@@ -19,7 +20,42 @@ public class ControladorRegistroEmpleadosIFrame implements MouseListener {
         Object event = e.getSource();
         if(event == registroEmpleadosIFrame.guardar){
             registrarEmpleado();
+            validarNombreEmpleado();
+            validarApellidoPaterno();
+            validarApellidoMaterno();
         }
+    }
+
+
+
+    private void validarNombreEmpleado(){
+        if(Regex.validarLetramayusculaLetraminuscula(registroEmpleadosIFrame.nombreEmpleado.getText())){
+            System.out.println("nombreValido");
+        }else {
+            Notificaciones.mensajeError(registroEmpleadosIFrame,"Nombre invalido","Nombre");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
+    }
+
+    private void validarApellidoPaterno(){
+        if(Regex.validarLetramayusculaLetraminuscula(registroEmpleadosIFrame.txtUsuario1.getText())){
+            System.out.println("ApellidoPaternoValido");
+        }else {
+            Notificaciones.mensajeError(registroEmpleadosIFrame,"Apellido Paterno invalido","Apellido Paterno");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
+    }
+
+    private void validarApellidoMaterno(){
+        if(Regex.validarLetramayusculaLetraminuscula(registroEmpleadosIFrame.txtUsuario2.getText())){
+            System.out.println("apellidoMaternoValido");
+        }else {
+            Notificaciones.mensajeError(registroEmpleadosIFrame,"Apellido invalido","Apellido Materno");
+        }
+        // if false
+        //Notificaciones.mensajeError(login,"Usuario o contraseña incorrectos","Credenciales invalidas");
     }
 
     private void registrarEmpleado(){

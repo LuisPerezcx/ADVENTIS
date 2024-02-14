@@ -5,8 +5,6 @@ import Views.Notificaciones;
 import Views.RegistroUsuariosIFrame;
 
 import javax.swing.border.BevelBorder;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -45,7 +43,7 @@ public class ControladorRegistroUsuariosIFrame implements MouseListener {
     }
 
     private void validarRegistroUsuario(){
-        if(Regex.validarNombre(registroUsuariosIFrame.txtUsuario.getText())){
+        if(Regex.validarLetramayusculaLetraminuscula(registroUsuariosIFrame.txtUsuario.getText())){
             System.out.println("nombreValido");
         }else {
             Notificaciones.mensajeError(registroUsuariosIFrame,"Nombre invalido","Nombre");
